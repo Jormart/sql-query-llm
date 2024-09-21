@@ -138,4 +138,4 @@ img/
 __pycache__/
 
 # Exclude requirements.txt (environment.yml included)
-.requirements.txt
+requirements.txt
