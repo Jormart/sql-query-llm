@@ -1,0 +1,26 @@
+# Run: pip install -r requirements.txt
+langchain
+langchain-community
+langchain-openai
+langchain-cli
+langchain-experimental
+python-dotenv
+pandas
+openai
+sqlparse
+transformers
+torch 
+torchvision
+torchaudio
+datasets
+cohere
+streamlit
+langchain-groq
+groq
+mysql-connector-python
+chromadb
+tiktoken
+wikipedia
+faiss-cpu
+tabulate
+matplotlib

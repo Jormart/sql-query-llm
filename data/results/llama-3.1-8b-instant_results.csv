@@ -1,0 +1,794 @@
+Query,Database,Query Answer,Translated Query (Natural Language),LLM Answer,Question,Single Question Answer,Precision,Recall,Exact Match,Fuzzy Match
+"SELECT area FROM state WHERE state_name = ""new mexico"";",geo,"[(121600.0,)]",What is the area of New Mexico?,"[(121600.0,)]",how big is new mexico,"New Mexico is the 5th largest state in the United States by land area. It covers approximately 121,669 square miles (314,915 square kilometers).",1.0,1.0,1,100
+SELECT name FROM city WHERE Population BETWEEN 160000 AND 900000,world_1,"[('Qandahar',), ('Herat',), ('Amsterdam',), ('Rotterdam',), ('Haag',), ('Utrecht',), ('Eindhoven',), ('Tilburg',), ('Groningen',), ('Breda',), ('Tirana',), ('Oran',), ('Constantine',), ('Annaba',), ('Batna',), ('Sétif',), ('Huambo',), ('Dubai',), ('Abu Dhabi',), ('Sharja',), ('al-Ayn',), ('Lomas de Zamora',), ('Quilmes',), ('Almirante Brown',), ('La Plata',), ('Mar del Plata',), ('San Miguel de Tucumán',), ('Lanús',), ('Merlo',), ('General San Martín',), ('Salta',), ('Moreno',), ('Santa Fé',), ('Avellaneda',), ('Tres de Febrero',), ('Morón',), ('Florencio Varela',), ('San Isidro',), ('Tigre',), ('Malvinas Argentinas',), ('Vicente López',), ('Berazategui',), ('Corrientes',), ('San Miguel',), ('Bahía Blanca',), ('Esteban Echeverría',), ('Resistencia',), ('José C. Paz',), ('Paraná',), ('Godoy Cruz',), ('Posadas',), ('Guaymallén',), ('Santiago del Estero',), ('San Salvador de Jujuy',), ('Hurlingham',), ('Neuquén',), ('Gjumri',), ('Vanadzor',), ('Canberra',), ('Gold Coast',), ('Newcastle',), ('Central Coast',), ('Wollongong',), ('Gäncä',), ('Sumqayit',), ('Nassau',), ('Khulna',), ('Rajshahi',), ('Narayanganj',), ('Rangpur',), ('Mymensingh',), ('Barisal',), ('Tungi',), ('Antwerpen',), ('Gent',), ('Charleroi',), ('Liège',), ('Cotonou',), ('Porto-Novo',), ('La Paz',), ('El Alto',), ('Cochabamba',), ('Oruro',), ('Sucre',), ('Sarajevo',), ('Gaborone',), ('São Gonçalo',), ('Nova Iguaçu',), ('São Luís',), ('Maceió',), ('Duque de Caxias',), ('São Bernardo do Campo',), ('Teresina',), ('Natal',), ('Osasco',), ('Campo Grande',), ('Santo André',), ('João Pessoa',), ('Jaboatão dos Guararapes',), ('Contagem',), ('São José dos Campos',), ('Uberlândia',), ('Feira de Santana',), ('Ribeirão Preto',), ('Sorocaba',), ('Niterói',), ('Cuiabá',), ('Juiz de Fora',), ('Aracaju',), ('São João de Meriti',), ('Londrina',), ('Joinville',), ('Belford Roxo',), ('Santos',), ('Ananindeua',), ('Campos dos Goytacazes',), ('Mauá',), ('Carapicuíba',), ('Olinda',), ('Campina Grande',), ('São José do Rio Preto',), ('Caxias do Sul',), ('Moji das Cruzes',), ('Diadema',), ('Aparecida de Goiânia',), ('Piracicaba',), ('Cariacica',), ('Vila Velha',), ('Pelotas',), ('Bauru',), ('Porto Velho',), ('Serra',), ('Betim',), ('Jundíaí',), ('Canoas',), ('Franca',), ('São Vicente',), ('Maringá',), ('Montes Claros',), ('Anápolis',), ('Florianópolis',), ('Petrópolis',), ('Itaquaquecetuba',), ('Vitória',), ('Ponta Grossa',), ('Rio Branco',), ('Foz do Iguaçu',), ('Macapá',), ('Ilhéus',), ('Vitória da Conquista',), ('Uberaba',), ('Paulista',), ('Limeira',), ('Blumenau',), ('Caruaru',), ('Santarém',), ('Volta Redonda',), ('Novo Hamburgo',), ('Caucaia',), ('Santa Maria',), ('Cascavel',), ('Guarujá',), ('Ribeirão das Neves',), ('Governador Valadares',), ('Taubaté',), ('Imperatriz',), ('Gravataí',), ('Embu',), ('Mossoró',), ('Várzea Grande',), ('Petrolina',), ('Barueri',), ('Viamão',), ('Ipatinga',), ('Juazeiro',), ('Juazeiro do Norte',), ('Taboão da Serra',), ('São José dos Pinhais',), ('Magé',), ('Suzano',), ('São Leopoldo',), ('Marília',), ('São Carlos',), ('Sumaré',), ('Presidente Prudente',), ('Divinópolis',), ('Sete Lagoas',), ('Rio Grande',), ('Itabuna',), ('Jequié',), ('Arapiraca',), ('Colombo',), ('Americana',), ('Alvorada',), ('Araraquara',), ('Itaboraí',), ('Santa Bárbara d´Oeste',), ('Nova Friburgo',), ('Jacareí',), ('Araçatuba',), ('Barra Mansa',), ('Praia Grande',), ('Marabá',), ('Criciúma',), ('Boa Vista',), ('Passo Fundo',), ('Dourados',), ('Santa Luzia',), ('Rio Claro',), ('Maracanaú',), ('Guarapuava',), ('Glasgow',), ('Liverpool',), ('Edinburgh',), ('Sheffield',), ('Manchester',), ('Leeds',), ('Bristol',), ('Cardiff',), ('Coventry',), ('Leicester',), ('Bradford',), ('Belfast',), ('Nottingham',), ('Kingston upon Hull',), ('Plymouth',), ('Stoke-on-Trent',), ('Wolverhampton',), ('Derby',), ('Swansea',), ('Southampton',), ('Aberdeen',), ('Northampton',), ('Dudley',), ('Portsmouth',), ('Newcastle upon Tyne',), ('Sunderland',), ('Luton',), ('Swindon',), ('Southend-on-Sea',), ('Walsall',), ('Bournemouth',), ('Plovdiv',), ('Varna',), ('Burgas',), ('Ruse',), ('Ouagadougou',), ('Bobo-Dioulasso',), ('Bujumbura',), ('Puente Alto',), ('Viña del Mar',), ('Valparaíso',), ('Talcahuano',), ('Antofagasta',), ('San Bernardo',), ('Temuco',), ('Concepción',), ('Rancagua',), ('Arica',), ('Talca',), ('Chillán',), ('Iquique',), ('San José',), ('Djibouti',), ('Santiago de los Caballeros',), ('Cuenca',), ('Machala',), ('Santo Domingo de los Colorados',), ('Portoviejo',), ('Ambato',), ('Manta',), ('Shubra al-Khayma',), ('Port Said',), ('Suez',), ('al-Mahallat al-Kubra',), ('Tanta',), ('al-Mansura',), ('Luxor',), ('Asyut',), ('Bahtim',), ('Zagazig',), ('al-Faiyum',), ('Ismailia',), ('Kafr al-Dawwar',), ('Assuan',), ('Damanhur',), ('al-Minya',), ('Bani Suwayf',), ('Qina',), ('Sawhaj',), ('San Salvador',), ('Asmara',), ('Valencia',), ('Sevilla',), ('Zaragoza',), ('Málaga',), ('Bilbao',), ('Las Palmas de Gran Canaria',), ('Murcia',), ('Palma de Mallorca',), ('Valladolid',), ('Córdoba',), ('Vigo',), ('Alicante [Alacant]',), ('Gijón',), ('L´Hospitalet de Llobregat',), ('Granada',), ('A Coruña (La Coruña)',), ('Vitoria-Gasteiz',), ('Santa Cruz de Tenerife',), ('Badalona',), ('Oviedo',), ('Móstoles',), ('Elche [Elx]',), ('Sabadell',), ('Santander',), ('Jerez de la Frontera',), ('Pamplona [Iruña]',), ('Donostia-San Sebastián',), ('Cartagena',), ('Leganés',), ('Fuenlabrada',), ('Almería',), ('Terrassa',), ('Alcalá de Henares',), ('Burgos',), ('Johannesburg',), ('Port Elizabeth',), ('Pretoria',), ('Inanda',), ('Durban',), ('Vanderbijlpark',), ('Kempton Park',), ('Alberton',), ('Pinetown',), ('Pietermaritzburg',), ('Benoni',), ('Randburg',), ('Umlazi',), ('Bloemfontein',), ('Vereeniging',), ('Wonderboom',), ('Roodepoort',), ('Boksburg',), ('Klerksdorp',), ('Soshanguve',), ('Newcastle',), ('East London',), ('Welkom',), ('Kimberley',), ('Uitenhage',), ('Chatsworth',), ('Mdantsane',), ('Krugersdorp',), ('Botshabelo',), ('Brakpan',), ('Witbank',), ('Oberholzer',), ('Germiston',), ('Springs',), ('Dire Dawa',), ('Cebu',), ('Zamboanga',), ('Pasig',), ('Valenzuela',), ('Las Piñas',), ('Antipolo',), ('Taguig',), ('Cagayan de Oro',), ('Parañaque',), ('Makati',), ('Bacolod',), ('General Santos',), ('Marikina',), ('Dasmariñas',), ('Muntinlupa',), ('Iloilo',), ('Pasay',), ('Malabon',), ('San José del Monte',), ('Bacoor',), ('Iligan',), ('Calamba',), ('Mandaluyong',), ('Butuan',), ('Angeles',), ('Tarlac',), ('Mandaue',), ('Baguio',), ('Batangas',), ('Cainta',), ('San Pedro',), ('Navotas',), ('Cabanatuan',), ('San Fernando',), ('Lipa',), ('Lapu-Lapu',), ('San Pablo',), ('Biñan',), ('Taytay',), ('Lucena',), ('Imus',), ('Olongapo',), ('Binangonan',), ('Santa Rosa',), ('Tagum',), ('Tacloban',), ('Malolos',), ('Mabalacat',), ('Cotabato',), ('Meycauayan',), ('Puerto Princesa',), ('Libreville',), ('Kutaisi',), ('Kumasi',), ('Ciudad de Guatemala',), ('Mixco',), ('Bissau',), ('Georgetown',), ('Port-au-Prince',), ('Carrefour',), ('Delmas',), ('Tegucigalpa',), ('San Pedro Sula',), ('Malang',), ('Bandar Lampung',), ('Bekasi',), ('Padang',), ('Surakarta',), ('Banjarmasin',), ('Pekan Baru',), ('Denpasar',), ('Yogyakarta',), ('Pontianak',), ('Samarinda',), ('Jambi',), ('Depok',), ('Cimahi',), ('Balikpapan',), ('Manado',), ('Mataram',), ('Pekalongan',), ('Tegal',), ('Bogor',), ('Ciputat',), ('Pondokgede',), ('Cirebon',), ('Kediri',), ('Ambon',), ('Jember',), ('Cilacap',), ('Cimanggis',), ('Pematang Siantar',), ('Purwokerto',), ('Ciomas',), ('Tasikmalaya',), ('Madiun',), ('Srinagar',), ('Agra',), ('Coimbatore',), ('Thane (Thana)',), ('Allahabad',), ('Meerut',), ('Vishakhapatnam',), ('Jabalpur',), ('Amritsar',), ('Faridabad',), ('Vijayawada',), ('Gwalior',), ('Jodhpur',), ('Nashik (Nasik)',), ('Hubli-Dharwad',), ('Solapur (Sholapur)',), ('Ranchi',), ('Bareilly',), ('Guwahati (Gauhati)',), ('Shambajinagar (Aurangabad)',), ('Cochin (Kochi)',), ('Rajkot',), ('Kota',), ('Thiruvananthapuram (Trivandrum',), ('Pimpri-Chinchwad',), ('Jalandhar (Jullundur)',), ('Gorakhpur',), ('Chandigarh',), ('Mysore',), ('Aligarh',), ('Guntur',), ('Jamshedpur',), ('Ghaziabad',), ('Warangal',), ('Raipur',), ('Moradabad',), ('Durgapur',), ('Amravati',), ('Calicut (Kozhikode)',), ('Bikaner',), ('Bhubaneswar',), ('Kolhapur',), ('Kataka (Cuttack)',), ('Ajmer',), ('Bhavnagar',), ('Tiruchirapalli',), ('Bhilai',), ('Bhiwandi',), ('Saharanpur',), ('Ulhasnagar',), ('Salem',), ('Ujjain',), ('Malegaon',), ('Jamnagar',), ('Bokaro Steel City',), ('Akola',), ('Belgaum',), ('Rajahmundry',), ('Nellore',), ('Udaipur',), ('New Bombay',), ('Bhatpara',), ('Gulbarga',), ('New Delhi',), ('Jhansi',), ('Gaya',), ('Kakinada',), ('Dhule (Dhulia)',), ('Panihati',), ('Nanded (Nander)',), ('Mangalore',), ('Dehra Dun',), ('Kamarhati',), ('Davangere',), ('Asansol',), ('Bhagalpur',), ('Bellary',), ('Barddhaman (Burdwan)',), ('Rampur',), ('Jalgaon',), ('Muzaffarpur',), ('Nizamabad',), ('Muzaffarnagar',), ('Patiala',), ('Shahjahanpur',), ('Kurnool',), ('Tiruppur (Tirupper)',), ('Rohtak',), ('South Dum Dum',), ('Mathura',), ('Chandrapur',), ('Barahanagar (Baranagar)',), ('Darbhanga',), ('Siliguri (Shiliguri)',), ('Raurkela',), ('Ambattur',), ('Panipat',), ('Firozabad',), ('Ichalkaranji',), ('Jammu',), ('Ramagundam',), ('Eluru',), ('Brahmapur',), ('Alwar',), ('Pondicherry',), ('Thanjavur',), ('Bihar Sharif',), ('Tuticorin',), ('Imphal',), ('Latur',), ('Sagar',), ('Farrukhabad-cum-Fatehgarh',), ('Sangli',), ('Parbhani',), ('Nagar Coil',), ('Bijapur',), ('Kukatpalle',), ('Bally',), ('Bhilwara',), ('Ratlam',), ('Avadi',), ('Dindigul',), ('Ahmadnagar',), ('Bilaspur',), ('Shimoga',), ('Kharagpur',), ('Mira Bhayandar',), ('Vellore',), ('Jalna',), ('Burnpur',), ('Anantapur',), ('Allappuzha (Alleppey)',), ('Tirupati',), ('Karnal',), ('Burhanpur',), ('Hisar (Hissar)',), ('Tiruvottiyur',), ('Mirzapur-cum-Vindhyachal',), ('Secunderabad',), ('Nadiad',), ('Dewas',), ('Murwara (Katni)',), ('Ganganagar',), ('Vizianagaram',), ('Mosul',), ('Irbil',), ('Kirkuk',), ('Basra',), ('al-Sulaymaniya',), ('al-Najaf',), ('Karbala',), ('al-Hilla',), ('al-Nasiriya',), ('al-Amara',), ('al-Diwaniya',), ('al-Ramadi',), ('al-Kut',), ('Ahvaz',), ('Qom',), ('Kermanshah',), ('Urmia',), ('Zahedan',), ('Rasht',), ('Hamadan',), ('Kerman',), ('Arak',), ('Ardebil',), ('Yazd',), ('Qazvin',), ('Zanjan',), ('Sanandaj',), ('Bandar-e-Abbas',), ('Khorramabad',), ('Eslamshahr',), ('Borujerd',), ('Abadan',), ('Dezful',), ('Kashan',), ('Sari',), ('Gorgan',), ('Najafabad',), ('Sabzevar',), ('Khomeynishahr',), ('Dublin',), ('Jerusalem',), ('Tel Aviv-Jaffa',), ('Haifa',), ('Rishon Le Ziyyon',), ('Beerseba',), ('Holon',), ('Palermo',), ('Genova',), ('Bologna',), ('Firenze',), ('Catania',), ('Bari',), ('Venezia',), ('Messina',), ('Verona',), ('Trieste',), ('Padova',), ('Taranto',), ('Brescia',), ('Reggio di Calabria',), ('Modena',), ('Prato',), ('Parma',), ('Cagliari',), ('Livorno',), ('Graz',), ('Linz',), ('Chiba',), ('Sakai',), ('Kumamoto',), ('Okayama',), ('Sagamihara',), ('Hamamatsu',), ('Kagoshima',), ('Funabashi',), ('Higashiosaka',), ('Hachioji',), ('Niigata',), ('Amagasaki',), ('Himeji',), ('Shizuoka',), ('Urawa',), ('Matsuyama',), ('Matsudo',), ('Kanazawa',), ('Kawaguchi',), ('Ichikawa',), ('Omiya',), ('Utsunomiya',), ('Oita',), ('Nagasaki',), ('Yokosuka',), ('Kurashiki',), ('Gifu',), ('Hirakata',), ('Nishinomiya',), ('Toyonaka',), ('Wakayama',), ('Fukuyama',), ('Fujisawa',), ('Asahikawa',), ('Machida',), ('Nara',), ('Takatsuki',), ('Iwaki',), ('Nagano',), ('Toyohashi',), ('Toyota',), ('Suita',), ('Takamatsu',), ('Koriyama',), ('Okazaki',), ('Kawagoe',), ('Tokorozawa',), ('Toyama',), ('Kochi',), ('Kashiwa',), ('Akita',), ('Miyazaki',), ('Koshigaya',), ('Naha',), ('Aomori',), ('Hakodate',), ('Akashi',), ('Yokkaichi',), ('Fukushima',), ('Morioka',), ('Maebashi',), ('Kasugai',), ('Otsu',), ('Ichihara',), ('Yao',), ('Ichinomiya',), ('Tokushima',), ('Kakogawa',), ('Ibaraki',), ('Neyagawa',), ('Shimonoseki',), ('Yamagata',), ('Fukui',), ('Hiratsuka',), ('Mito',), ('Sasebo',), ('Hachinohe',), ('Takasaki',), ('Shimizu',), ('Kurume',), ('Fuji',), ('Soka',), ('Fuchu',), ('Chigasaki',), ('Atsugi',), ('Numazu',), ('Ageo',), ('Yamato',), ('Matsumoto',), ('Kure',), ('Takarazuka',), ('Kasukabe',), ('Chofu',), ('Odawara',), ('Kofu',), ('Kushiro',), ('Kishiwada',), ('Hitachi',), ('Nagaoka',), ('Itami',), ('Uji',), ('Suzuka',), ('Hirosaki',), ('Ube',), ('Kodaira',), ('Takaoka',), ('Obihiro',), ('Tomakomai',), ('Saga',), ('Sakura',), ('Kamakura',), ('Mitaka',), ('Izumi',), ('Hino',), ('Hadano',), ('Ashikaga',), ('Tsu',), ('Sayama',), ('Yachiyo',), ('Tsukuba',), ('Sanaa',), ('Aden',), ('Taizz',), ('Hodeida',), ('al-Zarqa',), ('Irbid',), ('Novi Sad',), ('Niš',), ('Phnom Penh',), ('Garoua',), ('Calgary',), ('Toronto',), ('North York',), ('Winnipeg',), ('Edmonton',), ('Mississauga',), ('Scarborough',), ('Vancouver',), ('Etobicoke',), ('London',), ('Hamilton',), ('Ottawa',), ('Laval',), ('Surrey',), ('Brampton',), ('Windsor',), ('Saskatoon',), ('Kitchener',), ('Markham',), ('Regina',), ('Burnaby',), ('Québec',), ('Qaraghandy',), ('Shymkent',), ('Taraz',), ('Astana',), ('Öskemen',), ('Pavlodar',), ('Semey',), ('Aqtöbe',), ('Qostanay',), ('Petropavl',), ('Oral',), ('Temirtau',), ('Mombasa',), ('Kisumu',), ('Nakuru',), ('Bangui',), ('Handan',), ('Wuxi',), ('Xuzhou',), ('Datong',), ('Yichun',), ('Benxi',), ('Luoyang',), ('Suzhou',), ('Xining',), ('Huainan',), ('Jixi',), ('Daqing',), ('Fuxin',), ('Amoy [Xiamen]',), ('Liuzhou',), ('Shantou',), ('Jinzhou',), ('Mudanjiang',), ('Yinchuan',), ('Changzhou',), ('Zhangjiakou',), ('Dandong',), ('Hegang',), ('Kaifeng',), ('Jiamusi',), ('Liaoyang',), ('Hengyang',), ('Baoding',), ('Hunjiang',), ('Xinxiang',), ('Huangshi',), ('Haikou',), ('Yantai',), ('Bengbu',), ('Xiangtan',), ('Weifang',), ('Wuhu',), ('Pingxiang',), ('Yingkou',), ('Anyang',), ('Panzhihua',), ('Pingdingshan',), ('Xiangfan',), ('Zhuzhou',), ('Jiaozuo',), ('Wenzhou',), ('Zhangjiang',), ('Zigong',), ('Shuangyashan',), ('Zaozhuang',), ('Yakeshi',), ('Yichang',), ('Zhenjiang',), ('Huaibei',), ('Qinhuangdao',), ('Guilin',), ('Liupanshui',), ('Panjin',), ('Yangquan',), ('Jinxi',), ('Liaoyuan',), ('Lianyungang',), ('Xianyang',), ('Tai´an',), ('Chifeng',), ('Shaoguan',), ('Nantong',), ('Leshan',), ('Baoji',), ('Linyi',), ('Tonghua',), ('Siping',), ('Changzhi',), ('Tengzhou',), ('Chaozhou',), ('Yangzhou',), ('Dongwan',), ('Ma´anshan',), ('Foshan',), ('Yueyang',), ('Xingtai',), ('Changde',), ('Shihezi',), ('Yancheng',), ('Jiujiang',), ('Dongying',), ('Shashi',), ('Xintai',), ('Jingdezhen',), ('Tongchuan',), ('Zhongshan',), ('Shiyan',), ('Tieli',), ('Jining',), ('Wuhai',), ('Mianyang',), ('Luzhou',), ('Zunyi',), ('Shizuishan',), ('Neijiang',), ('Tongliao',), ('Tieling',), ('Wafangdian',), ('Anqing',), ('Shaoyang',), ('Laiwu',), ('Chengde',), ('Tianshui',), ('Nanyang',), ('Cangzhou',), ('Yibin',), ('Huaiyin',), ('Dunhua',), ('Yanji',), ('Jiangmen',), ('Tongling',), ('Suihua',), ('Gongziling',), ('Xiantao',), ('Chaoyang',), ('Ganzhou',), ('Huzhou',), ('Baicheng',), ('Shangzi',), ('Yangjiang',), ('Qitaihe',), ('Gejiu',), ('Jiangyin',), ('Hebi',), ('Jiaxing',), ('Wuzhou',), ('Meihekou',), ('Xuchang',), ('Liaocheng',), ('Haicheng',), ('Qianjiang',), ('Baiyin',), ('Bei´an',), ('Yixing',), ('Laizhou',), ('Qaramay',), ('Acheng',), ('Dezhou',), ('Nanping',), ('Zhaoqing',), ('Beipiao',), ('Fengcheng',), ('Fuyu',), ('Xinyang',), ('Dongtai',), ('Yuci',), ('Honghu',), ('Ezhou',), ('Heze',), ('Daxian',), ('Linfen',), ('Tianmen',), ('Yiyang',), ('Quanzhou',), ('Rizhao',), ('Deyang',), ('Guangyuan',), ('Changshu',), ('Zhangzhou',), ('Hailar',), ('Nanchong',), ('Jiutai',), ('Zhaodong',), ('Shaoxing',), ('Fuyang',), ('Maoming',), ('Qujing',), ('Ghulja',), ('Jiaohe',), ('Puyang',), ('Huadian',), ('Jiangyou',), ('Qashqar',), ('Anshun',), ('Fuling',), ('Xinyu',), ('Hanzhong',), ('Danyang',), ('Chenzhou',), ('Xiaogan',), ('Shangqiu',), ('Zhuhai',), ('Qingyuan',), ('Aqsu',), ('Jining',), ('Xiaoshan',), ('Zaoyang',), ('Xinghua',), ('Hami',), ('Huizhou',), ('Jinmen',), ('Sanming',), ('Bishkek',), ('Osh',), ('Cartagena',), ('Cúcuta',), ('Bucaramanga',), ('Ibagué',), ('Pereira',), ('Santa Marta',), ('Manizales',), ('Bello',), ('Pasto',), ('Neiva',), ('Soledad',), ('Armenia',), ('Villavicencio',), ('Soacha',), ('Valledupar',), ('Montería',), ('Itagüí',), ('Palmira',), ('Buenaventura',), ('Floridablanca',), ('Sincelejo',), ('Popayán',), ('Barrancabermeja',), ('Pointe-Noire',), ('Lubumbashi',), ('Mbuji-Mayi',), ('Kolwezi',), ('Kisangani',), ('Kananga',), ('Likasi',), ('Bukavu',), ('Kikwit',), ('Tshikapa',), ('Matadi',), ('Mbandaka',), ('Hamhung',), ('Chongjin',), ('Nampo',), ('Sinuiju',), ('Wonsan',), ('Phyongsong',), ('Sariwon',), ('Haeju',), ('Kanggye',), ('Kimchaek',), ('Hyesan',), ('Kaesong',), ('Songnam',), ('Puchon',), ('Suwon',), ('Anyang',), ('Chonju',), ('Chongju',), ('Koyang',), ('Ansan',), ('Pohang',), ('Chang-won',), ('Masan',), ('Kwangmyong',), ('Chonan',), ('Chinju',), ('Iksan',), ('Pyongtaek',), ('Kumi',), ('Uijongbu',), ('Kyongju',), ('Kunsan',), ('Cheju',), ('Kimhae',), ('Sunchon',), ('Mokpo',), ('Yong-in',), ('Wonju',), ('Kunpo',), ('Chunchon',), ('Namyangju',), ('Kangnung',), ('Chungju',), ('Andong',), ('Yosu',), ('Kyongsan',), ('Paju',), ('Yangsan',), ('Athenai',), ('Thessaloniki',), ('Pireus',), ('Zagreb',), ('Split',), ('Rijeka',), ('Santiago de Cuba',), ('Camagüey',), ('Holguín',), ('Santa Clara',), ('Guantánamo',), ('Nicosia',), ('Vientiane',), ('Riga',), ('Maseru',), ('Tripoli',), ('Monrovia',), ('Bengasi',), ('Vilnius',), ('Kaunas',), ('Klaipeda',), ('El-Aaiún',), ('Macao',), ('Antananarivo',), ('Skopje',), ('Blantyre',), ('Lilongwe',), ('Ipoh',), ('Johor Baharu',), ('Petaling Jaya',), ('Kelang',), ('Kuala Terengganu',), ('Pinang',), ('Kota Bharu',), ('Kuantan',), ('Taiping',), ('Seremban',), ('Bamako',), ('Rabat',), ('Marrakech',), ('Fès',), ('Tanger',), ('Salé',), ('Meknès',), ('Oujda',), ('Kénitra',), ('Tétouan',), ('Safi',), ('Nouakchott',), ('Naucalpan de Juárez',), ('Mexicali',), ('Culiacán',), ('Acapulco de Juárez',), ('Tlalnepantla de Baz',), ('Mérida',), ('Chihuahua',), ('San Luis Potosí',), ('Guadalupe',), ('Toluca',), ('Aguascalientes',), ('Querétaro',), ('Morelia',), ('Hermosillo',), ('Saltillo',), ('Torreón',), ('Centro (Villahermosa)',), ('San Nicolás de los Garza',), ('Durango',), ('Chimalhuacán',), ('Tlaquepaque',), ('Atizapán de Zaragoza',), ('Veracruz',), ('Cuautitlán Izcalli',), ('Irapuato',), ('Tuxtla Gutiérrez',), ('Tultitlán',), ('Reynosa',), ('Benito Juárez',), ('Matamoros',), ('Xalapa',), ('Celaya',), ('Mazatlán',), ('Ensenada',), ('Ahome',), ('Cajeme',), ('Cuernavaca',), ('Tonalá',), ('Valle de Chalco Solidaridad',), ('Nuevo Laredo',), ('Tepic',), ('Tampico',), ('Ixtapaluca',), ('Apodaca',), ('Guasave',), ('Gómez Palacio',), ('Tapachula',), ('Nicolás Romero',), ('Coatzacoalcos',), ('Uruapan',), ('Victoria',), ('Oaxaca de Juárez',), ('Coacalco de Berriozábal',), ('Pachuca de Soto',), ('General Escobedo',), ('Salamanca',), ('Santa Catarina',), ('Tehuacán',), ('Chalco',), ('Cárdenas',), ('Campeche',), ('La Paz',), ('Othón P. Blanco (Chetumal)',), ('Texcoco',), ('La Paz',), ('Metepec',), ('Monclova',), ('Huixquilucan',), ('Chilpancingo de los Bravo',), ('Puerto Vallarta',), ('Fresnillo',), ('Ciudad Madero',), ('Soledad de Graciano Sánchez',), ('San Juan del Río',), ('San Felipe del Progreso',), ('Córdoba',), ('Tecámac',), ('Ocosingo',), ('Carmen',), ('Lázaro Cárdenas',), ('Jiutepec',), ('Papantla',), ('Comalcalco',), ('Zamora',), ('Chisinau',), ('Tiraspol',), ('Ulan Bator',), ('Matola',), ('Beira',), ('Nampula',), ('Chimoio',), ('Mandalay',), ('Moulmein (Mawlamyine)',), ('Pegu (Bago)',), ('Bassein (Pathein)',), ('Windhoek',), ('Kathmandu',), ('Niamey',), ('Ogbomosho',), ('Kano',), ('Oshogbo',), ('Ilorin',), ('Abeokuta',), ('Port Harcourt',), ('Zaria',), ('Ilesha',), ('Onitsha',), ('Iwo',), ('Ado-Ekiti',), ('Abuja',), ('Kaduna',), ('Mushin',), ('Maiduguri',), ('Enugu',), ('Ede',), ('Aba',), ('Ife',), ('Ila',), ('Oyo',), ('Ikerre',), ('Benin City',), ('Iseyin',), ('Katsina',), ('Jos',), ('Sokoto',), ('Ilobu',), ('Offa',), ('Ikorodu',), ('Ilawe-Ekiti',), ('Owo',), ('Ikirun',), ('Shaki',), ('Calabar',), ('Ondo',), ('Akure',), ('Oslo',), ('Bergen',), ('Bouaké',), ('Quetta',), ('Islamabad',), ('Sargodha',), ('Sialkot',), ('Bahawalpur',), ('Sukkur',), ('Jhang',), ('Sheikhupura',), ('Larkana',), ('Gujrat',), ('Mardan',), ('Kasur',), ('Rahim Yar Khan',), ('Sahiwal',), ('Okara',), ('Wah',), ('Dera Ghazi Khan',), ('Mirpur Khas',), ('Nawabshah',), ('Mingora',), ('Chiniot',), ('Ciudad de Panamá',), ('San Miguelito',), ('Port Moresby',), ('Asunción',), ('Arequipa',), ('Trujillo',), ('Chiclayo',), ('Callao',), ('Iquitos',), ('Chimbote',), ('Huancayo',), ('Piura',), ('Cusco',), ('Pucallpa',), ('Tacna',), ('Ica',), ('Lisboa',), ('Porto',), ('San Juan',), ('Bayamón',), ('Ponce',), ('Carolina',), ('Lódz',), ('Kraków',), ('Wroclaw',), ('Poznan',), ('Gdansk',), ('Szczecin',), ('Bydgoszcz',), ('Lublin',), ('Katowice',), ('Bialystok',), ('Czestochowa',), ('Gdynia',), ('Sosnowiec',), ('Radom',), ('Kielce',), ('Gliwice',), ('Torun',), ('Bytom',), ('Zabrze',), ('Bielsko-Biala',), ('Olsztyn',), ('Rzeszów',), ('Doha',), ('Marseille',), ('Lyon',), ('Toulouse',), ('Nice',), ('Nantes',), ('Strasbourg',), ('Montpellier',), ('Bordeaux',), ('Rennes',), ('Le Havre',), ('Reims',), ('Lille',), ('St-Étienne',), ('Toulon',), ('Iasi',), ('Constanta',), ('Cluj-Napoca',), ('Galati',), ('Timisoara',), ('Brasov',), ('Craiova',), ('Ploiesti',), ('Braila',), ('Oradea',), ('Bacau',), ('Pitesti',), ('Arad',), ('Sibiu',), ('Târgu Mures',), ('Kigali',), ('Stockholm',), ('Gothenburg [Göteborg]',), ('Malmö',), ('Uppsala',), ('Frankfurt am Main',), ('Essen',), ('Dortmund',), ('Stuttgart',), ('Düsseldorf',), ('Bremen',), ('Duisburg',), ('Hannover',), ('Leipzig',), ('Nürnberg',), ('Dresden',), ('Bochum',), ('Wuppertal',), ('Bielefeld',), ('Mannheim',), ('Bonn',), ('Gelsenkirchen',), ('Karlsruhe',), ('Wiesbaden',), ('Münster',), ('Mönchengladbach',), ('Chemnitz',), ('Augsburg',), ('Halle/Saale',), ('Braunschweig',), ('Aachen',), ('Krefeld',), ('Magdeburg',), ('Kiel',), ('Oberhausen',), ('Lübeck',), ('Hagen',), ('Rostock',), ('Freiburg im Breisgau',), ('Erfurt',), ('Kassel',), ('Saarbrücken',), ('Mainz',), ('Hamm',), ('Herne',), ('Mülheim an der Ruhr',), ('Solingen',), ('Osnabrück',), ('Ludwigshafen am Rhein',), ('Leverkusen',), ('Ndola',), ('Kitwe',), ('Medina',), ('al-Dammam',), ('al-Taif',), ('Tabuk',), ('Burayda',), ('al-Hufuf',), ('al-Mubarraz',), ('Khamis Mushayt',), ('Hail',), ('Pikine',), ('Dakar',), ('Thiès',), ('Kaolack',), ('Ziguinchor',), ('Freetown',), ('Bratislava',), ('Košice',), ('Ljubljana',), ('Colombo',), ('Dehiwala',), ('Moratuwa',), ('Sharq al-Nil',), ('Port Sudan',), ('Kassala',), ('Obeid',), ('Nyala',), ('Wad Madani',), ('al-Qadarif',), ('Kusti',), ('Helsinki [Helsingfors]',), ('Espoo',), ('Tampere',), ('Vantaa',), ('Turku [Åbo]',), ('Zürich',), ('Geneve',), ('Basel',), ('Hims',), ('Hama',), ('Latakia',), ('Dushanbe',), ('Khujand',), ('Tainan',), ('Panchiao',), ('Chungho',), ('Keelung (Chilung)',), ('Sanchung',), ('Hsinchuang',), ('Hsinchu',), ('Chungli',), ('Fengshan',), ('Taoyuan',), ('Chiayi',), ('Hsintien',), ('Changhwa',), ('Yungho',), ('Tucheng',), ('Pingtung',), ('Yungkang',), ('Pingchen',), ('Tali',), ('Taiping',), ('Pate',), ('Fengyuan',), ('Luchou',), ('Dodoma',), ('Mwanza',), ('København',), ('Århus',), ('Odense',), ('Aalborg',), ('Nonthaburi',), ('Nakhon Ratchasima',), ('Chiang Mai',), ('Lomé',), ('N´Djaména',), ('Brno',), ('Ostrava',), ('Plzen',), ('Tunis',), ('Sfax',), ('Ariana',), ('Ettadhamen',), ('Gaziantep',), ('Konya',), ('Mersin (Içel)',), ('Antalya',), ('Diyarbakir',), ('Kayseri',), ('Eskisehir',), ('Sanliurfa',), ('Samsun',), ('Malatya',), ('Gebze',), ('Denizli',), ('Sivas',), ('Erzurum',), ('Tarsus',), ('Kahramanmaras',), ('Elâzig',), ('Van',), ('Sultanbeyli',), ('Izmit (Kocaeli)',), ('Manisa',), ('Batman',), ('Balikesir',), ('Sakarya (Adapazari)',), ('Ashgabat',), ('Chärjew',), ('Kampala',), ('Zaporizzja',), ('Lviv',), ('Kryvyi Rig',), ('Mykolajiv',), ('Mariupol',), ('Lugansk',), ('Vinnytsja',), ('Makijivka',), ('Herson',), ('Sevastopol',), ('Simferopol',), ('Pultava [Poltava]',), ('Tšernigiv',), ('Tšerkasy',), ('Gorlivka',), ('Zytomyr',), ('Sumy',), ('Dniprodzerzynsk',), ('Kirovograd',), ('Hmelnytskyi',), ('Tšernivtsi',), ('Rivne',), ('Krementšuk',), ('Ivano-Frankivsk',), ('Ternopil',), ('Lutsk',), ('Bila Tserkva',), ('Kramatorsk',), ('Melitopol',), ('Kertš',), ('Debrecen',), ('Miskolc',), ('Auckland',), ('Christchurch',), ('Manukau',), ('North Shore',), ('Waitakere',), ('Wellington',), ('Namangan',), ('Samarkand',), ('Andijon',), ('Buhoro',), ('Karsi',), ('Nukus',), ('Kükon',), ('Fargona',), ('Gomel',), ('Mogiljov',), ('Vitebsk',), ('Grodno',), ('Brest',), ('Bobruisk',), ('Baranovitši',), ('Barquisimeto',), ('Valencia',), ('Ciudad Guayana',), ('Petare',), ('Maracay',), ('Barcelona',), ('Maturín',), ('San Cristóbal',), ('Ciudad Bolívar',), ('Cumaná',), ('Mérida',), ('Cabimas',), ('Barinas',), ('Turmero',), ('Baruta',), ('Puerto Cabello',), ('Santa Ana de Coro',), ('Los Teques',), ('Punto Fijo',), ('Guarenas',), ('Krasnojarsk',), ('Saratov',), ('Toljatti',), ('Uljanovsk',), ('Izevsk',), ('Krasnodar',), ('Jaroslavl',), ('Habarovsk',), ('Vladivostok',), ('Irkutsk',), ('Barnaul',), ('Novokuznetsk',), ('Penza',), ('Rjazan',), ('Orenburg',), ('Lipetsk',), ('Nabereznyje Tšelny',), ('Tula',), ('Tjumen',), ('Kemerovo',), ('Astrahan',), ('Tomsk',), ('Kirov',), ('Ivanovo',), ('Tšeboksary',), ('Brjansk',), ('Tver',), ('Kursk',), ('Magnitogorsk',), ('Kaliningrad',), ('Nizni Tagil',), ('Murmansk',), ('Ulan-Ude',), ('Kurgan',), ('Arkangeli',), ('Sotši',), ('Smolensk',), ('Orjol',), ('Stavropol',), ('Belgorod',), ('Kaluga',), ('Vladimir',), ('Mahatškala',), ('Tšerepovets',), ('Saransk',), ('Tambov',), ('Vladikavkaz',), ('Tšita',), ('Vologda',), ('Veliki Novgorod',), ('Komsomolsk-na-Amure',), ('Kostroma',), ('Volzski',), ('Taganrog',), ('Petroskoi',), ('Bratsk',), ('Dzerzinsk',), ('Surgut',), ('Orsk',), ('Sterlitamak',), ('Angarsk',), ('Joškar-Ola',), ('Rybinsk',), ('Prokopjevsk',), ('Niznevartovsk',), ('Naltšik',), ('Syktyvkar',), ('Severodvinsk',), ('Bijsk',), ('Niznekamsk',), ('Blagoveštšensk',), ('Šahty',), ('Staryi Oskol',), ('Zelenograd',), ('Balakovo',), ('Novorossijsk',), ('Pihkova',), ('Zlatoust',), ('Jakutsk',), ('Podolsk',), ('Petropavlovsk-Kamtšatski',), ('Kamensk-Uralski',), ('Engels',), ('Syzran',), ('Grozny',), ('Novotšerkassk',), ('Berezniki',), ('Juzno-Sahalinsk',), ('Volgodonsk',), ('Abakan',), ('Maikop',), ('Miass',), ('Armavir',), ('Ljubertsy',), ('Rubtsovsk',), ('Haiphong',), ('Da Nang',), ('Biên Hoa',), ('Nha Trang',), ('Hue',), ('Can Tho',), ('Cam Pha',), ('Nam Dinh',), ('Quy Nhon',), ('Tallinn',), ('San Jose',), ('Indianapolis',), ('San Francisco',), ('Jacksonville',), ('Columbus',), ('Austin',), ('Baltimore',), ('Memphis',), ('Milwaukee',), ('Boston',), ('Washington',), ('Nashville-Davidson',), ('El Paso',), ('Seattle',), ('Denver',), ('Charlotte',), ('Fort Worth',), ('Portland',), ('Oklahoma City',), ('Tucson',), ('New Orleans',), ('Las Vegas',), ('Cleveland',), ('Long Beach',), ('Albuquerque',), ('Kansas City',), ('Fresno',), ('Virginia Beach',), ('Atlanta',), ('Sacramento',), ('Oakland',), ('Mesa',), ('Tulsa',), ('Omaha',), ('Minneapolis',), ('Honolulu',), ('Miami',), ('Colorado Springs',), ('Saint Louis',), ('Wichita',), ('Santa Ana',), ('Pittsburgh',), ('Arlington',), ('Cincinnati',), ('Anaheim',), ('Toledo',), ('Tampa',), ('Buffalo',), ('Saint Paul',), ('Corpus Christi',), ('Aurora',), ('Raleigh',), ('Newark',), ('Lexington-Fayette',), ('Anchorage',), ('Louisville',), ('Riverside',), ('Saint Petersburg',), ('Bakersfield',), ('Stockton',), ('Birmingham',), ('Jersey City',), ('Norfolk',), ('Baton Rouge',), ('Hialeah',), ('Lincoln',), ('Greensboro',), ('Plano',), ('Rochester',), ('Glendale',), ('Akron',), ('Garland',), ('Madison',), ('Fort Wayne',), ('Fremont',), ('Scottsdale',), ('Montgomery',), ('Shreveport',), ('Augusta-Richmond County',), ('Lubbock',), ('Chesapeake',), ('Mobile',), ('Des Moines',), ('Grand Rapids',), ('Richmond',), ('Yonkers',), ('Spokane',), ('Glendale',), ('Tacoma',), ('Irving',), ('Huntington Beach',), ('Modesto',), ('Durham',), ('Columbus',), ('Orlando',), ('Boise City',), ('Winston-Salem',), ('San Bernardino',), ('Jackson',), ('Little Rock',), ('Salt Lake City',), ('Reno',), ('Newport News',), ('Chandler',), ('Laredo',), ('Henderson',), ('Arlington',), ('Knoxville',), ('Amarillo',), ('Providence',), ('Chula Vista',), ('Worcester',), ('Oxnard',), ('Dayton',), ('Garden Grove',), ('Oceanside',), ('Bulawayo',), ('Chitungwiza',), ('Mount Darwin',), ('Gaza',)]","What are the names of cities with a population between 160,000 and 900,000?","[('Lagos',), ('Kano',), ('Ibadan',), ('Abuja',), ('Ilorin',), ('Kaduna',), ('Port Harcourt',), ('Zaria',), ('Enugu',), ('Aba',), ('Ife',), ('Ila',), ('Oyo',), ('Ikerre',), ('Benin City',), ('Iseyin',), ('Katsina',), ('Jos',), ('Sokoto',), ('Ilobu',), ('Offa',), ('Ikorodu',), ('Ilawe-Ekiti',), ('Owo',), ('Ikirun',), ('Shaki',), ('Calabar',), ('Ondo',), ('Akure',), ('Oslo',), ('Bergen',), ('Bouaké',), ('Quetta',), ('Islamabad',), ('Sargodha',), ('Sialkot',), ('Bahawalpur',), ('Sukkur',), ('Jhang',), ('Sheikhupura',), ('Larkana',), ('Gujrat',), ('Mardan',), ('Kasur',), ('Rahim Yar Khan',), ('Sahiwal',), ('Okara',), ('Wah',), ('Dera Ghazi Khan',), ('Mirpur Khas',), ('Nawabshah',), ('Mingora',), ('Chiniot',), ('Ciudad de Panamá',), ('San Miguelito',), ('Port Moresby',), ('Asunción',), ('Arequipa',), ('Trujillo',), ('Chiclayo',), ('Callao',), ('Iquitos',), ('Chimbote',), ('Huancayo',), ('Piura',), ('Cusco',), ('Pucallpa',), ('Tacna',), ('Ica',), ('Lisboa',), ('Porto',), ('San Juan',), ('Bayamón',), ('Ponce',), ('Carolina',), ('Lódz',), ('Kraków',), ('Wroclaw',), ('Poznan',), ('Gdansk',), ('Szczecin',), ('Bydgoszcz',), ('Lublin',), ('Katowice',), ('Bialystok',), ('Czestochowa',), ('Gdynia',), ('Sosnowiec',), ('Radom',), ('Kielce',), ('Gliwice',), ('Torun',), ('Bytom',), ('Zabrze',), ('Bielsko-Biala',), ('Olsztyn',), ('Rzeszów',), ('Doha',), ('Marseille',), ('Lyon',), ('Toulouse',), ('Nice',), ('Nantes',), ('Strasbourg',), ('Montpellier',), ('Bordeaux',), ('Rennes',), ('Le Havre',), ('Reims',), ('Lille',), ('St-Étienne',), ('Toulon',), ('Iasi',), ('Constanta',), ('Cluj-Napoca',), ('Galati',), ('Timisoara',), ('Brasov',), ('Craiova',), ('Ploiesti',), ('Braila',), ('Oradea',), ('Bacau',), ('Pitesti',), ('Arad',), ('Sibiu',), ('Târgu Mures',), ('Kigali',), ('Stockholm',), ('Gothenburg [Göteborg]',), ('Malmö',), ('Uppsala',), ('Frankfurt am Main',), ('Essen',), ('Dortmund',), ('Stuttgart',), ('Düsseldorf',), ('Bremen',), ('Duisburg',), ('Hannover',), ('Leipzig',), ('Nürnberg',), ('Dresden',), ('Bochum',), ('Wuppertal',), ('Bielefeld',), ('Mannheim',), ('Bonn',), ('Gelsenkirchen',), ('Karlsruhe',), ('Wiesbaden',), ('Münster',), ('Mönchengladbach',), ('Chemnitz',), ('Augsburg',), ('Halle/Saale',), ('Braunschweig',), ('Aachen',), ('Krefeld',), ('Magdeburg',), ('Kiel',), ('Oberhausen',), ('Lübeck',), ('Hagen',), ('Rostock',), ('Freiburg im Breisgau',), ('Erfurt',), ('Kassel',), ('Saarbrücken',), ('Mainz',), ('Hamm',), ('Herne',), ('Mülheim an der Ruhr',), ('Solingen',), ('Osnabrück',), ('Ludwigshafen am Rhein',), ('Leverkusen',), ('Ndola',), ('Kitwe',), ('Medina',), ('al-Dammam',), ('al-Taif',), ('Tabuk',), ('Burayda',), ('al-Hufuf',), ('al-Mubarraz',), ('Khamis Mushayt',), ('Hail',), ('Pikine',), ('Dakar',), ('Thiès',), ('Kaolack',), ('Ziguinchor',), ('Freetown',), ('Bratislava',), ('Košice',), ('Ljubljana',), ('Colombo',), ('Dehiwala',), ('Moratuwa',), ('Sharq al-Nil',), ('Port Sudan',), ('Kassala',), ('Obeid',), ('Nyala',), ('Wad Madani',), ('al-Qadarif',), ('Kusti',), ('Helsinki [Helsingfors]',), ('Espoo',), ('Tampere',), ('Vantaa',), ('Turku [Åbo]',), ('Zürich',), ('Geneve',), ('Basel',), ('Hims',), ('Hama',), ('Latakia',), ('Dushanbe',), ('Khujand',), ('Tainan',), ('Panchiao',), ('Chungho',), ('Keelung (Chilung)',), ('Sanchung',), ('Hsinchuang',), ('Hsinchu',), ('Chungli',), ('Fengshan',), ('Taoyuan',), ('Chiayi',), ('Hsintien',), ('Changhwa',), ('Yungho',), ('Tucheng',), ('Pingtung',), ('Yungkang',), ('Pingchen',), ('Tali',), ('Taiping',), ('Pate',), ('Fengyuan',), ('Luchou',), ('Dodoma',), ('Mwanza',), ('København',), ('Århus',), ('Odense',), ('Aalborg',), ('Nonthaburi',), ('Nakhon Ratchasima',), ('Chiang Mai',), ('Lomé',), ('N´Djaména',), ('Brno',), ('Ostrava',), ('Plzen',), ('Tunis',), ('Sfax',), ('Ariana',), ('Ettadhamen',), ('Gaziantep',), ('Konya',), ('Mersin (Içel)',), ('Antalya',), ('Diyarbakir',), ('Kayseri',), ('Eskisehir',), ('Sanliurfa',), ('Samsun',), ('Malatya',), ('Gebze',), ('Denizli',), ('Sivas',), ('Erzurum',), ('Tarsus',), ('Kahramanmaras',), ('Elâzig',), ('Van',), ('Sultanbeyli',), ('Izmit (Kocaeli)',), ('Manisa',), ('Batman',), ('Balikesir',), ('Sakarya (Adapazari)',), ('Ashgabat',), ('Chärjew',), ('Kampala',), ('Zaporizzja',), ('Lviv',), ('Kryvyi Rig',), ('Mykolajiv',), ('Mariupol',), ('Lugansk',), ('Vinnytsja',), ('Makijivka',), ('Herson',), ('Sevastopol',), ('Simferopol',), ('Pultava [Poltava]',), ('Tšernigiv',), ('Tšerkasy',), ('Gorlivka',), ('Zytomyr',), ('Sumy',), ('Dniprodzerzynsk',), ('Kirovograd',), ('Hmelnytskyi',), ('Tšernivtsi',), ('Rivne',), ('Krementšuk',), ('Ivano-Frankivsk',), ('Ternopil',), ('Lutsk',), ('Bila Tserkva',), ('Kramatorsk',), ('Melitopol',), ('Kertš',), ('Debrecen',), ('Miskolc',), ('Auckland',), ('Christchurch',), ('Manukau',), ('North Shore',), ('Waitakere',), ('Wellington',), ('Namangan',), ('Samarkand',), ('Andijon',), ('Buhoro',), ('Karsi',), ('Nukus',), ('Kükon',), ('Fargona',), ('Gomel',), ('Mogiljov',), ('Vitebsk',), ('Grodno',), ('Brest',), ('Bobruisk',), ('Baranovitši',), ('Barquisimeto',), ('Valencia',), ('Ciudad Guayana',), ('Petare',), ('Maracay',), ('Barcelona',), ('Maturín',), ('San Cristóbal',), ('Ciudad Bolívar',), ('Cumaná',), ('Mérida',), ('Cabimas',), ('Barinas',), ('Turmero',), ('Baruta',), ('Puerto Cabello',), ('Santa Ana de Coro',), ('Los Teques',), ('Punto Fijo',), ('Guarenas',), ('Krasnojarsk',), ('Saratov',), ('Toljatti',), ('Uljanovsk',), ('Izevsk',), ('Krasnodar',), ('Jaroslavl',), ('Habarovsk',), ('Vladivostok',), ('Irkutsk',), ('Barnaul',), ('Novokuznetsk',), ('Penza',), ('Rjazan',), ('Orenburg',), ('Lipetsk',), ('Nabereznyje Tšelny',), ('Tula',), ('Tjumen',), ('Kemerovo',), ('Astrahan',), ('Tomsk',), ('Kirov',), ('Ivanovo',), ('Tšeboksary',), ('Brjansk',), ('Tver',), ('Kursk',), ('Magnitogorsk',), ('Kaliningrad',), ('Nizni Tagil',), ('Murmansk',), ('Ulan-Ude',), ('Kurgan',), ('Arkangeli',), ('Sotši',), ('Smolensk',), ('Orjol',), ('Stavropol',), ('Belgorod',), ('Kaluga',), ('Vladimir',), ('Mahatškala',), ('Tšerepovets',), ('Saransk',), ('Tambov',), ('Vladikavkaz',), ('Tšita',), ('Vologda',), ('Veliki Novgorod',), ('Komsomolsk-na-Amure',), ('Kostroma',), ('Volzski',), ('Taganrog',), ('Petroskoi',), ('Bratsk',), ('Dzerzinsk',), ('Surgut',), ('Orsk',), ('Sterlitamak',), ('Angarsk',), ('Joškar-Ola',), ('Rybinsk',), ('Prokopjevsk',), ('Niznevartovsk',), ('Naltšik',), ('Syktyvkar',), ('Severodvinsk',), ('Bijsk',), ('Niznekamsk',), ('Blagoveštšensk',), ('Šahty',), ('Staryi Oskol',), ('Zelenograd',), ('Balakovo',), ('Novorossijsk',), ('Pihkova',), ('Zlatoust',), ('Jakutsk',), ('Podolsk',), ('Petropavlovsk-Kamtšatski',), ('Kamensk-Uralski',), ('Engels',), ('Syzran',), ('Grozny',), ('Novotšerkassk',), ('Berezniki',), ('Juzno-Sahalinsk',), ('Volgodonsk',), ('Abakan',), ('Maikop',), ('Miass',), ('Armavir',), ('Ljubertsy',), ('Rubtsovsk',), ('Haiphong',), ('Da Nang',), ('Biên Hoa',), ('Nha Trang',), ('Hue',), ('Can Tho',), ('Cam Pha',), ('Nam Dinh',), ('Quy Nhon',), ('Tallinn',), ('San Jose',), ('Indianapolis',), ('San Francisco',), ('Jacksonville',), ('Columbus',), ('Austin',), ('Baltimore',), ('Memphis',), ('Milwaukee',), ('Boston',), ('Washington',), ('Nashville-Davidson',), ('El Paso',), ('Seattle',), ('Denver',), ('Charlotte',), ('Fort Worth',), ('Portland',), ('Oklahoma City',), ('Tucson',), ('New Orleans',), ('Las Vegas',), ('Cleveland',), ('Long Beach',), ('Albuquerque',), ('Kansas City',), ('Fresno',), ('Virginia Beach',), ('Atlanta',), ('Sacramento',), ('Oakland',), ('Mesa',), ('Tulsa',), ('Omaha',), ('Minneapolis',), ('Honolulu',), ('Miami',), ('Colorado Springs',), ('Saint Louis',), ('Wichita',), ('Santa Ana',), ('Pittsburgh',), ('Arlington',), ('Cincinnati',), ('Anaheim',), ('Toledo',), ('Tampa',), ('Buffalo',), ('Saint Paul',), ('Corpus Christi',), ('Aurora',), ('Raleigh',), ('Newark',), ('Lexington-Fayette',), ('Anchorage',), ('Louisville',), ('Riverside',), ('Saint Petersburg',), ('Bakersfield',), ('Stockton',), ('Birmingham',), ('Jersey City',), ('Norfolk',), ('Baton Rouge',), ('Hialeah',), ('Lincoln',), ('Greensboro',), ('Plano',), ('Rochester',), ('Glendale',), ('Akron',), ('Garland',), ('Madison',), ('Fort Wayne',), ('Fremont',), ('Scottsdale',), ('Montgomery',), ('Shreveport',), ('Augusta-Richmond County',), ('Lubbock',), ('Chesapeake',), ('Mobile',), ('Des Moines',), ('Grand Rapids',), ('Richmond',), ('Yonkers',), ('Spokane',), ('Glendale',), ('Tacoma',), ('Irving',), ('Huntington Beach',), ('Modesto',), ('Durham',), ('Columbus',), ('Orlando',), ('Boise City',), ('Winston-Salem',), ('San Bernardino',), ('Jackson',), ('Little Rock',), ('Salt Lake City',), ('Reno',), ('Newport News',), ('Chandler',), ('Laredo',), ('Henderson',), ('Arlington',), ('Knoxville',), ('Amarillo',), ('Providence',), ('Chula Vista',), ('Worcester',), ('Oxnard',), ('Dayton',), ('Garden Grove',), ('Oceanside',), ('Bulawayo',), ('Chitungwiza',), ('Mount Darwin',), ('Gaza',)]",What are the cities whose population is between 160000 and 900000?,"Unfortunately, I don't have a comprehensive list of cities with their exact populations. However, I can provide you with some cities that fall within the given population range (160,000 to 900,000) based on available data:
+
+1. Fort Wayne, Indiana, USA - population around 265,956
+2. Omaha, Nebraska, USA - population around 455,475
+3. Albuquerque, New Mexico, USA - population around 559,277
+4. Tucson, Arizona, USA - population around 548,071
+5. Fresno, California, USA - population around 542,107
+6. Sacramento, California, USA - population around 495,000
+7. Colorado Springs, Colorado, USA - population around 465,101
+8. Wichita, Kansas, USA - population around 397,532
+9. Raleigh, North Carolina, USA - population around 467,665
+10. Henderson, Nevada, USA - population around 295,343
+11. Chandler, Arizona, USA - population around 247,477
+12. Chula Vista, California, USA - population around 274,492
+13. Chesapeake, Virginia, USA - population around 249,422
+14. Irving, Texas, USA - population around 256,684
+15. Scottsdale, Arizona, USA - population around 241,361
+16. Gilbert, Arizona, USA - population around 255,326
+17. Hendersonville, Tennessee, USA - population around 57,103
+18. Hendersonville, North Carolina, USA - population around 13,963
+19. Henderson, Kentucky, USA - population around 17,265
+20. Henderson, Texas, USA - population around 11,579
+
+Outside of the United States:
+
+1. Leicester, UK - population around 345,400
+2. Bradford, UK - population around 541,169
+3. Coventry, UK - population around 345,400
+4. Hull, UK - population around 264,200
+5. St. Catharines, Canada - population around 133,113
+6. Kitchener, Canada - population around 233,222
+7. Waterloo, Canada - population around 103,206
+8. Guelph, Canada - population around 135,000
+9. Peterborough, Canada - population around 81,032
+10. Lethbridge, Canada - population around 113,000
+11. Sherbrooke, Canada - population around 161,323
+12. Saguenay, Canada - population around 143,640
+13. Trois-Rivières, Canada - population around 134,413
+14. Drummondville, Canada - population around 68,341
+15. Saint-Jean-sur-Richelieu, Canada - population around 92,394
+16. Laval, Canada - population around 433,000
+17. Gatineau, Canada - population around 291,000
+18. Longueuil, Canada - population around 231,000
+19. Saint-Hyacinthe, Canada - population around 55,000
+20. Saint-Jérôme, Canada - population around 82,000
+
+Please note that these numbers are approximate and may have changed since the last available census or estimate.",0.9965753424657534,0.3152762730227519,0,47
+SELECT city_name FROM city WHERE population > 150000;,geo,"[('birmingham',), ('mobile',), ('montgomery',), ('anchorage',), ('phoenix',), ('tucson',), ('mesa',), ('little rock',), ('los angeles',), ('san diego',), ('san francisco',), ('san jose',), ('long beach',), ('oakland',), ('sacramento',), ('anaheim',), ('fresno',), ('santa ana',), ('riverside',), ('huntington beach',), ('denver',), ('colorado springs',), ('aurora',), ('washington',), ('jacksonville',), ('miami',), ('tampa',), ('st. petersburg',), ('fort lauderdale',), ('atlanta',), ('columbus',), ('honolulu',), ('ewa',), ('chicago',), ('indianapolis',), ('fort wayne',), ('gary',), ('des moines',), ('wichita',), ('kansas city',), ('louisville',), ('lexington',), ('new orleans',), ('baton rouge',), ('shreveport',), ('metairie',), ('baltimore',), ('boston',), ('worcester',), ('springfield',), ('detroit',), ('grand rapids',), ('warren',), ('flint',), ('minneapolis',), ('st. paul',), ('jackson',), ('st. louis',), ('kansas city',), ('omaha',), ('lincoln',), ('las vegas',), ('newark',), ('jersey city',), ('albuquerque',), ('new york',), ('buffalo',), ('rochester',), ('yonkers',), ('syracuse',), ('charlotte',), ('greensboro',), ('cleveland',), ('columbus',), ('cincinnati',), ('toledo',), ('akron',), ('dayton',), ('oklahoma city',), ('tulsa',), ('portland',), ('philadelphia',), ('pittsburgh',), ('providence',), ('memphis',), ('nashville',), ('knoxville',), ('chattanooga',), ('houston',), ('dallas',), ('san antonio',), ('el paso',), ('fort worth',), ('austin',), ('corpus christi',), ('lubbock',), ('arlington',), ('salt lake city',), ('norfolk',), ('virginia beach',), ('richmond',), ('arlington',), ('seattle',), ('spokane',), ('tacoma',), ('milwaukee',), ('madison',)]","What are the names of cities with a population of over 150,000?","[('los angeles',), ('san diego',), ('san francisco',), ('san jose',), ('long beach',), ('oakland',), ('sacramento',), ('chicago',), ('indianapolis',), ('kansas city',), ('louisville',), ('new orleans',), ('baltimore',), ('boston',), ('worcester',), ('detroit',), ('minneapolis',), ('st. paul',), ('st. louis',), ('kansas city',), ('philadelphia',), ('pittsburgh',), ('houston',), ('san antonio',), ('dallas',), ('austin',), ('seattle',), ('milwaukee',)]",what are the major cities in the usa,"There are numerous major cities in the United States, and the definition of ""major"" can vary depending on the context. However, here are some of the most populous and influential cities in the USA:
+
+1. New York City, New York (approx. 8.4 million people)
+2. Los Angeles, California (approx. 3.9 million people)
+3. Chicago, Illinois (approx. 2.7 million people)
+4. Houston, Texas (approx. 2.3 million people)
+5. Phoenix, Arizona (approx. 1.7 million people)
+6. Philadelphia, Pennsylvania (approx. 1.6 million people)
+7. San Antonio, Texas (approx. 1.5 million people)
+8. San Diego, California (approx. 1.4 million people)
+9. Dallas, Texas (approx. 1.3 million people)
+10. San Jose, California (approx. 1 million people)
+
+Other notable major cities in the USA include:
+
+- Austin, Texas
+- Boston, Massachusetts
+- Detroit, Michigan
+- Jacksonville, Florida
+- Miami, Florida
+- Oakland, California
+- Portland, Oregon
+- Sacramento, California
+- Seattle, Washington
+- Washington, D.C.
+
+These cities are often considered hubs for business, culture, education, and entertainment, and are frequently ranked among the most livable, innovative, and influential cities in the world.",1.0,0.25961538461538464,0,42
+"SELECT COUNT ( capital ) FROM state WHERE state_name = ""rhode island"";",geo,"[(1,)]",How many capitals are there in Rhode Island?,"[('1',)]",how many capitals does rhode island have,"Rhode Island has 1 capital, which is Providence.",1.0,1.0,1,100
+"SELECT sum(SurfaceArea) FROM country WHERE Region = ""Caribbean""",world_1,"[(234423.0,)]",What is the total surface area of countries in the Caribbean region?,"[(234423.0,)]",What is the total surface area of the countries in the Caribbean region?,"The Caribbean region consists of numerous countries, each with its own unique geography. Calculating the total surface area of all countries in the Caribbean region can be complex due to the varying sizes and shapes of the territories.
+
+However, I can provide you with an approximate total surface area of the countries in the Caribbean region. 
+
+According to available data, the total surface area of the countries in the Caribbean region is approximately 944,909 square kilometers (364,495 square miles).
+
+Here's a breakdown of the surface areas of the countries in the Caribbean region:
+
+1. Antigua and Barbuda: 442 square kilometers (171 square miles)
+2. The Bahamas: 13,940 square kilometers (5,380 square miles)
+3. Barbados: 430 square kilometers (166 square miles)
+4. Cuba: 109,884 square kilometers (42,426 square miles)
+5. Dominica: 751 square kilometers (290 square miles)
+6. Dominican Republic: 48,445 square kilometers (18,704 square miles)
+7. Grenada: 344 square kilometers (133 square miles)
+8. Haiti: 27,750 square kilometers (10,714 square miles)
+9. Jamaica: 10,991 square kilometers (4,243 square miles)
+10. Saint Kitts and Nevis: 269 square kilometers (104 square miles)
+11. Saint Lucia: 616 square kilometers (238 square miles)
+12. Saint Vincent and the Grenadines: 344 square kilometers (133 square miles)
+13. Trinidad and Tobago: 5,128 square kilometers (1,978 square miles)
+14. Anguilla (British overseas territory): 35 square kilometers (14 square miles)
+15. Aruba (constituent country of the Kingdom of the Netherlands): 193 square kilometers (75 square miles)
+16. Bonaire (special municipality of the Netherlands): 294 square kilometers (114 square miles)
+17. British Virgin Islands (British overseas territory): 151 square kilometers (58 square miles)
+18. Cayman Islands (British overseas territory): 264 square kilometers (102 square miles)
+19. Curaçao (constituent country of the Kingdom of the Netherlands): 444 square kilometers (171 square miles)
+20. Guadeloupe (overseas department of France): 1,628 square kilometers (629 square miles)
+21. Martinique (overseas department of France): 1,100 square kilometers (425 square miles)
+22. Montserrat (British overseas territory): 102 square kilometers (39 square miles)
+23. Puerto Rico (unincorporated territory of the United States): 9,104 square kilometers (3,515 square miles)
+24. Saint Barthélemy (overseas collectivity of France): 21 square kilometers (8 square miles)
+25. Saint Martin (overseas collectivity of France): 53 square kilometers (20 square miles)
+26. Saint Pierre and Miquelon (overseas collectivity of France): 242 square kilometers (93 square miles)
+27. Sint Eustatius (special municipality of the Netherlands): 21 square kilometers (8 square miles)
+28. Saba (special municipality of the Netherlands): 13 square kilometers (5 square miles)
+29. Turks and Caicos Islands (British overseas territory): 948 square kilometers (366 square miles)
+30. United States Virgin Islands (unincorporated territory of the United States): 346 square kilometers (134 square miles)
+
+Please note that the surface areas may vary slightly depending on the source and method of measurement.",1.0,1.0,1,100
+"SELECT population FROM city WHERE city_name = ""boulder"";",geo,"[(76685,)]",What is the population of Boulder?,"[('76685',)]",how many people live in boulder,"As of the 2020 United States Census, the population of Boulder, Colorado is approximately 105,673 people. However, the Boulder metropolitan area has a population of around 330,000 people.",1.0,1.0,1,100
+SELECT COUNT ( state_name ) FROM state;,geo,"[(51,)]",What is the total number of states?,"[('51',)]",how many states are in the usa,There are 50 states in the United States of America.,1.0,1.0,1,100
+"SELECT lake_name FROM lake WHERE state_name = ""california"";",geo,"[('salton sea',), ('tahoe',)]",What are the names of lakes in California?,"[('salton sea',), ('tahoe',)]",give me the lakes in california,"Here are some of the notable lakes in California:
+
+1. Lake Tahoe: Located in the Sierra Nevada mountains, it's a popular destination for skiing, boating, and water sports.
+2. Clear Lake: The largest natural lake in California, known for its clear waters and rich history.
+3. Lake Berryessa: A large lake in Napa County, popular for boating, fishing, and swimming.
+4. Lake Shasta: A large reservoir in Shasta County, known for its boating, fishing, and water sports.
+5. Lake Isabella: A large reservoir in Kern County, popular for boating, fishing, and swimming.
+6. Mono Lake: A saline soda lake in Mono County, known for its unique geology and bird-watching opportunities.
+7. Lake Almanor: A large lake in Plumas County, popular for boating, fishing, and swimming.
+8. Lake Oroville: A large reservoir in Butte County, known for its boating, fishing, and water sports.
+9. Lake Kaweah: A large reservoir in Tulare County, popular for boating, fishing, and swimming.
+10. Lake Mead (partially in California): A large reservoir on the Arizona-California border, known for its boating, fishing, and water sports.
+
+This is not an exhaustive list, as there are many other lakes in California.",1.0,1.0,1,100
+"SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != ""English""",world_1,"[('ABW',), ('AFG',), ('AGO',), ('ALB',), ('AND',), ('ANT',), ('ARE',), ('ARG',), ('ARM',), ('ASM',), ('ATG',), ('AUS',), ('AUT',), ('AZE',), ('BDI',), ('BEL',), ('BEN',), ('BFA',), ('BGD',), ('BGR',), ('BHR',), ('BHS',), ('BIH',), ('BLR',), ('BLZ',), ('BOL',), ('BRA',), ('BRB',), ('BRN',), ('BTN',), ('BWA',), ('CAF',), ('CAN',), ('CCK',), ('CHE',), ('CHL',), ('CHN',), ('CIV',), ('CMR',), ('COD',), ('COG',), ('COK',), ('COL',), ('COM',), ('CPV',), ('CRI',), ('CUB',), ('CXR',), ('CYP',), ('CZE',), ('DEU',), ('DJI',), ('DMA',), ('DNK',), ('DOM',), ('DZA',), ('ECU',), ('EGY',), ('ERI',), ('ESH',), ('ESP',), ('EST',), ('ETH',), ('FIN',), ('FJI',), ('FRA',), ('FRO',), ('FSM',), ('GAB',), ('GBR',), ('GEO',), ('GHA',), ('GIB',), ('GIN',), ('GLP',), ('GMB',), ('GNB',), ('GNQ',), ('GRC',), ('GRD',), ('GRL',), ('GTM',), ('GUF',), ('GUM',), ('GUY',), ('HKG',), ('HND',), ('HRV',), ('HTI',), ('HUN',), ('IDN',), ('IND',), ('IRL',), ('IRN',), ('IRQ',), ('ISL',), ('ISR',), ('ITA',), ('JAM',), ('JOR',), ('JPN',), ('KAZ',), ('KEN',), ('KGZ',), ('KHM',), ('KIR',), ('KNA',), ('KOR',), ('KWT',), ('LAO',), ('LBN',), ('LBR',), ('LBY',), ('LCA',), ('LIE',), ('LKA',), ('LSO',), ('LTU',), ('LUX',), ('LVA',), ('MAC',), ('MAR',), ('MCO',), ('MDA',), ('MDG',), ('MDV',), ('MEX',), ('MHL',), ('MKD',), ('MLI',), ('MLT',), ('MMR',), ('MNG',), ('MNP',), ('MOZ',), ('MRT',), ('MTQ',), ('MUS',), ('MWI',), ('MYS',), ('MYT',), ('NAM',), ('NCL',), ('NER',), ('NGA',), ('NIC',), ('NIU',), ('NLD',), ('NOR',), ('NPL',), ('NRU',), ('NZL',), ('OMN',), ('PAK',), ('PAN',), ('PCN',), ('PER',), ('PHL',), ('PLW',), ('PNG',), ('POL',), ('PRI',), ('PRK',), ('PRT',), ('PRY',), ('PSE',), ('PYF',), ('QAT',), ('REU',), ('ROM',), ('RUS',), ('RWA',), ('SAU',), ('SDN',), ('SEN',), ('SGP',), ('SJM',), ('SLB',), ('SLE',), ('SLV',), ('SMR',), ('SOM',), ('SPM',), ('STP',), ('SUR',), ('SVK',), ('SVN',), ('SWE',), ('SWZ',), ('SYC',), ('SYR',), ('TCD',), ('TGO',), ('THA',), ('TJK',), ('TKL',), ('TKM',), ('TMP',), ('TON',), ('TTO',), ('TUN',), ('TUR',), ('TUV',), ('TWN',), ('TZA',), ('UGA',), ('UKR',), ('URY',), ('USA',), ('UZB',), ('VAT',), ('VCT',), ('VEN',), ('VIR',), ('VNM',), ('VUT',), ('WLF',), ('WSM',), ('YEM',), ('YUG',), ('ZAF',), ('ZMB',), ('ZWE',)]",What countries do not have English as an official language?,"[('CHE',), ('CPV',), ('CXR',), ('CYP',), ('DNK',), ('FRO',), ('GRC',), ('GRL',), ('GUF',), ('GUM',), ('IRN',), ('LBN',), ('LIE',), ('LUX',), ('MAC',), ('MAR',), ('MCO',), ('MDA',), ('MDG',), ('MNE',), ('MRT',), ('MTQ',), ('MYT',), ('NCL',), ('NOR',), ('PCN',), ('PRK',), ('PRY',), ('PYF',), ('SAU',), ('SJM',), ('SLB',), ('SOM',), ('SPM',), ('STP',), ('SUR',), ('SVK',), ('SVN',), ('TJK',), ('TKM',), ('TMP',), ('TON',), ('TUN',), ('TUR',), ('TUV',), ('VAT',), ('VCT',), ('VNM',), ('WLF',), ('YEM',), ('ZWE',)]",What are the country codes of countries where people use languages other than English?,"Here's a list of country codes for countries where English is not the primary language:
+
+1. Afghanistan - AF
+2. Albania - AL
+3. Algeria - DZ
+4. Andorra - AD
+5. Angola - AO
+6. Antigua and Barbuda - AG (English is official, but not primary)
+7. Argentina - AR
+8. Armenia - AM
+9. Australia - AU (English is official, but not primary in some regions)
+10. Austria - AT
+11. Azerbaijan - AZ
+12. Bahamas - BS
+13. Bahrain - BH
+14. Bangladesh - BD
+15. Barbados - BB
+16. Belarus - BY
+17. Belgium - BE
+18. Belize - BZ
+19. Benin - BJ
+20. Bhutan - BT
+21. Bolivia - BO
+22. Bosnia and Herzegovina - BA
+23. Botswana - BW
+24. Brazil - BR
+25. Brunei - BN
+26. Bulgaria - BG
+27. Burkina Faso - BF
+28. Burundi - BI
+29. Cambodia - KH
+30. Cameroon - CM
+31. Canada - CA (English and French are official)
+32. Central African Republic - CF
+33. Chad - TD
+34. Chile - CL
+35. China - CN
+36. Colombia - CO
+37. Comoros - KM
+38. Congo (Brazzaville) - CG
+39. Congo (Kinshasa) - CD
+40. Costa Rica - CR
+41. Côte d'Ivoire - CI
+42. Croatia - HR
+43. Cuba - CU
+44. Cyprus - CY
+45. Czech Republic - CZ
+46. Denmark - DK
+47. Djibouti - DJ
+48. Dominica - DM
+49. Dominican Republic - DO
+50. Ecuador - EC
+51. Egypt - EG
+52. El Salvador - SV
+53. Equatorial Guinea - GQ
+54. Eritrea - ER
+55. Estonia - EE
+56. Eswatini (formerly Swaziland) - SZ
+57. Ethiopia - ET
+58. Fiji - FJ
+59. Finland - FI
+60. France - FR
+61. Gabon - GA
+62. Gambia - GM
+63. Georgia - GE
+64. Germany - DE
+65. Ghana - GH
+66. Greece - GR
+67. Grenada - GD
+68. Guatemala - GT
+69. Guinea - GN
+70. Guinea-Bissau - GW
+71. Guyana - GY
+72. Haiti - HT
+73. Honduras - HN
+74. Hungary - HU
+75. Iceland - IS
+76. India - IN
+77. Indonesia - ID
+78. Iran - IR
+79. Iraq - IQ
+80. Ireland - IE
+81. Israel - IL
+82. Italy - IT
+83. Jamaica - JM
+84. Japan - JP
+85. Jordan - JO
+86. Kazakhstan - KZ
+87. Kenya - KE
+88. Kiribati - KI
+89. North Korea - KP
+90. South Korea - KR
+91. Kosovo - XK
+92. Kuwait - KW
+93. Kyrgyzstan - KG
+94. Laos - LA
+95. Latvia - LV
+96. Lebanon - LB
+97. Lesotho - LS
+98. Liberia - LR
+99. Libya - LY
+100. Lithuania - LT
+101. Luxembourg - LU
+102. Macedonia (FYROM) - MK
+103. Madagascar - MG
+104. Malawi - MW
+105. Malaysia - MY
+106. Maldives - MV
+107. Mali - ML
+108. Malta - MT
+109. Marshall Islands - MH
+110. Mauritania - MR
+111. Mauritius - MU
+112. Mexico - MX
+113. Micronesia - FM
+114. Moldova - MD
+115. Monaco - MC
+116. Mongolia - MN
+117. Montenegro - ME
+118. Morocco - MA
+119. Mozambique - MZ
+120. Myanmar (Burma) - MM
+121. Namibia - NA
+122. Nauru - NR
+123. Nepal - NP
+124. Netherlands - NL
+125. New Zealand - NZ
+126. Nicaragua - NI
+127. Niger - NE
+128. Nigeria - NG
+129. Norway - NO
+130. Oman - OM
+131. Pakistan - PK
+132. Palau - PW
+133. Panama - PA
+134. Papua New Guinea - PG
+135. Paraguay - PY
+136. Peru - PE
+137. Philippines - PH
+138. Poland - PL
+139. Portugal - PT
+140. Qatar - QA
+141. Romania - RO
+142. Russia - RU
+143. Rwanda - RW
+144. Saint Kitts and Nevis - KN
+145. Saint Lucia - LC
+146. Saint Vincent and the Grenadines - VC
+147. Samoa - WS
+148. San Marino - SM
+149. Sao Tome and Principe - ST
+150. Saudi Arabia - SA
+151. Senegal - SN
+152. Serbia - RS
+153. Seychelles - SC
+154. Sierra Leone - SL
+155. Singapore - SG
+156. Sint Maarten (Dutch part) - SX
+157. Slovakia - SK
+158. Slovenia - SI
+159. Solomon Islands - SB
+160. Somalia - SO
+161. South Africa - ZA
+162. South Sudan - SS
+163. Spain - ES
+164. Sri Lanka - LK
+165. Sudan - SD
+166. Suriname - SR
+167. Sweden - SE
+168. Switzerland - CH
+169. Syria - SY
+170. Tajikistan - TJ
+171. Tanzania - TZ
+172. Thailand - TH
+173. Timor-Leste (East Timor) - TL
+174. Togo - TG
+175. Tonga - TO
+176. Trinidad and Tobago - TT
+177. Tunisia - TN
+178. Turkey - TR
+179. Turkmenistan - TM
+180. Tuvalu - TV
+181. Uganda - UG
+182. Ukraine - UA
+183. United Arab Emirates - AE
+184. Uruguay - UY
+185. Uzbekistan - UZ
+186. Vanuatu - VU
+187. Vatican City - VA
+188. Venezuela - VE
+189. Vietnam - VN
+190. Yemen - YE
+191. Zambia - ZM
+192. Zimbabwe - ZW
+
+Note: This list includes countries where English is not the primary language, but it may still be widely spoken or used as an official language in some regions or institutions.",0.9803921568627451,0.2242152466367713,0,37
+"SELECT sum(Population) , max(GNP) FROM country WHERE Continent = ""Asia""",world_1,"[(3705025700, 3787042.0)]",What is the total population and the highest GNP of countries in Asia?,"[('3705025700', '3787042.0')]",What is the total population and maximum GNP in Asia?,"However, I need more specific information to provide an accurate answer. Asia is a vast continent with many countries, each having its own population and GNP.
+
+That being said, here are some approximate numbers based on available data:
+
+- Total population of Asia: Approximately 4.6 billion people (as of 2020).
+- Maximum GNP in Asia: The GNP of China is the largest in Asia, with a nominal GNP of around $16.14 trillion (as of 2021).",1.0,1.0,1,100
+"SELECT sum(Population) FROM city WHERE District = ""Gelderland""",world_1,"[(545548,)]",What is the total population of the city district in Gelderland?,"[('545548',)]",How many people live in Gelderland district?,"Gelderland is a province in the Netherlands, not a district. However, I can provide you with the population of Gelderland province. 
+
+As of 2021, the population of Gelderland province is approximately 2.1 million people.",1.0,1.0,1,100
+SELECT AVG ( population ) FROM state;,geo,"[(4415590.666666667,)]",What is the average population of all states?,"[('4415590.666666667',)]",what is the average population of the us by state,"As of the 2020 United States Census, the average population of the US by state is approximately 7.9 million people. However, please note that this number may have changed slightly due to population growth and other factors.
+
+Here's a breakdown of the 50 US states by population, from highest to lowest, based on the 2020 census:
+
+1. California - 39.538 million
+2. Texas - 29.743 million
+3. Florida - 21.767 million
+4. New York - 20.201 million
+5. Pennsylvania - 12.773 million
+6. Illinois - 12.812 million
+7. Ohio - 11.799 million
+8. Georgia - 10.711 million
+9. North Carolina - 10.439 million
+10. Michigan - 10.077 million
+11. New Jersey - 9.288 million
+12. Virginia - 8.631 million
+13. Washington - 7.506 million
+14. Arizona - 7.421 million
+15. Massachusetts - 7.076 million
+16. Indiana - 6.785 million
+17. Tennessee - 6.910 million
+18. Missouri - 6.106 million
+19. Maryland - 6.062 million
+20. Minnesota - 5.706 million
+21. Colorado - 5.839 million
+22. South Carolina - 5.118 million
+23. Alabama - 5.212 million
+24. Louisiana - 4.657 million
+25. Kentucky - 4.647 million
+26. Oklahoma - 3.959 million
+27. Connecticut - 3.578 million
+28. Iowa - 3.190 million
+29. Mississippi - 2.961 million
+30. West Virginia - 1.793 million
+31. New Hampshire - 1.377 million
+32. Nevada - 3.199 million
+33. New Mexico - 2.145 million
+34. Nebraska - 1.942 million
+35. Kansas - 2.937 million
+36. Oregon - 4.319 million
+37. Utah - 3.255 million
+38. Arkansas - 3.025 million
+39. Wisconsin - 5.893 million
+40. Idaho - 1.866 million
+41. Maine - 1.362 million
+42. Montana - 1.084 million
+43. Delaware - 1.003 million
+44. South Dakota - 892,508
+45. North Dakota - 779,094
+46. Alaska - 739,795
+47. Rhode Island - 1.097 million
+48. Vermont - 643,077
+49. Wyoming - 579,315
+50. District of Columbia - 702,455
+
+Please note that these numbers are based on the 2020 census and may have changed slightly since then due to population growth and other factors.",1.0,1.0,1,100
+SELECT max(elevation) FROM airports WHERE country = 'Iceland',flight_4,"[(1030,)]",What is the highest elevation of an airport in Iceland?,"[(1030,)]",What is the maximum elevation of all airports in the country of Iceland?,The maximum elevation of all airports in Iceland is at the Egilsstaðir Airport (EGS) which is at an elevation of 20 meters (66 feet) above sea level.,1.0,1.0,1,100
+"SELECT avg(LifeExpectancy) FROM country WHERE Continent = ""Africa"" AND GovernmentForm = ""Republic""",world_1,"[(50.84347826086957,)]",What is the average life expectancy in African countries that are republics?,[],What is the average life expectancy in African countries that are republics?,"The average life expectancy in African countries that are republics can vary greatly depending on several factors such as the specific country, economic conditions, healthcare access, and more. However, I can provide some general information on the average life expectancy in some African republics.
+
+According to the World Bank data (2020), here are some average life expectancies for African republics:
+
+1. South Africa (Republic) - 64.3 years
+2. Egypt (Republic) - 72.5 years
+3. Nigeria (Federal Republic) - 58.8 years
+4. Ghana (Republic) - 65.5 years
+5. Senegal (Republic) - 64.5 years
+6. Kenya (Republic) - 69.5 years
+7. Tanzania (United Republic) - 64.5 years
+8. Uganda (Republic) - 63.4 years
+9. Democratic Republic of the Congo - 61.3 years
+10. Republic of the Congo - 58.4 years
+
+Please note that these numbers are subject to change and may not reflect the current life expectancy. Additionally, these numbers are averages and can vary depending on various factors such as urban vs. rural areas, socioeconomic status, and more.
+
+It's also worth noting that some African countries have higher life expectancies, such as Mauritius (Republic) with 75.5 years, Seychelles (Republic) with 74.3 years, and Botswana (Republic) with 64.1 years.
+
+Keep in mind that these numbers are estimates and may have changed since the last available data.",0.0,0.0,0,0
+"SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = ""Africa""",world_1,"[(10,)]",What types of governments exist in Africa?,"[('Government1',), ('Government2',), ('Government3',)]",How many type of governments are in Africa?,"There are over 55 countries in Africa, and each has its own unique system of government. However, I can provide you with a general breakdown of the types of governments found in Africa:
+
+1. Presidential Republics: 34 countries, including Nigeria, South Africa, and Egypt, have a presidential system where the president serves as both the head of state and head of government.
+2. Parliamentary Republics: 15 countries, including Ghana, Kenya, and Tanzania, have a parliamentary system where the prime minister is the head of government and is accountable to the parliament.
+3. Monarchies: 3 countries, including Morocco, Lesotho, and Eswatini, have a monarchical system where the monarch serves as the head of state.
+4. Federal Republics: 2 countries, including Ethiopia and Somalia, have a federal system where power is divided between a central government and regional governments.
+5. One-Party States: 2 countries, including Eritrea and Djibouti, have a one-party system where only one party is allowed to participate in politics.
+6. Military Dictatorships: 1 country, Sudan, has a military dictatorship where the military holds significant power and influence.
+7. Constitutional Monarchies: 1 country, Botswana, has a constitutional monarchy where the monarch serves as the head of state but has limited powers.
+
+It's worth noting that some countries have a hybrid system, combining elements of different types of governments.",0.0,0.0,0,5
+SELECT COUNT ( river_name ) FROM river;,geo,"[(149,)]",What is the total number of rivers?,"[(149,)]",how many rivers are there in us,"There are approximately 254,000 rivers in the United States. However, this number can vary depending on the source and the definition of a ""river.""",1.0,1.0,1,100
+"SELECT Abbreviation FROM AIRLINES WHERE Airline = ""JetBlue Airways""",flight_2,"[('JetBlue',)]",What is the abbreviation for JetBlue Airways?,"[('JBU',)]","What is the abbreviation of Airline ""JetBlue Airways""?",B6,0.0,0.0,0,60
+SELECT Name FROM country WHERE IndepYear > 1950,world_1,"[('Angola',), ('United Arab Emirates',), ('Armenia',), ('Antigua and Barbuda',), ('Azerbaijan',), ('Burundi',), ('Benin',), ('Burkina Faso',), ('Bangladesh',), ('Bahrain',), ('Bahamas',), ('Bosnia and Herzegovina',), ('Belarus',), ('Belize',), ('Barbados',), ('Brunei',), ('Botswana',), ('Central African Republic',), ('Côte d’Ivoire',), ('Cameroon',), ('Congo, The Democratic Republic of the',), ('Congo',), ('Comoros',), ('Cape Verde',), ('Cyprus',), ('Czech Republic',), ('Germany',), ('Djibouti',), ('Dominica',), ('Algeria',), ('Eritrea',), ('Estonia',), ('Fiji Islands',), ('Micronesia, Federated States of',), ('Gabon',), ('Georgia',), ('Ghana',), ('Guinea',), ('Gambia',), ('Guinea-Bissau',), ('Equatorial Guinea',), ('Grenada',), ('Guyana',), ('Croatia',), ('Jamaica',), ('Kazakstan',), ('Kenya',), ('Kyrgyzstan',), ('Cambodia',), ('Kiribati',), ('Saint Kitts and Nevis',), ('Kuwait',), ('Laos',), ('Libyan Arab Jamahiriya',), ('Saint Lucia',), ('Lesotho',), ('Lithuania',), ('Latvia',), ('Morocco',), ('Moldova',), ('Madagascar',), ('Maldives',), ('Marshall Islands',), ('Macedonia',), ('Mali',), ('Malta',), ('Mozambique',), ('Mauritania',), ('Mauritius',), ('Malawi',), ('Malaysia',), ('Namibia',), ('Niger',), ('Nigeria',), ('Nauru',), ('Oman',), ('Palau',), ('Papua New Guinea',), ('Qatar',), ('Russian Federation',), ('Rwanda',), ('Sudan',), ('Senegal',), ('Singapore',), ('Solomon Islands',), ('Sierra Leone',), ('Somalia',), ('Sao Tome and Principe',), ('Suriname',), ('Slovakia',), ('Slovenia',), ('Swaziland',), ('Seychelles',), ('Chad',), ('Togo',), ('Tajikistan',), ('Turkmenistan',), ('Tonga',), ('Trinidad and Tobago',), ('Tunisia',), ('Tuvalu',), ('Tanzania',), ('Uganda',), ('Ukraine',), ('Uzbekistan',), ('Saint Vincent and the Grenadines',), ('Vanuatu',), ('Samoa',), ('Zambia',), ('Zimbabwe',)]",What are the names of countries that gained independence after 1950?,"[('Angola',), ('United Arab Emirates',), ('Armenia',), ('Antigua and Barbuda',), ('Azerbaijan',), ('Bahrain',), ('Bangladesh',), ('Barbados',), ('Belarus',), ('Belize',), ('Benin',), ('Bosnia and Herzegovina',), ('Botswana',), ('Brunei',), ('Bulgaria',), ('Burkina Faso',), ('Burundi',), ('Cambodia',), ('Cameroon',), ('Cape Verde',), ('Central African Republic',), ('Côte d’Ivoire',), ('Comoros',), ('Congo, The Democratic Republic of the',), ('Congo',), ('Croatia',), ('Cyprus',), ('Czech Republic',), ('Djibouti',), ('Dominica',), ('Equatorial Guinea',), ('Eritrea',), ('Estonia',), ('Fiji Islands',), ('Gabon',), ('Gambia',), ('Georgia',), ('Germany',), ('Ghana',), ('Grenada',), ('Guinea',), ('Guinea-Bissau',), ('Guyana',), ('Jamaica',), ('Kazakstan',), ('Kenya',), ('Kiribati',), ('Kuwait',), ('Kyrgyzstan',), ('Laos',), ('Lesotho',), ('Lithuania',), ('Latvia',), ('Libyan Arab Jamahiriya',), ('Macedonia',), ('Madagascar',), ('Malawi',), ('Malaysia',), ('Maldives',), ('Mali',), ('Malta',), ('Mauritania',), ('Mauritius',), ('Micronesia, Federated States of',), ('Moldova',), ('Mongolia',), ('Morocco',), ('Mozambique',), ('Myanmar',), ('Namibia',), ('Nauru',), ('Nepal',), ('Niger',), ('Nigeria',), ('Oman',), ('Palau',), ('Papua New Guinea',), ('Paraguay',), ('Qatar',), ('Russian Federation',), ('Rwanda',), ('Saint Kitts and Nevis',), ('Saint Lucia',), ('Saint Vincent and the Grenadines',), ('Samoa',), ('Sao Tome and Principe',), ('Senegal',), ('Seychelles',), ('Sierra Leone',), ('Singapore',), ('Slovakia',), ('Slovenia',), ('Solomon Islands',), ('Somalia',), ('South Africa',), ('South Sudan',), ('Sri Lanka',), ('Sudan',), ('Suriname',), ('Swaziland',), ('Tajikistan',), ('Tanzania',), ('Thailand',), ('Timor-Leste',), ('Togo',), ('Tonga',), ('Trinidad and Tobago',), ('Tunisia',), ('Turkey',), ('Turkmenistan',), ('Tuvalu',), ('Uganda',), ('Ukraine',), ('United States',), ('Uruguay',), ('Uzbekistan',), ('Vanuatu',), ('Venezuela',), ('Vietnam',), ('Yemen',), ('Zambia',), ('Zimbabwe',)]",What are the names of all the countries that became independent after 1950?,"Here's a list of countries that gained independence after 1950:
+
+1. Sudan (January 1, 1956)
+2. Morocco (March 2, 1956)
+3. Tunisia (March 20, 1956)
+4. Ghana (March 6, 1957)
+5. Malaya (August 31, 1957) - now known as Malaysia
+6. Cyprus (August 16, 1960)
+7. Senegal (April 4, 1960)
+8. Mali (June 20, 1960)
+9. Nigeria (October 1, 1960)
+10. Somalia (June 26, 1960)
+11. Sierra Leone (April 27, 1961)
+12. Tanganyika (December 9, 1961) - now known as Tanzania
+13. Uganda (October 9, 1962)
+14. Kenya (December 12, 1963)
+15. Jamaica (August 6, 1962)
+16. Trinidad and Tobago (August 31, 1962)
+17. Singapore (September 16, 1963)
+18. Malaysia (September 16, 1963) - formed from Malaya, Sabah, and Sarawak
+19. Zambia (October 24, 1964)
+20. Malawi (July 6, 1964)
+21. Malta (September 21, 1964)
+22. Gambia (February 18, 1965)
+23. Singapore (August 9, 1965) - left Malaysia
+24. Botswana (September 30, 1966)
+25. Lesotho (October 4, 1966)
+26. Guyana (May 26, 1966)
+27. Barbados (November 30, 1966)
+28. Mauritius (March 12, 1968)
+29. Swaziland (September 6, 1968) - now known as Eswatini
+30. Equatorial Guinea (October 12, 1968)
+31. Guinea-Bissau (September 10, 1973)
+32. Mozambique (June 25, 1975)
+33. Angola (November 11, 1975)
+34. Cape Verde (July 5, 1975)
+35. Comoros (July 6, 1975)
+36. Djibouti (June 27, 1977)
+37. Dominica (November 3, 1978)
+38. Saint Lucia (February 22, 1979)
+39. Saint Vincent and the Grenadines (October 27, 1979)
+40. Zimbabwe (April 18, 1980)
+41. Grenada (February 7, 1974) - initially gained independence, but was briefly occupied by the US and its allies in 1983
+42. Namibia (March 21, 1990)
+43. Eritrea (May 24, 1993)
+44. Bosnia and Herzegovina (March 1, 1992) - declared independence, but the declaration was recognized in 1992
+45. Croatia (June 25, 1991) - declared independence, but the declaration was recognized in 1992
+46. Slovenia (June 25, 1991) - declared independence, but the declaration was recognized in 1992
+47. Macedonia (September 8, 1991) - now known as North Macedonia
+48. Georgia (April 9, 1991)
+49. Armenia (September 21, 1991)
+50. Azerbaijan (October 18, 1991)
+51. Moldova (August 27, 1991)
+52. Belarus (August 25, 1991)
+53. Ukraine (August 24, 1991)
+54. Kazakhstan (December 16, 1991)
+55. Kyrgyzstan (August 31, 1991)
+56. Tajikistan (September 24, 1991)
+57. Turkmenistan (October 27, 1991)
+58. Uzbekistan (August 31, 1991)
+59. South Korea (August 15, 1948) - initially gained independence, but was occupied by the US military government until 1948
+60. East Timor (May 20, 2002)
+61. Montenegro (June 3, 2006)
+62. Kosovo (February 17, 2008)
+63. South Sudan (July 9, 2011)
+
+Please note that this list is not exhaustive, and there may be other countries that gained independence after 1950 that are not included here.",0.8688524590163934,0.9636363636363636,0,66
+"SELECT LENGTH FROM river WHERE river_name = ""rio grande"";",geo,"[(3033,), (3033,), (3033,)]",What is the length of the Rio Grande river?,"[('3033',)]",how long is the rio grande river,"The Rio Grande River is approximately 1,885 miles (3,034 kilometers) long.",1.0,1.0,0,44
+SELECT lake_name FROM lake;,geo,"[('iliamna',), ('becharof',), ('teshekpuk',), ('naknek',), ('salton sea',), ('tahoe',), ('okeechobee',), ('michigan',), ('michigan',), ('pontchartrain',), ('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',), ('superior',), ('lake of the woods',), ('red',), ('rainy',), ('mille lacs',), ('flathead',), ('tahoe',), ('erie',), ('ontario',), ('champlain',), ('erie',), ('erie',), ('great salt lake',), ('champlain',), ('superior',), ('michigan',), ('winnebago',)]",What are the names of the lakes?,"[('iliamna',), ('becharof',), ('teshekpuk',), ('naknek',), ('salton sea',), ('tahoe',), ('okeechobee',), ('michigan',), ('pontchartrain',), ('superior',), ('huron',), ('lake of the woods',), ('red',), ('rainy',), ('mille lacs',), ('flathead',), ('winnebago',)]",name all the lakes of us,"Here's a list of major lakes in the United States:
+
+1. Great Lakes:
+   - Lake Superior
+   - Lake Michigan
+   - Lake Huron
+   - Lake Erie
+   - Lake Ontario
+
+2. Other large lakes:
+   - Lake Mead (Arizona/Nevada)
+   - Lake Powell (Arizona/Utah)
+   - Lake Tahoe (California/Nevada)
+   - Lake Chelan (Washington)
+   - Lake George (New York)
+   - Lake Champlain (New York/Vermont)
+   - Lake Pontchartrain (Louisiana)
+   - Lake Okeechobee (Florida)
+   - Lake Sakakawea (North Dakota)
+   - Lake Texoma (Texas/Oklahoma)
+   - Lake Winnipesaukee (New Hampshire)
+
+3. Alaska's lakes:
+   - Lake Iliamna
+   - Lake Clark
+   - Lake Chelan (also in Washington)
+   - Lake Aleknagik
+   - Lake Eklutna
+
+4. Other notable lakes:
+   - Crater Lake (Oregon)
+   - Lake Berryessa (California)
+   - Lake Shasta (California)
+   - Lake Tahoe (California/Nevada)
+   - Lake Norman (North Carolina)
+   - Lake Lanier (Georgia)
+   - Lake Seminole (Georgia)
+   - Lake Martin (Alabama)
+   - Lake Norman (North Carolina)
+   - Lake Pontchartrain (Louisiana)
+
+This is not an exhaustive list, as there are thousands of lakes in the United States. However, it includes many of the most notable and well-known lakes across the country.",1.0,0.7727272727272727,0,72
+"SELECT state_name FROM city WHERE city_name = ""springfield"";",geo,"[('illinois',), ('massachusetts',), ('missouri',), ('ohio',)]",What is the name of the state where Springfield is located?,"[('missouri',)]",what state is springfield in,"Springfield is a city name that appears in multiple states in the United States. However, the most well-known Springfield is likely the one in Illinois, which is the capital city of the state.",1.0,0.25,0,36
+"SELECT avg(GNP) , sum(population) FROM country WHERE GovernmentForm = ""US Territory""",world_1,"[(510.3333333333333, 329000)]",What is the average Gross National Product (GNP) and total population of US territories?,"[('510.3333333333333', '329000')]",What is the average GNP and total population in all nations whose government is US territory?,"The US territories include American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and the US Virgin Islands. 
+
+To provide an accurate answer, I'll need to gather data on the GNP and population of each territory. 
+
+Here's the data I found:
+
+1. American Samoa:
+   - GNP: Approximately $700 million (2020)
+   - Population: Around 55,519 (2020)
+
+2. Guam:
+   - GNP: Approximately $4.6 billion (2020)
+   - Population: Around 164,583 (2020)
+
+3. Northern Mariana Islands:
+   - GNP: Approximately $1.1 billion (2020)
+   - Population: Around 53,855 (2020)
+
+4. Puerto Rico:
+   - GNP: Approximately $104.9 billion (2020)
+   - Population: Around 3.2 million (2020)
+
+5. US Virgin Islands:
+   - GNP: Approximately $4.5 billion (2020)
+   - Population: Around 109,700 (2020)
+
+Now, let's calculate the total GNP and population of these territories.
+
+Total GNP: $700 million + $4.6 billion + $1.1 billion + $104.9 billion + $4.5 billion ≈ $115.65 billion
+
+Total Population: 55,519 + 164,583 + 53,855 + 3,200,000 + 109,700 ≈ 3,483,557
+
+Please note that these figures are estimates and may have changed since 2020.",1.0,1.0,1,100
+"SELECT lake_name FROM lake WHERE area > 750 AND state_name = ""michigan"";",geo,"[('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',)]",What are the names of lakes in Michigan that are larger than 750 square miles?,"[('michigan',)]",name the major lakes in michigan,"Some of the major lakes in Michigan include:
+
+1. Lake Michigan
+2. Lake Huron
+3. Lake Superior
+4. Lake Erie
+5. Lake St. Clair",1.0,0.2,0,35
+SELECT lake_name FROM lake WHERE area > 750;,geo,"[('iliamna',), ('becharof',), ('teshekpuk',), ('salton sea',), ('okeechobee',), ('michigan',), ('michigan',), ('pontchartrain',), ('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',), ('superior',), ('lake of the woods',), ('red',), ('rainy',), ('erie',), ('ontario',), ('champlain',), ('erie',), ('erie',), ('great salt lake',), ('champlain',), ('superior',), ('michigan',)]",What are the names of the lakes with an area greater than 750 square kilometers?,"[('michigan',), ('superior',), ('huron',), ('ontario',), ('champlain',), ('erie',)]",what are the major lakes in united states,"The United States has numerous major lakes, but here are some of the most notable ones:
+
+1. **Lake Superior**: The largest of the Great Lakes, located on the border of the US and Canada, and covering approximately 31,700 square miles.
+2. **Lake Michigan**: The second-largest Great Lake, located in the US, covering about 22,400 square miles.
+3. **Lake Huron**: The third-largest Great Lake, located on the border of the US and Canada, covering approximately 23,000 square miles.
+4. **Lake Erie**: The fourth-largest Great Lake, located on the border of the US and Canada, covering about 9,900 square miles.
+5. **Lake Ontario**: The smallest of the Great Lakes, located on the border of the US and Canada, covering approximately 9,300 square miles.
+6. **Lake Mead**: A large man-made lake on the Arizona-Nevada border, covering about 247 square miles.
+7. **Lake Powell**: A large man-made lake on the Arizona-Utah border, covering approximately 160 square miles.
+8. **Lake Tahoe**: A large freshwater lake located on the California-Nevada border, covering about 191 square miles.
+9. **Lake Oahe**: A large man-made lake on the North Dakota-South Dakota border, covering approximately 370 square miles.
+10. **Lake Sakakawea**: A large man-made lake in North Dakota, covering about 380 square miles.
+
+These are just a few of the many major lakes in the United States.",1.0,0.35294117647058826,0,33
+"SELECT state_name FROM city WHERE city_name = ""austin"" AND population > 150000;",geo,"[('texas',)]","What is the name of the state where Austin is located and has a population of over 150,000?",[],which states have a major city named austin,"There is only one state with a major city named Austin: 
+
+Texas.",0.0,0.0,0,0
+"SELECT COUNT ( state_name ) FROM city WHERE city_name = ""springfield"";",geo,"[(4,)]",How many states is Springfield located in?,"[('4',)]",how many states have a city named springfield,There are at least 41 cities or towns named Springfield in the United States.,1.0,1.0,1,100
+SELECT COUNT ( traverse ) FROM river WHERE LENGTH > 750;,geo,"[(100,)]",What is the total number of rivers that are longer than 750 kilometers?,[()],how many states have major rivers,"Almost all states in the United States have major rivers. However, I can provide you with a more specific answer. According to the U.S. Geological Survey (USGS), there are 48 states with major rivers. The two states without major rivers are:
+
+1. Delaware
+2. Rhode Island",0.0,0.0,0,0
+SELECT traverse FROM river WHERE LENGTH = ( SELECT MIN ( LENGTH ) FROM river );,geo,"[('new york',), ('pennsylvania',), ('new jersey',), ('delaware',)]",What is the name of the river that is the shortest?,[],what states does the shortest river run through,"The shortest river in the world is the D River in Oregon, USA, and it runs through the state of Oregon.",0.0,0.0,0,0
+"SELECT population FROM city WHERE city_name = ""seattle"" AND state_name = ""washington"";",geo,"[(493846,)]",What is the population of Seattle in Washington?,"[('Seattle', 493846)]",what is the population of seattle washington,"As of the 2020 United States Census, the population of Seattle, Washington is approximately 733,919. However, the Seattle metropolitan area has a population of around 4.2 million people.",0.5,1.0,0,60
+SELECT COUNT ( DISTINCT traverse ) FROM river WHERE LENGTH > 750;,geo,"[(33,)]",What is the number of rivers that are longer than 750 kilometers?,"[('33',)]",how many states are next to major rivers,There are 48 states in the United States that are adjacent to a major river.,1.0,1.0,1,100
+SELECT DISTINCT capital FROM state;,geo,"[('montgomery',), ('juneau',), ('phoenix',), ('little rock',), ('sacramento',), ('denver',), ('hartford',), ('dover',), ('washington',), ('tallahassee',), ('atlanta',), ('honolulu',), ('boise',), ('springfield',), ('indianapolis',), ('des moines',), ('topeka',), ('frankfort',), ('baton rouge',), ('augusta',), ('annapolis',), ('boston',), ('lansing',), ('st. paul',), ('jackson',), ('jefferson city',), ('helena',), ('lincoln',), ('carson city',), ('concord',), ('trenton',), ('santa fe',), ('albany',), ('raleigh',), ('bismarck',), ('columbus',), ('oklahoma city',), ('salem',), ('harrisburg',), ('providence',), ('columbia',), ('pierre',), ('nashville',), ('austin',), ('salt lake city',), ('montpelier',), ('richmond',), ('olympia',), ('charleston',), ('madison',), ('cheyenne',)]",What are the capital cities of all states?,"[('montgomery',), ('juneau',), ('phoenix',), ('little rock',), ('sacramento',), ('denver',), ('hartford',), ('dover',), ('washington',), ('tallahassee',), ('atlanta',), ('honolulu',), ('boise',), ('springfield',), ('indianapolis',), ('des moines',), ('topeka',), ('frankfort',), ('baton rouge',), ('augusta',), ('annapolis',), ('boston',), ('lansing',), ('st. paul',), ('jackson',), ('jefferson city',), ('helena',), ('lincoln',), ('carson city',), ('concord',), ('trenton',), ('santa fe',), ('albany',), ('raleigh',), ('bismarck',), ('columbus',), ('oklahoma city',), ('salem',), ('harrisburg',), ('providence',), ('columbia',), ('pierre',), ('nashville',), ('austin',), ('salt lake city',), ('montpelier',), ('richmond',), ('olympia',), ('charleston',), ('madison',), ('cheyenne',)]",name the 50 capitals in the usa,"Here's a list of the 50 state capitals in the United States:
+
+1. Montgomery (Alabama)
+2. Juneau (Alaska)
+3. Phoenix (Arizona)
+4. Little Rock (Arkansas)
+5. Sacramento (California)
+6. Denver (Colorado)
+7. Hartford (Connecticut)
+8. Dover (Delaware)
+9. Tallahassee (Florida)
+10. Atlanta (Georgia)
+11. Honolulu (Hawaii)
+12. Boise (Idaho)
+13. Springfield (Illinois)
+14. Indianapolis (Indiana)
+15. Des Moines (Iowa)
+16. Topeka (Kansas)
+17. Frankfort (Kentucky)
+18. Baton Rouge (Louisiana)
+19. Augusta (Maine)
+20. Annapolis (Maryland)
+21. Boston (Massachusetts)
+22. Lansing (Michigan)
+23. Saint Paul (Minnesota)
+24. Jackson (Mississippi)
+25. Jefferson City (Missouri)
+26. Helena (Montana)
+27. Lincoln (Nebraska)
+28. Carson City (Nevada)
+29. Concord (New Hampshire)
+30. Trenton (New Jersey)
+31. Santa Fe (New Mexico)
+32. Albany (New York)
+33. Raleigh (North Carolina)
+34. Bismarck (North Dakota)
+35. Columbus (Ohio)
+36. Oklahoma City (Oklahoma)
+37. Salem (Oregon)
+38. Harrisburg (Pennsylvania)
+39. Providence (Rhode Island)
+40. Columbia (South Carolina)
+41. Pierre (South Dakota)
+42. Nashville (Tennessee)
+43. Austin (Texas)
+44. Salt Lake City (Utah)
+45. Montpelier (Vermont)
+46. Richmond (Virginia)
+47. Olympia (Washington)
+48. Charleston (West Virginia)
+49. Madison (Wisconsin)
+50. Cheyenne (Wyoming)",1.0,1.0,1,100
+"SELECT COUNT ( river_name ) FROM river WHERE traverse = ""idaho"";",geo,"[(2,)]",What rivers in Idaho have a name?,"[('Snake River',)]",how many rivers are in idaho,"Idaho has approximately 3,100 rivers.",0.0,0.0,0,0
+"SELECT country_name FROM state WHERE state_name = ""massachusetts"";",geo,"[('usa',)]",What is the name of the country where Massachusetts is located?,"[('usa',)]",where is massachusetts,"Massachusetts is a state located in the northeastern United States. It is one of the original 13 colonies and is situated in the New England region. Massachusetts shares borders with the states of New Hampshire to the north, Vermont to the northwest, Connecticut to the west, Rhode Island to the south, and the Atlantic Ocean to the east.",1.0,1.0,1,100
+SELECT count(*) FROM FLIGHTS,flight_2,"[(1200,)]",How many flights are there in total?,"[('1200',)]",How many flights do we have?,I'm not aware of any flights. Could you please provide more context or information about the flights you are referring to?,1.0,1.0,1,100
+"SELECT river_name FROM river WHERE LENGTH > 750 AND traverse = ""illinois"";",geo,"[('mississippi',), ('ohio',), ('ohio',), ('wabash',)]",What are the names of rivers in Illinois that are longer than 750 miles?,[],name the major rivers in illinois,"The major rivers in Illinois are:
+
+1. Mississippi River
+2. Illinois River
+3. Ohio River
+4. Wabash River
+5. Kankakee River
+6. Sangamon River
+7. Des Plaines River
+8. Fox River",0.0,0.0,0,0
+"SELECT Airline FROM AIRLINES WHERE Abbreviation = ""UAL""",flight_2,"[('United Airlines',)]","What is the name of the airline with the abbreviation ""UAL""?",[],Which airline has abbreviation 'UAL'?,United Airlines has the abbreviation 'UAL'.,0.0,0.0,0,0
+"SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = ""Aruba"" ORDER BY Percentage DESC LIMIT 1",world_1,"[('Papiamento',)]",What language is most widely spoken in Aruba?,"[('Papiamento',)]",Which language is the most popular in Aruba?,"The most popular language in Aruba is Papiamento, but many people also speak Dutch and English.",1.0,1.0,1,100
+"SELECT t2.capital FROM state AS t2 JOIN city AS t1 ON t2.state_name = t1.state_name WHERE t1.city_name = ""durham"";",geo,"[('raleigh',)]",What is the capital of the state where Durham is located?,"[('Raleigh',)]",what is the capital of states that have cities named durham,"There are several states with cities named Durham. Here are a few:
+
+1. North Carolina - The capital of North Carolina is Raleigh.
+2. New Hampshire - The capital of New Hampshire is Concord.
+3. Illinois - The capital of Illinois is Springfield.
+4. Iowa - The capital of Iowa is Des Moines.
+5. Connecticut - The capital of Connecticut is Hartford.
+6. Ohio - The capital of Ohio is Columbus.
+7. Indiana - The capital of Indiana is Indianapolis.
+8. Pennsylvania - The capital of Pennsylvania is Harrisburg.
+9. Wisconsin - The capital of Wisconsin is Madison.
+10. New Jersey - The capital of New Jersey is Trenton.
+11. South Carolina - The capital of South Carolina is Columbia.
+12. Tennessee - The capital of Tennessee is Nashville.
+13. Kansas - The capital of Kansas is Topeka.
+14. Nebraska - The capital of Nebraska is Lincoln.
+15. Oklahoma - The capital of Oklahoma is Oklahoma City.
+16. North Dakota - The capital of North Dakota is Bismarck.
+17. South Dakota - The capital of South Dakota is Pierre.
+18. West Virginia - The capital of West Virginia is Charleston.
+19. Maine - The capital of Maine is Augusta.
+20. Vermont - The capital of Vermont is Montpelier.
+21. Idaho - The capital of Idaho is Boise.
+22. Utah - The capital of Utah is Salt Lake City.
+23. Washington - The capital of Washington is Olympia.
+24. Wyoming - The capital of Wyoming is Cheyenne.
+25. Montana - The capital of Montana is Helena.
+26. Arizona - The capital of Arizona is Phoenix.
+27. Colorado - The capital of Colorado is Denver.
+28. Nevada - The capital of Nevada is Carson City.
+29. New Mexico - The capital of New Mexico is Santa Fe.
+30. Oregon - The capital of Oregon is Salem.
+31. Alaska - The capital of Alaska is Juneau.
+32. Hawaii - The capital of Hawaii is Honolulu.
+33. Maryland - The capital of Maryland is Annapolis.
+34. Massachusetts - The capital of Massachusetts is Boston.
+35. Michigan - The capital of Michigan is Lansing.
+36. Minnesota - The capital of Minnesota is St. Paul.
+37. Missouri - The capital of Missouri is Jefferson City.
+38. New York - The capital of New York is Albany.
+39. Rhode Island - The capital of Rhode Island is Providence.
+40. Texas - The capital of Texas is Austin.
+41. Virginia - The capital of Virginia is Richmond.
+42. Washington D.C. - The capital of Washington D.C. is Washington D.C.
+43. Delaware - The capital of Delaware is Dover.
+44. Florida - The capital of Florida is Tallahassee.
+45. Georgia - The capital of Georgia is Atlanta.
+46. Kentucky - The capital of Kentucky is Frankfort.
+47. Louisiana - The capital of Louisiana is Baton Rouge.
+48. Mississippi - The capital of Mississippi is Jackson.
+49. North Carolina - The capital of North Carolina is Raleigh.
+50. Ohio - The capital of Ohio is Columbus.
+51. Oklahoma - The capital of Oklahoma is Oklahoma City.
+52. Pennsylvania - The capital of Pennsylvania is Harrisburg.
+53. South Carolina - The capital of South Carolina is Columbia.
+54. Tennessee - The capital of Tennessee is Nashville.
+55. Texas - The capital of Texas is Austin.
+56. Vermont - The capital of Vermont is Montpelier.
+57. Virginia - The capital of Virginia is Richmond.
+58. West Virginia - The capital of West Virginia is Charleston.
+59. Wisconsin - The capital of Wisconsin is Madison.
+60. Wyoming - The capital of Wyoming is Cheyenne.
+
+Note that this list may not be exhaustive, but it covers most of the states with cities named Durham.",1.0,1.0,1,100
+"SELECT DISTINCT T1.Region FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = ""English"" OR T2.Language = ""Dutch""",world_1,"[('Caribbean',), ('Polynesia',), ('Australia and New Zealand',), ('Western Europe',), ('Middle East',), ('Central America',), ('North America',), ('Southeast Asia',), ('Nordic Countries',), ('South America',), ('British Islands',), ('Southern Europe',), ('Micronesia',), ('Eastern Asia',), ('Southern Africa',), ('Southern and Central Asia',), ('Western Africa',), ('Eastern Africa',), ('Micronesia/Caribbean',), ('Melanesia',)]",What regions have English or Dutch as a spoken language?,"[('North America',), ('Western Europe',), ('British Islands',), ('Nordic Countries',), ('Southern Europe',), ('Australia and New Zealand',), ('Caribbean',), ('Micronesia/Caribbean',)]",What are the regions that use English or Dutch?,"The regions that use English or Dutch include:
+
+- English-speaking regions:
+  - United States
+  - United Kingdom (England, Scotland, Wales, and Northern Ireland)
+  - Canada
+  - Australia
+  - New Zealand
+  - Ireland
+  - Caribbean islands (such as Jamaica, Barbados, and the Bahamas)
+  - Many African countries (such as South Africa, Ghana, and Kenya)
+  - Some countries in Asia (such as Singapore and the Philippines)
+  - Many countries in the Pacific (such as Fiji and Samoa)
+
+- Dutch-speaking regions:
+  - Netherlands
+  - Belgium (Flemish region)
+  - Suriname
+  - Aruba
+  - Curaçao
+  - Sint Maarten (Dutch part)
+  - Some regions in France (such as the Nord-Pas-de-Calais region near the border with Belgium)",1.0,0.4,0,51
+"SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.HeadOfState = ""Beatrix"" AND T2.IsOfficial = ""T""",world_1,"[('Dutch',), ('Dutch',), ('Papiamento',), ('Dutch',)]",What languages are officially spoken in countries led by Beatrix?,"[('Dutch',), ('Dutch',), ('Papiamento',), ('Dutch',)]",What is the official language spoken in the country whose head of state is Beatrix?,The official language spoken in the country whose head of state is Beatrix is Dutch.,1.0,1.0,1,100
+SELECT state_name FROM state WHERE state_name NOT IN ( SELECT traverse FROM river );,geo,"[('alaska',), ('hawaii',), ('maine',), ('rhode island',)]",What are the names of states that do not have a river that crosses them?,"[('alaska',), ('hawaii',)]",what state has no rivers,"There is no state in the United States that has no rivers. However, some states have very few rivers or are mostly desert with limited water sources. 
+
+One example is Nevada, but it still has some rivers, such as the Colorado River.",1.0,0.5,0,58
+"SELECT COUNT ( river_name ) FROM river WHERE traverse NOT IN ( SELECT state_name FROM state WHERE capital = ""albany"" );",geo,"[(146,)]",What rivers do not pass through a state with Albany as its capital?,[],how many rivers do not traverse the state with the capital albany,"New York is the state with the capital Albany. There are many rivers in New York, but I'll provide a general answer. 
+
+Some notable rivers in New York that do not traverse the state with the capital Albany include:
+
+1. The Ohio River (forms the border between Pennsylvania and New York, but does not traverse the state)
+2. The Genesee River (flows through western New York, but does not pass through Albany)
+3. The Allegheny River (forms the border between Pennsylvania and New York, but does not traverse the state)
+4. The Susquehanna River (forms the border between Pennsylvania and New York, but does not traverse the state)
+5. The Delaware River (forms the border between Pennsylvania and New York, but does not traverse the state)
+
+However, it's worth noting that many other rivers do traverse the state of New York, including the Hudson River, which runs through Albany.",0.0,0.0,0,0
+"SELECT COUNT( DISTINCT Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = ""Chinese""",world_1,"[(4,)]",What continents have Chinese as an official language?,"[('Asia',)]",What is the number of distinct continents where Chinese is spoken?,"Chinese is spoken in 6 distinct continents: 
+
+1. Asia
+2. Africa
+3. Europe
+4. North America
+5. South America
+6. Australia",0.0,0.0,0,0
+"SELECT Region FROM country AS T1 JOIN city AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = ""Kabul""",world_1,"[('Southern and Central Asia',)]",What region is Kabul located in?,"[('Southern and Central Asia',)]",Which region is the city Kabul located in?,The city Kabul is located in the region of Central Asia.,1.0,1.0,1,100
+"SELECT COUNT(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = ""Afghanistan"" AND IsOfficial = ""T""",world_1,"[(2,)]",What is the total number of official languages spoken in Afghanistan?,"[('2',)]",How many official languages does Afghanistan have?,Afghanistan has two official languages: Pashto and Dari.,1.0,1.0,1,100
+SELECT t2.capital FROM state AS t2 JOIN city AS t1 ON t2.capital = t1.city_name WHERE t1.population <= 150000;,geo,"[('concord',), ('richmond',), ('hartford',), ('tallahassee',), ('albany',), ('boise',), ('springfield',), ('topeka',), ('lansing',), ('springfield',), ('columbia',), ('trenton',), ('albany',), ('raleigh',), ('springfield',), ('salem',), ('columbia',), ('charleston',), ('charleston',)]","What is the capital of a state that has a city with a population of less than 150,000?","[('concord',), ('tallahassee',), ('boise',), ('springfield',), ('topeka',), ('lansing',), ('columbia',), ('trenton',), ('raleigh',), ('salem',), ('columbia',), ('charleston',)]",which capitals are not major cities,"Some examples of capitals that are not major cities include:
+
+1. Funafuti (Tuvalu) - The capital of Tuvalu, with a population of around 4,500.
+2. Ngerulmud (Palau) - The capital of Palau, with a population of around 250.
+3. Naypyidaw (Myanmar) - Although it has a population of over 925,000, it was built as a new capital in 2006 and is still relatively underdeveloped compared to Yangon, the former capital.
+4. Djibouti City (Djibouti) - The capital of Djibouti, with a population of around 529,000, but it is still relatively small compared to other major cities in Africa.
+5. Bandar Seri Begawan (Brunei) - The capital of Brunei, with a population of around 200,000, but it is still relatively small compared to other major cities in Southeast Asia.
+6. San Marino City (San Marino) - The capital of San Marino, with a population of around 4,000.
+7. Vaduz (Liechtenstein) - The capital of Liechtenstein, with a population of around 5,000.
+8. Monaco-Ville (Monaco) - The capital of Monaco, with a population of around 1,000.
+9. Nuku'alofa (Tonga) - The capital of Tonga, with a population of around 25,000.
+10. Majuro (Marshall Islands) - The capital of the Marshall Islands, with a population of around 27,000.",1.0,0.7857142857142857,0,75

@@ -1,0 +1,1426 @@
+Query,Database,Query Answer,Translated Query (Natural Language),LLM Answer,Question,Single Question Answer,Precision,Recall,Exact Match,Fuzzy Match
+"SELECT area FROM state WHERE state_name = ""new mexico"";",geo,"[(121600.0,)]",What is the area of New Mexico?,"[(121600.0,)]",how big is new mexico,"New Mexico is approximately 121,669 square miles (314,915 square kilometers) in size.",1.0,1.0,1,100
+SELECT name FROM city WHERE Population BETWEEN 160000 AND 900000,world_1,"[('Qandahar',), ('Herat',), ('Amsterdam',), ('Rotterdam',), ('Haag',), ('Utrecht',), ('Eindhoven',), ('Tilburg',), ('Groningen',), ('Breda',), ('Tirana',), ('Oran',), ('Constantine',), ('Annaba',), ('Batna',), ('Sétif',), ('Huambo',), ('Dubai',), ('Abu Dhabi',), ('Sharja',), ('al-Ayn',), ('Lomas de Zamora',), ('Quilmes',), ('Almirante Brown',), ('La Plata',), ('Mar del Plata',), ('San Miguel de Tucumán',), ('Lanús',), ('Merlo',), ('General San Martín',), ('Salta',), ('Moreno',), ('Santa Fé',), ('Avellaneda',), ('Tres de Febrero',), ('Morón',), ('Florencio Varela',), ('San Isidro',), ('Tigre',), ('Malvinas Argentinas',), ('Vicente López',), ('Berazategui',), ('Corrientes',), ('San Miguel',), ('Bahía Blanca',), ('Esteban Echeverría',), ('Resistencia',), ('José C. Paz',), ('Paraná',), ('Godoy Cruz',), ('Posadas',), ('Guaymallén',), ('Santiago del Estero',), ('San Salvador de Jujuy',), ('Hurlingham',), ('Neuquén',), ('Gjumri',), ('Vanadzor',), ('Canberra',), ('Gold Coast',), ('Newcastle',), ('Central Coast',), ('Wollongong',), ('Gäncä',), ('Sumqayit',), ('Nassau',), ('Khulna',), ('Rajshahi',), ('Narayanganj',), ('Rangpur',), ('Mymensingh',), ('Barisal',), ('Tungi',), ('Antwerpen',), ('Gent',), ('Charleroi',), ('Liège',), ('Cotonou',), ('Porto-Novo',), ('La Paz',), ('El Alto',), ('Cochabamba',), ('Oruro',), ('Sucre',), ('Sarajevo',), ('Gaborone',), ('São Gonçalo',), ('Nova Iguaçu',), ('São Luís',), ('Maceió',), ('Duque de Caxias',), ('São Bernardo do Campo',), ('Teresina',), ('Natal',), ('Osasco',), ('Campo Grande',), ('Santo André',), ('João Pessoa',), ('Jaboatão dos Guararapes',), ('Contagem',), ('São José dos Campos',), ('Uberlândia',), ('Feira de Santana',), ('Ribeirão Preto',), ('Sorocaba',), ('Niterói',), ('Cuiabá',), ('Juiz de Fora',), ('Aracaju',), ('São João de Meriti',), ('Londrina',), ('Joinville',), ('Belford Roxo',), ('Santos',), ('Ananindeua',), ('Campos dos Goytacazes',), ('Mauá',), ('Carapicuíba',), ('Olinda',), ('Campina Grande',), ('São José do Rio Preto',), ('Caxias do Sul',), ('Moji das Cruzes',), ('Diadema',), ('Aparecida de Goiânia',), ('Piracicaba',), ('Cariacica',), ('Vila Velha',), ('Pelotas',), ('Bauru',), ('Porto Velho',), ('Serra',), ('Betim',), ('Jundíaí',), ('Canoas',), ('Franca',), ('São Vicente',), ('Maringá',), ('Montes Claros',), ('Anápolis',), ('Florianópolis',), ('Petrópolis',), ('Itaquaquecetuba',), ('Vitória',), ('Ponta Grossa',), ('Rio Branco',), ('Foz do Iguaçu',), ('Macapá',), ('Ilhéus',), ('Vitória da Conquista',), ('Uberaba',), ('Paulista',), ('Limeira',), ('Blumenau',), ('Caruaru',), ('Santarém',), ('Volta Redonda',), ('Novo Hamburgo',), ('Caucaia',), ('Santa Maria',), ('Cascavel',), ('Guarujá',), ('Ribeirão das Neves',), ('Governador Valadares',), ('Taubaté',), ('Imperatriz',), ('Gravataí',), ('Embu',), ('Mossoró',), ('Várzea Grande',), ('Petrolina',), ('Barueri',), ('Viamão',), ('Ipatinga',), ('Juazeiro',), ('Juazeiro do Norte',), ('Taboão da Serra',), ('São José dos Pinhais',), ('Magé',), ('Suzano',), ('São Leopoldo',), ('Marília',), ('São Carlos',), ('Sumaré',), ('Presidente Prudente',), ('Divinópolis',), ('Sete Lagoas',), ('Rio Grande',), ('Itabuna',), ('Jequié',), ('Arapiraca',), ('Colombo',), ('Americana',), ('Alvorada',), ('Araraquara',), ('Itaboraí',), ('Santa Bárbara d´Oeste',), ('Nova Friburgo',), ('Jacareí',), ('Araçatuba',), ('Barra Mansa',), ('Praia Grande',), ('Marabá',), ('Criciúma',), ('Boa Vista',), ('Passo Fundo',), ('Dourados',), ('Santa Luzia',), ('Rio Claro',), ('Maracanaú',), ('Guarapuava',), ('Glasgow',), ('Liverpool',), ('Edinburgh',), ('Sheffield',), ('Manchester',), ('Leeds',), ('Bristol',), ('Cardiff',), ('Coventry',), ('Leicester',), ('Bradford',), ('Belfast',), ('Nottingham',), ('Kingston upon Hull',), ('Plymouth',), ('Stoke-on-Trent',), ('Wolverhampton',), ('Derby',), ('Swansea',), ('Southampton',), ('Aberdeen',), ('Northampton',), ('Dudley',), ('Portsmouth',), ('Newcastle upon Tyne',), ('Sunderland',), ('Luton',), ('Swindon',), ('Southend-on-Sea',), ('Walsall',), ('Bournemouth',), ('Plovdiv',), ('Varna',), ('Burgas',), ('Ruse',), ('Ouagadougou',), ('Bobo-Dioulasso',), ('Bujumbura',), ('Puente Alto',), ('Viña del Mar',), ('Valparaíso',), ('Talcahuano',), ('Antofagasta',), ('San Bernardo',), ('Temuco',), ('Concepción',), ('Rancagua',), ('Arica',), ('Talca',), ('Chillán',), ('Iquique',), ('San José',), ('Djibouti',), ('Santiago de los Caballeros',), ('Cuenca',), ('Machala',), ('Santo Domingo de los Colorados',), ('Portoviejo',), ('Ambato',), ('Manta',), ('Shubra al-Khayma',), ('Port Said',), ('Suez',), ('al-Mahallat al-Kubra',), ('Tanta',), ('al-Mansura',), ('Luxor',), ('Asyut',), ('Bahtim',), ('Zagazig',), ('al-Faiyum',), ('Ismailia',), ('Kafr al-Dawwar',), ('Assuan',), ('Damanhur',), ('al-Minya',), ('Bani Suwayf',), ('Qina',), ('Sawhaj',), ('San Salvador',), ('Asmara',), ('Valencia',), ('Sevilla',), ('Zaragoza',), ('Málaga',), ('Bilbao',), ('Las Palmas de Gran Canaria',), ('Murcia',), ('Palma de Mallorca',), ('Valladolid',), ('Córdoba',), ('Vigo',), ('Alicante [Alacant]',), ('Gijón',), ('L´Hospitalet de Llobregat',), ('Granada',), ('A Coruña (La Coruña)',), ('Vitoria-Gasteiz',), ('Santa Cruz de Tenerife',), ('Badalona',), ('Oviedo',), ('Móstoles',), ('Elche [Elx]',), ('Sabadell',), ('Santander',), ('Jerez de la Frontera',), ('Pamplona [Iruña]',), ('Donostia-San Sebastián',), ('Cartagena',), ('Leganés',), ('Fuenlabrada',), ('Almería',), ('Terrassa',), ('Alcalá de Henares',), ('Burgos',), ('Johannesburg',), ('Port Elizabeth',), ('Pretoria',), ('Inanda',), ('Durban',), ('Vanderbijlpark',), ('Kempton Park',), ('Alberton',), ('Pinetown',), ('Pietermaritzburg',), ('Benoni',), ('Randburg',), ('Umlazi',), ('Bloemfontein',), ('Vereeniging',), ('Wonderboom',), ('Roodepoort',), ('Boksburg',), ('Klerksdorp',), ('Soshanguve',), ('Newcastle',), ('East London',), ('Welkom',), ('Kimberley',), ('Uitenhage',), ('Chatsworth',), ('Mdantsane',), ('Krugersdorp',), ('Botshabelo',), ('Brakpan',), ('Witbank',), ('Oberholzer',), ('Germiston',), ('Springs',), ('Dire Dawa',), ('Cebu',), ('Zamboanga',), ('Pasig',), ('Valenzuela',), ('Las Piñas',), ('Antipolo',), ('Taguig',), ('Cagayan de Oro',), ('Parañaque',), ('Makati',), ('Bacolod',), ('General Santos',), ('Marikina',), ('Dasmariñas',), ('Muntinlupa',), ('Iloilo',), ('Pasay',), ('Malabon',), ('San José del Monte',), ('Bacoor',), ('Iligan',), ('Calamba',), ('Mandaluyong',), ('Butuan',), ('Angeles',), ('Tarlac',), ('Mandaue',), ('Baguio',), ('Batangas',), ('Cainta',), ('San Pedro',), ('Navotas',), ('Cabanatuan',), ('San Fernando',), ('Lipa',), ('Lapu-Lapu',), ('San Pablo',), ('Biñan',), ('Taytay',), ('Lucena',), ('Imus',), ('Olongapo',), ('Binangonan',), ('Santa Rosa',), ('Tagum',), ('Tacloban',), ('Malolos',), ('Mabalacat',), ('Cotabato',), ('Meycauayan',), ('Puerto Princesa',), ('Libreville',), ('Kutaisi',), ('Kumasi',), ('Ciudad de Guatemala',), ('Mixco',), ('Bissau',), ('Georgetown',), ('Port-au-Prince',), ('Carrefour',), ('Delmas',), ('Tegucigalpa',), ('San Pedro Sula',), ('Malang',), ('Bandar Lampung',), ('Bekasi',), ('Padang',), ('Surakarta',), ('Banjarmasin',), ('Pekan Baru',), ('Denpasar',), ('Yogyakarta',), ('Pontianak',), ('Samarinda',), ('Jambi',), ('Depok',), ('Cimahi',), ('Balikpapan',), ('Manado',), ('Mataram',), ('Pekalongan',), ('Tegal',), ('Bogor',), ('Ciputat',), ('Pondokgede',), ('Cirebon',), ('Kediri',), ('Ambon',), ('Jember',), ('Cilacap',), ('Cimanggis',), ('Pematang Siantar',), ('Purwokerto',), ('Ciomas',), ('Tasikmalaya',), ('Madiun',), ('Srinagar',), ('Agra',), ('Coimbatore',), ('Thane (Thana)',), ('Allahabad',), ('Meerut',), ('Vishakhapatnam',), ('Jabalpur',), ('Amritsar',), ('Faridabad',), ('Vijayawada',), ('Gwalior',), ('Jodhpur',), ('Nashik (Nasik)',), ('Hubli-Dharwad',), ('Solapur (Sholapur)',), ('Ranchi',), ('Bareilly',), ('Guwahati (Gauhati)',), ('Shambajinagar (Aurangabad)',), ('Cochin (Kochi)',), ('Rajkot',), ('Kota',), ('Thiruvananthapuram (Trivandrum',), ('Pimpri-Chinchwad',), ('Jalandhar (Jullundur)',), ('Gorakhpur',), ('Chandigarh',), ('Mysore',), ('Aligarh',), ('Guntur',), ('Jamshedpur',), ('Ghaziabad',), ('Warangal',), ('Raipur',), ('Moradabad',), ('Durgapur',), ('Amravati',), ('Calicut (Kozhikode)',), ('Bikaner',), ('Bhubaneswar',), ('Kolhapur',), ('Kataka (Cuttack)',), ('Ajmer',), ('Bhavnagar',), ('Tiruchirapalli',), ('Bhilai',), ('Bhiwandi',), ('Saharanpur',), ('Ulhasnagar',), ('Salem',), ('Ujjain',), ('Malegaon',), ('Jamnagar',), ('Bokaro Steel City',), ('Akola',), ('Belgaum',), ('Rajahmundry',), ('Nellore',), ('Udaipur',), ('New Bombay',), ('Bhatpara',), ('Gulbarga',), ('New Delhi',), ('Jhansi',), ('Gaya',), ('Kakinada',), ('Dhule (Dhulia)',), ('Panihati',), ('Nanded (Nander)',), ('Mangalore',), ('Dehra Dun',), ('Kamarhati',), ('Davangere',), ('Asansol',), ('Bhagalpur',), ('Bellary',), ('Barddhaman (Burdwan)',), ('Rampur',), ('Jalgaon',), ('Muzaffarpur',), ('Nizamabad',), ('Muzaffarnagar',), ('Patiala',), ('Shahjahanpur',), ('Kurnool',), ('Tiruppur (Tirupper)',), ('Rohtak',), ('South Dum Dum',), ('Mathura',), ('Chandrapur',), ('Barahanagar (Baranagar)',), ('Darbhanga',), ('Siliguri (Shiliguri)',), ('Raurkela',), ('Ambattur',), ('Panipat',), ('Firozabad',), ('Ichalkaranji',), ('Jammu',), ('Ramagundam',), ('Eluru',), ('Brahmapur',), ('Alwar',), ('Pondicherry',), ('Thanjavur',), ('Bihar Sharif',), ('Tuticorin',), ('Imphal',), ('Latur',), ('Sagar',), ('Farrukhabad-cum-Fatehgarh',), ('Sangli',), ('Parbhani',), ('Nagar Coil',), ('Bijapur',), ('Kukatpalle',), ('Bally',), ('Bhilwara',), ('Ratlam',), ('Avadi',), ('Dindigul',), ('Ahmadnagar',), ('Bilaspur',), ('Shimoga',), ('Kharagpur',), ('Mira Bhayandar',), ('Vellore',), ('Jalna',), ('Burnpur',), ('Anantapur',), ('Allappuzha (Alleppey)',), ('Tirupati',), ('Karnal',), ('Burhanpur',), ('Hisar (Hissar)',), ('Tiruvottiyur',), ('Mirzapur-cum-Vindhyachal',), ('Secunderabad',), ('Nadiad',), ('Dewas',), ('Murwara (Katni)',), ('Ganganagar',), ('Vizianagaram',), ('Mosul',), ('Irbil',), ('Kirkuk',), ('Basra',), ('al-Sulaymaniya',), ('al-Najaf',), ('Karbala',), ('al-Hilla',), ('al-Nasiriya',), ('al-Amara',), ('al-Diwaniya',), ('al-Ramadi',), ('al-Kut',), ('Ahvaz',), ('Qom',), ('Kermanshah',), ('Urmia',), ('Zahedan',), ('Rasht',), ('Hamadan',), ('Kerman',), ('Arak',), ('Ardebil',), ('Yazd',), ('Qazvin',), ('Zanjan',), ('Sanandaj',), ('Bandar-e-Abbas',), ('Khorramabad',), ('Eslamshahr',), ('Borujerd',), ('Abadan',), ('Dezful',), ('Kashan',), ('Sari',), ('Gorgan',), ('Najafabad',), ('Sabzevar',), ('Khomeynishahr',), ('Dublin',), ('Jerusalem',), ('Tel Aviv-Jaffa',), ('Haifa',), ('Rishon Le Ziyyon',), ('Beerseba',), ('Holon',), ('Palermo',), ('Genova',), ('Bologna',), ('Firenze',), ('Catania',), ('Bari',), ('Venezia',), ('Messina',), ('Verona',), ('Trieste',), ('Padova',), ('Taranto',), ('Brescia',), ('Reggio di Calabria',), ('Modena',), ('Prato',), ('Parma',), ('Cagliari',), ('Livorno',), ('Graz',), ('Linz',), ('Chiba',), ('Sakai',), ('Kumamoto',), ('Okayama',), ('Sagamihara',), ('Hamamatsu',), ('Kagoshima',), ('Funabashi',), ('Higashiosaka',), ('Hachioji',), ('Niigata',), ('Amagasaki',), ('Himeji',), ('Shizuoka',), ('Urawa',), ('Matsuyama',), ('Matsudo',), ('Kanazawa',), ('Kawaguchi',), ('Ichikawa',), ('Omiya',), ('Utsunomiya',), ('Oita',), ('Nagasaki',), ('Yokosuka',), ('Kurashiki',), ('Gifu',), ('Hirakata',), ('Nishinomiya',), ('Toyonaka',), ('Wakayama',), ('Fukuyama',), ('Fujisawa',), ('Asahikawa',), ('Machida',), ('Nara',), ('Takatsuki',), ('Iwaki',), ('Nagano',), ('Toyohashi',), ('Toyota',), ('Suita',), ('Takamatsu',), ('Koriyama',), ('Okazaki',), ('Kawagoe',), ('Tokorozawa',), ('Toyama',), ('Kochi',), ('Kashiwa',), ('Akita',), ('Miyazaki',), ('Koshigaya',), ('Naha',), ('Aomori',), ('Hakodate',), ('Akashi',), ('Yokkaichi',), ('Fukushima',), ('Morioka',), ('Maebashi',), ('Kasugai',), ('Otsu',), ('Ichihara',), ('Yao',), ('Ichinomiya',), ('Tokushima',), ('Kakogawa',), ('Ibaraki',), ('Neyagawa',), ('Shimonoseki',), ('Yamagata',), ('Fukui',), ('Hiratsuka',), ('Mito',), ('Sasebo',), ('Hachinohe',), ('Takasaki',), ('Shimizu',), ('Kurume',), ('Fuji',), ('Soka',), ('Fuchu',), ('Chigasaki',), ('Atsugi',), ('Numazu',), ('Ageo',), ('Yamato',), ('Matsumoto',), ('Kure',), ('Takarazuka',), ('Kasukabe',), ('Chofu',), ('Odawara',), ('Kofu',), ('Kushiro',), ('Kishiwada',), ('Hitachi',), ('Nagaoka',), ('Itami',), ('Uji',), ('Suzuka',), ('Hirosaki',), ('Ube',), ('Kodaira',), ('Takaoka',), ('Obihiro',), ('Tomakomai',), ('Saga',), ('Sakura',), ('Kamakura',), ('Mitaka',), ('Izumi',), ('Hino',), ('Hadano',), ('Ashikaga',), ('Tsu',), ('Sayama',), ('Yachiyo',), ('Tsukuba',), ('Sanaa',), ('Aden',), ('Taizz',), ('Hodeida',), ('al-Zarqa',), ('Irbid',), ('Novi Sad',), ('Niš',), ('Phnom Penh',), ('Garoua',), ('Calgary',), ('Toronto',), ('North York',), ('Winnipeg',), ('Edmonton',), ('Mississauga',), ('Scarborough',), ('Vancouver',), ('Etobicoke',), ('London',), ('Hamilton',), ('Ottawa',), ('Laval',), ('Surrey',), ('Brampton',), ('Windsor',), ('Saskatoon',), ('Kitchener',), ('Markham',), ('Regina',), ('Burnaby',), ('Québec',), ('Qaraghandy',), ('Shymkent',), ('Taraz',), ('Astana',), ('Öskemen',), ('Pavlodar',), ('Semey',), ('Aqtöbe',), ('Qostanay',), ('Petropavl',), ('Oral',), ('Temirtau',), ('Mombasa',), ('Kisumu',), ('Nakuru',), ('Bangui',), ('Handan',), ('Wuxi',), ('Xuzhou',), ('Datong',), ('Yichun',), ('Benxi',), ('Luoyang',), ('Suzhou',), ('Xining',), ('Huainan',), ('Jixi',), ('Daqing',), ('Fuxin',), ('Amoy [Xiamen]',), ('Liuzhou',), ('Shantou',), ('Jinzhou',), ('Mudanjiang',), ('Yinchuan',), ('Changzhou',), ('Zhangjiakou',), ('Dandong',), ('Hegang',), ('Kaifeng',), ('Jiamusi',), ('Liaoyang',), ('Hengyang',), ('Baoding',), ('Hunjiang',), ('Xinxiang',), ('Huangshi',), ('Haikou',), ('Yantai',), ('Bengbu',), ('Xiangtan',), ('Weifang',), ('Wuhu',), ('Pingxiang',), ('Yingkou',), ('Anyang',), ('Panzhihua',), ('Pingdingshan',), ('Xiangfan',), ('Zhuzhou',), ('Jiaozuo',), ('Wenzhou',), ('Zhangjiang',), ('Zigong',), ('Shuangyashan',), ('Zaozhuang',), ('Yakeshi',), ('Yichang',), ('Zhenjiang',), ('Huaibei',), ('Qinhuangdao',), ('Guilin',), ('Liupanshui',), ('Panjin',), ('Yangquan',), ('Jinxi',), ('Liaoyuan',), ('Lianyungang',), ('Xianyang',), ('Tai´an',), ('Chifeng',), ('Shaoguan',), ('Nantong',), ('Leshan',), ('Baoji',), ('Linyi',), ('Tonghua',), ('Siping',), ('Changzhi',), ('Tengzhou',), ('Chaozhou',), ('Yangzhou',), ('Dongwan',), ('Ma´anshan',), ('Foshan',), ('Yueyang',), ('Xingtai',), ('Changde',), ('Shihezi',), ('Yancheng',), ('Jiujiang',), ('Dongying',), ('Shashi',), ('Xintai',), ('Jingdezhen',), ('Tongchuan',), ('Zhongshan',), ('Shiyan',), ('Tieli',), ('Jining',), ('Wuhai',), ('Mianyang',), ('Luzhou',), ('Zunyi',), ('Shizuishan',), ('Neijiang',), ('Tongliao',), ('Tieling',), ('Wafangdian',), ('Anqing',), ('Shaoyang',), ('Laiwu',), ('Chengde',), ('Tianshui',), ('Nanyang',), ('Cangzhou',), ('Yibin',), ('Huaiyin',), ('Dunhua',), ('Yanji',), ('Jiangmen',), ('Tongling',), ('Suihua',), ('Gongziling',), ('Xiantao',), ('Chaoyang',), ('Ganzhou',), ('Huzhou',), ('Baicheng',), ('Shangzi',), ('Yangjiang',), ('Qitaihe',), ('Gejiu',), ('Jiangyin',), ('Hebi',), ('Jiaxing',), ('Wuzhou',), ('Meihekou',), ('Xuchang',), ('Liaocheng',), ('Haicheng',), ('Qianjiang',), ('Baiyin',), ('Bei´an',), ('Yixing',), ('Laizhou',), ('Qaramay',), ('Acheng',), ('Dezhou',), ('Nanping',), ('Zhaoqing',), ('Beipiao',), ('Fengcheng',), ('Fuyu',), ('Xinyang',), ('Dongtai',), ('Yuci',), ('Honghu',), ('Ezhou',), ('Heze',), ('Daxian',), ('Linfen',), ('Tianmen',), ('Yiyang',), ('Quanzhou',), ('Rizhao',), ('Deyang',), ('Guangyuan',), ('Changshu',), ('Zhangzhou',), ('Hailar',), ('Nanchong',), ('Jiutai',), ('Zhaodong',), ('Shaoxing',), ('Fuyang',), ('Maoming',), ('Qujing',), ('Ghulja',), ('Jiaohe',), ('Puyang',), ('Huadian',), ('Jiangyou',), ('Qashqar',), ('Anshun',), ('Fuling',), ('Xinyu',), ('Hanzhong',), ('Danyang',), ('Chenzhou',), ('Xiaogan',), ('Shangqiu',), ('Zhuhai',), ('Qingyuan',), ('Aqsu',), ('Jining',), ('Xiaoshan',), ('Zaoyang',), ('Xinghua',), ('Hami',), ('Huizhou',), ('Jinmen',), ('Sanming',), ('Bishkek',), ('Osh',), ('Cartagena',), ('Cúcuta',), ('Bucaramanga',), ('Ibagué',), ('Pereira',), ('Santa Marta',), ('Manizales',), ('Bello',), ('Pasto',), ('Neiva',), ('Soledad',), ('Armenia',), ('Villavicencio',), ('Soacha',), ('Valledupar',), ('Montería',), ('Itagüí',), ('Palmira',), ('Buenaventura',), ('Floridablanca',), ('Sincelejo',), ('Popayán',), ('Barrancabermeja',), ('Pointe-Noire',), ('Lubumbashi',), ('Mbuji-Mayi',), ('Kolwezi',), ('Kisangani',), ('Kananga',), ('Likasi',), ('Bukavu',), ('Kikwit',), ('Tshikapa',), ('Matadi',), ('Mbandaka',), ('Hamhung',), ('Chongjin',), ('Nampo',), ('Sinuiju',), ('Wonsan',), ('Phyongsong',), ('Sariwon',), ('Haeju',), ('Kanggye',), ('Kimchaek',), ('Hyesan',), ('Kaesong',), ('Songnam',), ('Puchon',), ('Suwon',), ('Anyang',), ('Chonju',), ('Chongju',), ('Koyang',), ('Ansan',), ('Pohang',), ('Chang-won',), ('Masan',), ('Kwangmyong',), ('Chonan',), ('Chinju',), ('Iksan',), ('Pyongtaek',), ('Kumi',), ('Uijongbu',), ('Kyongju',), ('Kunsan',), ('Cheju',), ('Kimhae',), ('Sunchon',), ('Mokpo',), ('Yong-in',), ('Wonju',), ('Kunpo',), ('Chunchon',), ('Namyangju',), ('Kangnung',), ('Chungju',), ('Andong',), ('Yosu',), ('Kyongsan',), ('Paju',), ('Yangsan',), ('Athenai',), ('Thessaloniki',), ('Pireus',), ('Zagreb',), ('Split',), ('Rijeka',), ('Santiago de Cuba',), ('Camagüey',), ('Holguín',), ('Santa Clara',), ('Guantánamo',), ('Nicosia',), ('Vientiane',), ('Riga',), ('Maseru',), ('Tripoli',), ('Monrovia',), ('Bengasi',), ('Vilnius',), ('Kaunas',), ('Klaipeda',), ('El-Aaiún',), ('Macao',), ('Antananarivo',), ('Skopje',), ('Blantyre',), ('Lilongwe',), ('Ipoh',), ('Johor Baharu',), ('Petaling Jaya',), ('Kelang',), ('Kuala Terengganu',), ('Pinang',), ('Kota Bharu',), ('Kuantan',), ('Taiping',), ('Seremban',), ('Bamako',), ('Rabat',), ('Marrakech',), ('Fès',), ('Tanger',), ('Salé',), ('Meknès',), ('Oujda',), ('Kénitra',), ('Tétouan',), ('Safi',), ('Nouakchott',), ('Naucalpan de Juárez',), ('Mexicali',), ('Culiacán',), ('Acapulco de Juárez',), ('Tlalnepantla de Baz',), ('Mérida',), ('Chihuahua',), ('San Luis Potosí',), ('Guadalupe',), ('Toluca',), ('Aguascalientes',), ('Querétaro',), ('Morelia',), ('Hermosillo',), ('Saltillo',), ('Torreón',), ('Centro (Villahermosa)',), ('San Nicolás de los Garza',), ('Durango',), ('Chimalhuacán',), ('Tlaquepaque',), ('Atizapán de Zaragoza',), ('Veracruz',), ('Cuautitlán Izcalli',), ('Irapuato',), ('Tuxtla Gutiérrez',), ('Tultitlán',), ('Reynosa',), ('Benito Juárez',), ('Matamoros',), ('Xalapa',), ('Celaya',), ('Mazatlán',), ('Ensenada',), ('Ahome',), ('Cajeme',), ('Cuernavaca',), ('Tonalá',), ('Valle de Chalco Solidaridad',), ('Nuevo Laredo',), ('Tepic',), ('Tampico',), ('Ixtapaluca',), ('Apodaca',), ('Guasave',), ('Gómez Palacio',), ('Tapachula',), ('Nicolás Romero',), ('Coatzacoalcos',), ('Uruapan',), ('Victoria',), ('Oaxaca de Juárez',), ('Coacalco de Berriozábal',), ('Pachuca de Soto',), ('General Escobedo',), ('Salamanca',), ('Santa Catarina',), ('Tehuacán',), ('Chalco',), ('Cárdenas',), ('Campeche',), ('La Paz',), ('Othón P. Blanco (Chetumal)',), ('Texcoco',), ('La Paz',), ('Metepec',), ('Monclova',), ('Huixquilucan',), ('Chilpancingo de los Bravo',), ('Puerto Vallarta',), ('Fresnillo',), ('Ciudad Madero',), ('Soledad de Graciano Sánchez',), ('San Juan del Río',), ('San Felipe del Progreso',), ('Córdoba',), ('Tecámac',), ('Ocosingo',), ('Carmen',), ('Lázaro Cárdenas',), ('Jiutepec',), ('Papantla',), ('Comalcalco',), ('Zamora',), ('Chisinau',), ('Tiraspol',), ('Ulan Bator',), ('Matola',), ('Beira',), ('Nampula',), ('Chimoio',), ('Mandalay',), ('Moulmein (Mawlamyine)',), ('Pegu (Bago)',), ('Bassein (Pathein)',), ('Windhoek',), ('Kathmandu',), ('Niamey',), ('Ogbomosho',), ('Kano',), ('Oshogbo',), ('Ilorin',), ('Abeokuta',), ('Port Harcourt',), ('Zaria',), ('Ilesha',), ('Onitsha',), ('Iwo',), ('Ado-Ekiti',), ('Abuja',), ('Kaduna',), ('Mushin',), ('Maiduguri',), ('Enugu',), ('Ede',), ('Aba',), ('Ife',), ('Ila',), ('Oyo',), ('Ikerre',), ('Benin City',), ('Iseyin',), ('Katsina',), ('Jos',), ('Sokoto',), ('Ilobu',), ('Offa',), ('Ikorodu',), ('Ilawe-Ekiti',), ('Owo',), ('Ikirun',), ('Shaki',), ('Calabar',), ('Ondo',), ('Akure',), ('Oslo',), ('Bergen',), ('Bouaké',), ('Quetta',), ('Islamabad',), ('Sargodha',), ('Sialkot',), ('Bahawalpur',), ('Sukkur',), ('Jhang',), ('Sheikhupura',), ('Larkana',), ('Gujrat',), ('Mardan',), ('Kasur',), ('Rahim Yar Khan',), ('Sahiwal',), ('Okara',), ('Wah',), ('Dera Ghazi Khan',), ('Mirpur Khas',), ('Nawabshah',), ('Mingora',), ('Chiniot',), ('Ciudad de Panamá',), ('San Miguelito',), ('Port Moresby',), ('Asunción',), ('Arequipa',), ('Trujillo',), ('Chiclayo',), ('Callao',), ('Iquitos',), ('Chimbote',), ('Huancayo',), ('Piura',), ('Cusco',), ('Pucallpa',), ('Tacna',), ('Ica',), ('Lisboa',), ('Porto',), ('San Juan',), ('Bayamón',), ('Ponce',), ('Carolina',), ('Lódz',), ('Kraków',), ('Wroclaw',), ('Poznan',), ('Gdansk',), ('Szczecin',), ('Bydgoszcz',), ('Lublin',), ('Katowice',), ('Bialystok',), ('Czestochowa',), ('Gdynia',), ('Sosnowiec',), ('Radom',), ('Kielce',), ('Gliwice',), ('Torun',), ('Bytom',), ('Zabrze',), ('Bielsko-Biala',), ('Olsztyn',), ('Rzeszów',), ('Doha',), ('Marseille',), ('Lyon',), ('Toulouse',), ('Nice',), ('Nantes',), ('Strasbourg',), ('Montpellier',), ('Bordeaux',), ('Rennes',), ('Le Havre',), ('Reims',), ('Lille',), ('St-Étienne',), ('Toulon',), ('Iasi',), ('Constanta',), ('Cluj-Napoca',), ('Galati',), ('Timisoara',), ('Brasov',), ('Craiova',), ('Ploiesti',), ('Braila',), ('Oradea',), ('Bacau',), ('Pitesti',), ('Arad',), ('Sibiu',), ('Târgu Mures',), ('Kigali',), ('Stockholm',), ('Gothenburg [Göteborg]',), ('Malmö',), ('Uppsala',), ('Frankfurt am Main',), ('Essen',), ('Dortmund',), ('Stuttgart',), ('Düsseldorf',), ('Bremen',), ('Duisburg',), ('Hannover',), ('Leipzig',), ('Nürnberg',), ('Dresden',), ('Bochum',), ('Wuppertal',), ('Bielefeld',), ('Mannheim',), ('Bonn',), ('Gelsenkirchen',), ('Karlsruhe',), ('Wiesbaden',), ('Münster',), ('Mönchengladbach',), ('Chemnitz',), ('Augsburg',), ('Halle/Saale',), ('Braunschweig',), ('Aachen',), ('Krefeld',), ('Magdeburg',), ('Kiel',), ('Oberhausen',), ('Lübeck',), ('Hagen',), ('Rostock',), ('Freiburg im Breisgau',), ('Erfurt',), ('Kassel',), ('Saarbrücken',), ('Mainz',), ('Hamm',), ('Herne',), ('Mülheim an der Ruhr',), ('Solingen',), ('Osnabrück',), ('Ludwigshafen am Rhein',), ('Leverkusen',), ('Ndola',), ('Kitwe',), ('Medina',), ('al-Dammam',), ('al-Taif',), ('Tabuk',), ('Burayda',), ('al-Hufuf',), ('al-Mubarraz',), ('Khamis Mushayt',), ('Hail',), ('Pikine',), ('Dakar',), ('Thiès',), ('Kaolack',), ('Ziguinchor',), ('Freetown',), ('Bratislava',), ('Košice',), ('Ljubljana',), ('Colombo',), ('Dehiwala',), ('Moratuwa',), ('Sharq al-Nil',), ('Port Sudan',), ('Kassala',), ('Obeid',), ('Nyala',), ('Wad Madani',), ('al-Qadarif',), ('Kusti',), ('Helsinki [Helsingfors]',), ('Espoo',), ('Tampere',), ('Vantaa',), ('Turku [Åbo]',), ('Zürich',), ('Geneve',), ('Basel',), ('Hims',), ('Hama',), ('Latakia',), ('Dushanbe',), ('Khujand',), ('Tainan',), ('Panchiao',), ('Chungho',), ('Keelung (Chilung)',), ('Sanchung',), ('Hsinchuang',), ('Hsinchu',), ('Chungli',), ('Fengshan',), ('Taoyuan',), ('Chiayi',), ('Hsintien',), ('Changhwa',), ('Yungho',), ('Tucheng',), ('Pingtung',), ('Yungkang',), ('Pingchen',), ('Tali',), ('Taiping',), ('Pate',), ('Fengyuan',), ('Luchou',), ('Dodoma',), ('Mwanza',), ('København',), ('Århus',), ('Odense',), ('Aalborg',), ('Nonthaburi',), ('Nakhon Ratchasima',), ('Chiang Mai',), ('Lomé',), ('N´Djaména',), ('Brno',), ('Ostrava',), ('Plzen',), ('Tunis',), ('Sfax',), ('Ariana',), ('Ettadhamen',), ('Gaziantep',), ('Konya',), ('Mersin (Içel)',), ('Antalya',), ('Diyarbakir',), ('Kayseri',), ('Eskisehir',), ('Sanliurfa',), ('Samsun',), ('Malatya',), ('Gebze',), ('Denizli',), ('Sivas',), ('Erzurum',), ('Tarsus',), ('Kahramanmaras',), ('Elâzig',), ('Van',), ('Sultanbeyli',), ('Izmit (Kocaeli)',), ('Manisa',), ('Batman',), ('Balikesir',), ('Sakarya (Adapazari)',), ('Ashgabat',), ('Chärjew',), ('Kampala',), ('Zaporizzja',), ('Lviv',), ('Kryvyi Rig',), ('Mykolajiv',), ('Mariupol',), ('Lugansk',), ('Vinnytsja',), ('Makijivka',), ('Herson',), ('Sevastopol',), ('Simferopol',), ('Pultava [Poltava]',), ('Tšernigiv',), ('Tšerkasy',), ('Gorlivka',), ('Zytomyr',), ('Sumy',), ('Dniprodzerzynsk',), ('Kirovograd',), ('Hmelnytskyi',), ('Tšernivtsi',), ('Rivne',), ('Krementšuk',), ('Ivano-Frankivsk',), ('Ternopil',), ('Lutsk',), ('Bila Tserkva',), ('Kramatorsk',), ('Melitopol',), ('Kertš',), ('Debrecen',), ('Miskolc',), ('Auckland',), ('Christchurch',), ('Manukau',), ('North Shore',), ('Waitakere',), ('Wellington',), ('Namangan',), ('Samarkand',), ('Andijon',), ('Buhoro',), ('Karsi',), ('Nukus',), ('Kükon',), ('Fargona',), ('Gomel',), ('Mogiljov',), ('Vitebsk',), ('Grodno',), ('Brest',), ('Bobruisk',), ('Baranovitši',), ('Barquisimeto',), ('Valencia',), ('Ciudad Guayana',), ('Petare',), ('Maracay',), ('Barcelona',), ('Maturín',), ('San Cristóbal',), ('Ciudad Bolívar',), ('Cumaná',), ('Mérida',), ('Cabimas',), ('Barinas',), ('Turmero',), ('Baruta',), ('Puerto Cabello',), ('Santa Ana de Coro',), ('Los Teques',), ('Punto Fijo',), ('Guarenas',), ('Krasnojarsk',), ('Saratov',), ('Toljatti',), ('Uljanovsk',), ('Izevsk',), ('Krasnodar',), ('Jaroslavl',), ('Habarovsk',), ('Vladivostok',), ('Irkutsk',), ('Barnaul',), ('Novokuznetsk',), ('Penza',), ('Rjazan',), ('Orenburg',), ('Lipetsk',), ('Nabereznyje Tšelny',), ('Tula',), ('Tjumen',), ('Kemerovo',), ('Astrahan',), ('Tomsk',), ('Kirov',), ('Ivanovo',), ('Tšeboksary',), ('Brjansk',), ('Tver',), ('Kursk',), ('Magnitogorsk',), ('Kaliningrad',), ('Nizni Tagil',), ('Murmansk',), ('Ulan-Ude',), ('Kurgan',), ('Arkangeli',), ('Sotši',), ('Smolensk',), ('Orjol',), ('Stavropol',), ('Belgorod',), ('Kaluga',), ('Vladimir',), ('Mahatškala',), ('Tšerepovets',), ('Saransk',), ('Tambov',), ('Vladikavkaz',), ('Tšita',), ('Vologda',), ('Veliki Novgorod',), ('Komsomolsk-na-Amure',), ('Kostroma',), ('Volzski',), ('Taganrog',), ('Petroskoi',), ('Bratsk',), ('Dzerzinsk',), ('Surgut',), ('Orsk',), ('Sterlitamak',), ('Angarsk',), ('Joškar-Ola',), ('Rybinsk',), ('Prokopjevsk',), ('Niznevartovsk',), ('Naltšik',), ('Syktyvkar',), ('Severodvinsk',), ('Bijsk',), ('Niznekamsk',), ('Blagoveštšensk',), ('Šahty',), ('Staryi Oskol',), ('Zelenograd',), ('Balakovo',), ('Novorossijsk',), ('Pihkova',), ('Zlatoust',), ('Jakutsk',), ('Podolsk',), ('Petropavlovsk-Kamtšatski',), ('Kamensk-Uralski',), ('Engels',), ('Syzran',), ('Grozny',), ('Novotšerkassk',), ('Berezniki',), ('Juzno-Sahalinsk',), ('Volgodonsk',), ('Abakan',), ('Maikop',), ('Miass',), ('Armavir',), ('Ljubertsy',), ('Rubtsovsk',), ('Haiphong',), ('Da Nang',), ('Biên Hoa',), ('Nha Trang',), ('Hue',), ('Can Tho',), ('Cam Pha',), ('Nam Dinh',), ('Quy Nhon',), ('Tallinn',), ('San Jose',), ('Indianapolis',), ('San Francisco',), ('Jacksonville',), ('Columbus',), ('Austin',), ('Baltimore',), ('Memphis',), ('Milwaukee',), ('Boston',), ('Washington',), ('Nashville-Davidson',), ('El Paso',), ('Seattle',), ('Denver',), ('Charlotte',), ('Fort Worth',), ('Portland',), ('Oklahoma City',), ('Tucson',), ('New Orleans',), ('Las Vegas',), ('Cleveland',), ('Long Beach',), ('Albuquerque',), ('Kansas City',), ('Fresno',), ('Virginia Beach',), ('Atlanta',), ('Sacramento',), ('Oakland',), ('Mesa',), ('Tulsa',), ('Omaha',), ('Minneapolis',), ('Honolulu',), ('Miami',), ('Colorado Springs',), ('Saint Louis',), ('Wichita',), ('Santa Ana',), ('Pittsburgh',), ('Arlington',), ('Cincinnati',), ('Anaheim',), ('Toledo',), ('Tampa',), ('Buffalo',), ('Saint Paul',), ('Corpus Christi',), ('Aurora',), ('Raleigh',), ('Newark',), ('Lexington-Fayette',), ('Anchorage',), ('Louisville',), ('Riverside',), ('Saint Petersburg',), ('Bakersfield',), ('Stockton',), ('Birmingham',), ('Jersey City',), ('Norfolk',), ('Baton Rouge',), ('Hialeah',), ('Lincoln',), ('Greensboro',), ('Plano',), ('Rochester',), ('Glendale',), ('Akron',), ('Garland',), ('Madison',), ('Fort Wayne',), ('Fremont',), ('Scottsdale',), ('Montgomery',), ('Shreveport',), ('Augusta-Richmond County',), ('Lubbock',), ('Chesapeake',), ('Mobile',), ('Des Moines',), ('Grand Rapids',), ('Richmond',), ('Yonkers',), ('Spokane',), ('Glendale',), ('Tacoma',), ('Irving',), ('Huntington Beach',), ('Modesto',), ('Durham',), ('Columbus',), ('Orlando',), ('Boise City',), ('Winston-Salem',), ('San Bernardino',), ('Jackson',), ('Little Rock',), ('Salt Lake City',), ('Reno',), ('Newport News',), ('Chandler',), ('Laredo',), ('Henderson',), ('Arlington',), ('Knoxville',), ('Amarillo',), ('Providence',), ('Chula Vista',), ('Worcester',), ('Oxnard',), ('Dayton',), ('Garden Grove',), ('Oceanside',), ('Bulawayo',), ('Chitungwiza',), ('Mount Darwin',), ('Gaza',)]","What are the names of cities with a population between 160,000 and 900,000?","[('Tallinn',), ('Århus',), ('Odense',), ('Aalborg',), ('Nonthaburi',), ('Nakhon Ratchasima',), ('Chiang Mai',), ('Lomé',), ('N´Djaména',), ('Brno',), ('Ostrava',), ('Plzen',), ('Tunis',), ('Sfax',), ('Ariana',), ('Ettadhamen',), ('Gaziantep',), ('Konya',), ('Mersin (Içel)',), ('Antalya',), ('Diyarbakir',), ('Kayseri',), ('Eskisehir',), ('Sanliurfa',), ('Samsun',), ('Malatya',), ('Gebze',), ('Denizli',), ('Sivas',), ('Erzurum',), ('Tarsus',), ('Kahramanmaras',), ('Elâzig',), ('Van',), ('Sultanbeyli',), ('Izmit (Kocaeli)',), ('Manisa',), ('Batman',), ('Balikesir',), ('Sakarya (Adapazari)',), ('Ashgabat',), ('Chärjew',), ('Kampala',), ('Zaporizzja',), ('Lviv',), ('Kryvyi Rig',), ('Mykolajiv',), ('Mariupol',), ('Lugansk',), ('Vinnytsja',), ('Makijivka',), ('Herson',), ('Sevastopol',), ('Simferopol',), ('Pultava [Poltava]',), ('Tšernigiv',), ('Tšerkasy',), ('Gorlivka',), ('Zytomyr',), ('Sumy',), ('Dniprodzerzynsk',), ('Kirovograd',), ('Hmelnytskyi',), ('Tšernivtsi',), ('Rivne',), ('Krementšuk',), ('Ivano-Frankivsk',), ('Ternopil',), ('Lutsk',), ('Bila Tserkva',), ('Kramatorsk',), ('Melitopol',), ('Kertš',), ('Debrecen',), ('Miskolc',), ('Auckland',), ('Christchurch',), ('Manukau',), ('North Shore',), ('Waitakere',), ('Wellington',), ('Namangan',), ('Samarkand',), ('Andijon',), ('Buhoro',), ('Karsi',), ('Nukus',), ('Kükon',), ('Fargona',), ('Gomel',), ('Mogiljov',), ('Vitebsk',), ('Grodno',), ('Brest',), ('Bobruisk',), ('Baranovitši',), ('Barquisimeto',), ('Valencia',), ('Ciudad Guayana',), ('Petare',), ('Maracay',), ('Barcelona',), ('Maturín',), ('San Cristóbal',), ('Ciudad Bolívar',), ('Cumaná',), ('Mérida',), ('Cabimas',), ('Barinas',), ('Turmero',), ('Baruta',), ('Puerto Cabello',), ('Santa Ana de Coro',), ('Los Teques',), ('Punto Fijo',), ('Guarenas',), ('Krasnojarsk',), ('Saratov',), ('Toljatti',), ('Uljanovsk',), ('Izevsk',), ('Krasnodar',), ('Jaroslavl',), ('Habarovsk',), ('Vladivostok',), ('Irkutsk',), ('Barnaul',), ('Novokuznetsk',), ('Penza',), ('Rjazan',), ('Orenburg',), ('Lipetsk',), ('Nabereznyje Tšelny',), ('Tula',), ('Tjumen',), ('Kemerovo',), ('Astrahan',), ('Tomsk',), ('Kirov',), ('Ivanovo',), ('Tšeboksary',), ('Brjansk',), ('Tver',), ('Kursk',), ('Magnitogorsk',), ('Kaliningrad',), ('Nizni Tagil',), ('Murmansk',), ('Ulan-Ude',), ('Kurgan',), ('Arkangeli',), ('Sotši',), ('Smolensk',), ('Orjol',), ('Stavropol',), ('Belgorod',), ('Kaluga',), ('Vladimir',), ('Mahatškala',), ('Tšerepovets',), ('Saransk',), ('Tambov',), ('Vologda',), ('Veliki Novgorod',), ('Kostroma',), ('Volzski',), ('Taganrog',), ('Petroskoi',), ('Bratsk',), ('Dzerzinsk',), ('Surgut',), ('Orsk',), ('Sterlitamak',), ('Angarsk',), ('Joškar-Ola',), ('Rybinsk',), ('Prokopjevsk',), ('Niznevartovsk',), ('Naltšik',), ('Syktyvkar',), ('Severodvinsk',), ('Bijsk',), ('Niznekamsk',), ('Blagoveštšensk',), ('Šahty',), ('Staryi Oskol',), ('Zelenograd',), ('Balakovo',), ('Novorossijsk',), ('Pihkova',), ('Zlatoust',), ('Jakutsk',), ('Podolsk',), ('Petropavlovsk-Kamtšatski',), ('Kamensk-Uralski',), ('Engels',), ('Syzran',), ('Grozny',), ('Novotšerkassk',), ('Berezniki',), ('Juzno-Sahalinsk',), ('Volgodonsk',), ('Abakan',), ('Maikop',), ('Miass',), ('Armavir',), ('Ljubertsy',), ('Rubtsovsk',), ('Haiphong',), ('Da Nang',), ('Biên Hoa',), ('Nha Trang',), ('Hue',), ('Can Tho',), ('Cam Pha',), ('Nam Dinh',), ('Quy Nhon',), ('Tallinn',), ('San Jose',), ('Indianapolis',), ('San Francisco',), ('Jacksonville',), ('Columbus',), ('Austin',), ('Baltimore',), ('Memphis',), ('Milwaukee',), ('Boston',), ('Washington',), ('Nashville-Davidson',), ('El Paso',), ('Seattle',), ('Denver',), ('Charlotte',), ('Fort Worth',), ('Portland',), ('Oklahoma City',), ('Tucson',), ('New Orleans',), ('Las Vegas',), ('Cleveland',), ('Long Beach',), ('Albuquerque',), ('Kansas City',), ('Fresno',), ('Virginia Beach',), ('Atlanta',), ('Sacramento',), ('Oakland',), ('Mesa',), ('Tulsa',), ('Omaha',), ('Minneapolis',), ('Honolulu',), ('Miami',), ('Colorado Springs',), ('Saint Louis',), ('Wichita',), ('Santa Ana',), ('Pittsburgh',), ('Arlington',), ('Cincinnati',), ('Anaheim',), ('Toledo',), ('Tampa',), ('Buffalo',), ('Saint Paul',), ('Corpus Christi',), ('Aurora',), ('Raleigh',), ('Newark',), ('Lexington-Fayette',), ('Anchorage',), ('Louisville',), ('Riverside',), ('Saint Petersburg',), ('Bakersfield',), ('Stockton',), ('Birmingham',), ('Jersey City',), ('Norfolk',), ('Baton Rouge',), ('Hialeah',), ('Lincoln',), ('Greensboro',), ('Plano',), ('Rochester',), ('Glendale',), ('Akron',), ('Garland',), ('Madison',), ('Fort Wayne',), ('Fremont',), ('Scottsdale',), ('Montgomery',), ('Shreveport',), ('Augusta-Richmond County',), ('Lubbock',), ('Chesapeake',), ('Mobile',), ('Des Moines',), ('Grand Rapids',), ('Richmond',), ('Yonkers',), ('Spokane',), ('Glendale',), ('Tacoma',), ('Irving',), ('Huntington Beach',), ('Modesto',), ('Durham',), ('Columbus',), ('Orlando',), ('Boise City',), ('Winston-Salem',), ('San Bernardino',), ('Jackson',), ('Little Rock',), ('Salt Lake City',), ('Reno',), ('Newport News',), ('Chandler',), ('Laredo',), ('Henderson',), ('Arlington',), ('Knoxville',), ('Amarillo',), ('Providence',), ('Chula Vista',), ('Worcester',), ('Oxnard',), ('Dayton',), ('Garden Grove',), ('Oceanside',), ('Bulawayo',), ('Chitungwiza',), ('Mount Darwin',), ('Gaza',)]",What are the cities whose population is between 160000 and 900000?,"To provide an accurate answer, I'll need a specific context or a list of cities to refer to. However, I can give you a general answer based on available data.
+
+Here are some cities with a population between 160,000 and 900,000:
+
+1. Omaha, USA - approximately 486,051
+2. Albuquerque, USA - approximately 559,277
+3. Tucson, USA - approximately 548,071
+4. Sacramento, USA - approximately 495,000
+5. Portland, Maine, USA - approximately 207,000 ( metropolitan area: 538,000)
+6. Boise, USA - approximately 235,684
+7. Richmond, USA - approximately 228,603
+8. Spokane, USA - approximately 223,081
+9. Wichita, USA - approximately 397,532
+10. Tulsa, USA - approximately 403,090
+
+Outside the United States:
+1. Gwangju, South Korea - approximately 649,000 ( metropolitan area: 1.5 million)
+2. Kaohsiung, Taiwan - approximately 277,000 ( metropolitan area: 2.8 million)
+3. Fukuoka, Japan - approximately 623,000 ( metropolitan area: 5.5 million)
+4. Nagoya, Japan - approximately 233,000 ( metropolitan area: 3.2 million)
+5. Busan, South Korea - approximately 344,000 ( metropolitan area: 3.4 million)
+6. Daegu, South Korea - approximately 243,000 ( metropolitan area: 2.5 million)
+7. Daejeon, South Korea - approximately 153,000 ( metropolitan area: 1.5 million)
+8. Ulsan, South Korea - approximately 166,000 ( metropolitan area: 1.2 million)
+9. Changwon, South Korea - approximately 548,000
+10. Sapporo, Japan - approximately 196,000 ( metropolitan area: 2.6 million)
+
+Please note that the population figures may vary depending on the source and date.",1.0,0.180931744312026,0,31
+SELECT city_name FROM city WHERE population > 150000;,geo,"[('birmingham',), ('mobile',), ('montgomery',), ('anchorage',), ('phoenix',), ('tucson',), ('mesa',), ('little rock',), ('los angeles',), ('san diego',), ('san francisco',), ('san jose',), ('long beach',), ('oakland',), ('sacramento',), ('anaheim',), ('fresno',), ('santa ana',), ('riverside',), ('huntington beach',), ('denver',), ('colorado springs',), ('aurora',), ('washington',), ('jacksonville',), ('miami',), ('tampa',), ('st. petersburg',), ('fort lauderdale',), ('atlanta',), ('columbus',), ('honolulu',), ('ewa',), ('chicago',), ('indianapolis',), ('fort wayne',), ('gary',), ('des moines',), ('wichita',), ('kansas city',), ('louisville',), ('lexington',), ('new orleans',), ('baton rouge',), ('shreveport',), ('metairie',), ('baltimore',), ('boston',), ('worcester',), ('springfield',), ('detroit',), ('grand rapids',), ('warren',), ('flint',), ('minneapolis',), ('st. paul',), ('jackson',), ('st. louis',), ('kansas city',), ('omaha',), ('lincoln',), ('las vegas',), ('newark',), ('jersey city',), ('albuquerque',), ('new york',), ('buffalo',), ('rochester',), ('yonkers',), ('syracuse',), ('charlotte',), ('greensboro',), ('cleveland',), ('columbus',), ('cincinnati',), ('toledo',), ('akron',), ('dayton',), ('oklahoma city',), ('tulsa',), ('portland',), ('philadelphia',), ('pittsburgh',), ('providence',), ('memphis',), ('nashville',), ('knoxville',), ('chattanooga',), ('houston',), ('dallas',), ('san antonio',), ('el paso',), ('fort worth',), ('austin',), ('corpus christi',), ('lubbock',), ('arlington',), ('salt lake city',), ('norfolk',), ('virginia beach',), ('richmond',), ('arlington',), ('seattle',), ('spokane',), ('tacoma',), ('milwaukee',), ('madison',)]","What cities have a population of more than 150,000?","[('phoenix',), ('los angeles',), ('san diego',), ('san jose',), ('san francisco',), ('long beach',), ('oakland',), ('sacramento',), ('anaheim',), ('fresno',), ('santa ana',), ('riverside',), ('huntington beach',), ('denver',), ('colorado springs',), ('aurora',), ('jacksonville',), ('miami',), ('tampa',), ('st. petersburg',), ('fort lauderdale',), ('atlanta',), ('columbus',), ('chicago',), ('indianapolis',), ('fort wayne',), ('gary',), ('des moines',), ('wichita',), ('kansas city',), ('louisville',), ('lexington',), ('new orleans',), ('baton rouge',), ('shreveport',), ('metairie',), ('baltimore',), ('boston',), ('worcester',), ('springfield',), ('detroit',), ('grand rapids',), ('warren',), ('flint',), ('minneapolis',), ('st. paul',), ('jackson',), ('st. louis',), ('kansas city',), ('omaha',), ('lincoln',), ('las vegas',), ('newark',), ('jersey city',), ('albuquerque',), ('new york',), ('buffalo',), ('rochester',), ('yonkers',), ('syracuse',), ('charlotte',), ('greensboro',), ('cleveland',), ('columbus',), ('cincinnati',), ('toledo',), ('akron',), ('dayton',), ('oklahoma city',), ('tulsa',), ('portland',), ('philadelphia',), ('pittsburgh',), ('providence',), ('memphis',), ('nashville',), ('knoxville',), ('chattanooga',), ('houston',), ('dallas',), ('san antonio',), ('el paso',), ('fort worth',), ('austin',), ('corpus christi',), ('lubbock',), ('arlington',), ('salt lake city',), ('norfolk',), ('virginia beach',), ('richmond',), ('arlington',), ('seattle',), ('spokane',), ('tacoma',), ('milwaukee',), ('madison',)]",what are the major cities in the usa,"The major cities in the USA include:
+
+1. New York City, New York
+2. Los Angeles, California
+3. Chicago, Illinois
+4. Houston, Texas
+5. Phoenix, Arizona
+6. Philadelphia, Pennsylvania
+7. San Antonio, Texas
+8. San Diego, California
+9. Dallas, Texas
+10. San Jose, California
+
+Additionally, other notable major cities in the USA are:
+
+- Washington, D.C. (the capital)
+- Boston, Massachusetts
+- Seattle, Washington
+- Denver, Colorado
+- Miami, Florida
+- Atlanta, Georgia
+- Minneapolis, Minnesota
+- Portland, Oregon
+- Nashville, Tennessee
+- Austin, Texas
+
+Note that the definition of a 'major city' can vary depending on the criteria used, such as population size, economic influence, or cultural significance.",1.0,0.9038461538461539,0,95
+"SELECT COUNT ( capital ) FROM state WHERE state_name = ""rhode island"";",geo,"[(1,)]",How many capitals are there in the state of Rhode Island?,"[(1,)]",how many capitals does rhode island have,"Rhode Island has no official capital city, but the city of Providence serves as the state's capital.",1.0,1.0,1,100
+"SELECT sum(SurfaceArea) FROM country WHERE Region = ""Caribbean""",world_1,"[(234423.0,)]",What is the total surface area of all countries in the Caribbean region?,"[(234423.0,)]",What is the total surface area of the countries in the Caribbean region?,"The total surface area of the countries in the Caribbean region is approximately 275,400 square kilometers (106,300 square miles).",1.0,1.0,1,100
+"SELECT population FROM city WHERE city_name = ""boulder"";",geo,"[(76685,)]",What is the population of Boulder?,"[(76685,)]",how many people live in boulder,"As of the 2020 United States Census, the city of Boulder, Colorado has a population of approximately 105,006 people.",1.0,1.0,1,100
+SELECT COUNT ( state_name ) FROM state;,geo,"[(51,)]",How many states are there?,"[(51,)]",how many states are in the usa,There are 50 states in the United States of America.,1.0,1.0,1,100
+"SELECT lake_name FROM lake WHERE state_name = ""california"";",geo,"[('salton sea',), ('tahoe',)]",What are the names of the lakes in California?,"[('salton sea',), ('tahoe',)]",give me the lakes in california,"Here's a list of some of the major lakes in California:
+
+1. Lake Tahoe (located on the California-Nevada border)
+2. Clear Lake
+3. Lake Berryessa
+4. Lake Shasta
+5. Lake Oroville
+6. Folsom Lake
+7. Lake Don Pedro
+8. Lake McClure
+9. Lake Isabella
+10. Lake Sonoma
+11. Lake Mendocino
+12. Lake Almanor
+13. Lake Davis
+14. Lake Natoma
+15. Castaic Lake
+16. Pyramid Lake
+17. Silverwood Lake
+18. Diamond Valley Lake
+19. Lake Perris
+20. Salton Sea (California's largest lake)
+
+This is not an exhaustive list, as there are many smaller lakes and reservoirs throughout California.",1.0,1.0,1,100
+"SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != ""English""",world_1,"[('ABW',), ('AFG',), ('AGO',), ('ALB',), ('AND',), ('ANT',), ('ARE',), ('ARG',), ('ARM',), ('ASM',), ('ATG',), ('AUS',), ('AUT',), ('AZE',), ('BDI',), ('BEL',), ('BEN',), ('BFA',), ('BGD',), ('BGR',), ('BHR',), ('BHS',), ('BIH',), ('BLR',), ('BLZ',), ('BOL',), ('BRA',), ('BRB',), ('BRN',), ('BTN',), ('BWA',), ('CAF',), ('CAN',), ('CCK',), ('CHE',), ('CHL',), ('CHN',), ('CIV',), ('CMR',), ('COD',), ('COG',), ('COK',), ('COL',), ('COM',), ('CPV',), ('CRI',), ('CUB',), ('CXR',), ('CYP',), ('CZE',), ('DEU',), ('DJI',), ('DMA',), ('DNK',), ('DOM',), ('DZA',), ('ECU',), ('EGY',), ('ERI',), ('ESH',), ('ESP',), ('EST',), ('ETH',), ('FIN',), ('FJI',), ('FRA',), ('FRO',), ('FSM',), ('GAB',), ('GBR',), ('GEO',), ('GHA',), ('GIB',), ('GIN',), ('GLP',), ('GMB',), ('GNB',), ('GNQ',), ('GRC',), ('GRD',), ('GRL',), ('GTM',), ('GUF',), ('GUM',), ('GUY',), ('HKG',), ('HND',), ('HRV',), ('HTI',), ('HUN',), ('IDN',), ('IND',), ('IRL',), ('IRN',), ('IRQ',), ('ISL',), ('ISR',), ('ITA',), ('JAM',), ('JOR',), ('JPN',), ('KAZ',), ('KEN',), ('KGZ',), ('KHM',), ('KIR',), ('KNA',), ('KOR',), ('KWT',), ('LAO',), ('LBN',), ('LBR',), ('LBY',), ('LCA',), ('LIE',), ('LKA',), ('LSO',), ('LTU',), ('LUX',), ('LVA',), ('MAC',), ('MAR',), ('MCO',), ('MDA',), ('MDG',), ('MDV',), ('MEX',), ('MHL',), ('MKD',), ('MLI',), ('MLT',), ('MMR',), ('MNG',), ('MNP',), ('MOZ',), ('MRT',), ('MTQ',), ('MUS',), ('MWI',), ('MYS',), ('MYT',), ('NAM',), ('NCL',), ('NER',), ('NGA',), ('NIC',), ('NIU',), ('NLD',), ('NOR',), ('NPL',), ('NRU',), ('NZL',), ('OMN',), ('PAK',), ('PAN',), ('PCN',), ('PER',), ('PHL',), ('PLW',), ('PNG',), ('POL',), ('PRI',), ('PRK',), ('PRT',), ('PRY',), ('PSE',), ('PYF',), ('QAT',), ('REU',), ('ROM',), ('RUS',), ('RWA',), ('SAU',), ('SDN',), ('SEN',), ('SGP',), ('SJM',), ('SLB',), ('SLE',), ('SLV',), ('SMR',), ('SOM',), ('SPM',), ('STP',), ('SUR',), ('SVK',), ('SVN',), ('SWE',), ('SWZ',), ('SYC',), ('SYR',), ('TCD',), ('TGO',), ('THA',), ('TJK',), ('TKL',), ('TKM',), ('TMP',), ('TON',), ('TTO',), ('TUN',), ('TUR',), ('TUV',), ('TWN',), ('TZA',), ('UGA',), ('UKR',), ('URY',), ('USA',), ('UZB',), ('VAT',), ('VCT',), ('VEN',), ('VIR',), ('VNM',), ('VUT',), ('WLF',), ('WSM',), ('YEM',), ('YUG',), ('ZAF',), ('ZMB',), ('ZWE',)]",What countries have official languages other than English?,"[('AFG',), ('AGO',), ('ALB',), ('AND',), ('ARE',), ('ARG',), ('ARM',), ('AZE',), ('BDI',), ('BEL',), ('BEN',), ('BFA',), ('BGD',), ('BGR',), ('BHR',), ('BHS',), ('BIH',), ('BLR',), ('BLZ',), ('BOL',), ('BRA',), ('BRB',), ('BRN',), ('BTN',), ('BWA',), ('CAF',), ('CHE',), ('CHL',), ('CHN',), ('CIV',), ('CMR',), ('COD',), ('COG',), ('COL',), ('COM',), ('CPV',), ('CRI',), ('CUB',), ('CYP',), ('CZE',), ('DEU',), ('DJI',), ('DOM',), ('DZA',), ('ECU',), ('EGY',), ('ERI',), ('ESP',), ('EST',), ('ETH',), ('FIN',), ('FRA',), ('FRO',), ('GAB',), ('GEO',), ('GIN',), ('GLP',), ('GMB',), ('GNB',), ('GNQ',), ('GRC',), ('GRL',), ('GTM',), ('GUF',), ('GUY',), ('HKG',), ('HND',), ('HRV',), ('HUN',), ('IDN',), ('IRL',), ('IRN',), ('IRQ',), ('ISL',), ('ISR',), ('ITA',), ('JOR',), ('JPN',), ('KAZ',), ('KEN',), ('KGZ',), ('KHM',), ('KIR',), ('KNA',), ('KOR',), ('KWT',), ('LAO',), ('LBN',), ('LBY',), ('LIE',), ('LKA',), ('LSO',), ('LTU',), ('LUX',), ('LVA',), ('MAC',), ('MAR',), ('MCO',), ('MDA',), ('MDG',), ('MDV',), ('MEX',), ('MLI',), ('MLT',), ('MMR',), ('MNG',), ('MNP',), ('MOZ',), ('MRT',), ('MTQ',), ('MUS',), ('MWI',), ('MYS',), ('MYT',), ('NAM',), ('NCL',), ('NER',), ('NGA',), ('NIC',), ('NLD',), ('NOR',), ('NPL',), ('NRU',), ('OMN',), ('PAK',), ('PAN',), ('PER',), ('PHL',), ('PLW',), ('POL',), ('PRI',), ('PRK',), ('PRT',), ('PRY',), ('PSE',), ('PYF',), ('QAT',), ('REU',), ('ROM',), ('RUS',), ('RWA',), ('SAU',), ('SDN',), ('SEN',), ('SGP',), ('SJM',), ('SLB',), ('SLE',), ('SLV',), ('SMR',), ('SOM',), ('SPM',), ('STP',), ('SUR',), ('SVK',), ('SVN',), ('SWE',), ('SWZ',), ('SYC',), ('SYR',), ('TCD',), ('TGO',), ('THA',), ('TJK',), ('TKL',), ('TKM',), ('TMP',), ('TON',), ('TUN',), ('TUR',), ('TUV',), ('TWN',), ('TZA',), ('UGA',), ('UKR',), ('URY',), ('UZB',), ('VAT',), ('VEN',), ('VNM',), ('VUT',), ('WLF',), ('YEM',), ('ZAF',), ('ZMB',), ('ZWE',)]",What are the country codes of countries where people use languages other than English?,"Here's a list of country codes for countries where people primarily use languages other than English:
+
+1. Arabic:
+   - Algeria (DZ)
+   - Bahrain (BH)
+   - Egypt (EG)
+   - Iraq (IQ)
+   - Jordan (JO)
+   - Kuwait (KW)
+   - Lebanon (LB)
+   - Libya (LY)
+   - Morocco (MA)
+   - Oman (OM)
+   - Qatar (QA)
+   - Saudi Arabia (SA)
+   - Syria (SY)
+   - Tunisia (TN)
+   - United Arab Emirates (AE)
+   - Yemen (YE)
+
+2. Chinese:
+   - China (CN)
+   - Taiwan (TW)
+
+3. French:
+   - Belgium (BE)
+   - Benin (BJ)
+   - Burkina Faso (BF)
+   - Burundi (BI)
+   - Cameroon (CM)
+   - Canada (CA) - Quebec
+   - Central African Republic (CF)
+   - Chad (TD)
+   - Comoros (KM)
+   - Congo (CG)
+   - Côte d'Ivoire (CI)
+   - Democratic Republic of the Congo (CD)
+   - Djibouti (DJ)
+   - Equatorial Guinea (GQ)
+   - France (FR)
+   - Gabon (GA)
+   - Guinea (GN)
+   - Haiti (HT)
+   - Luxembourg (LU)
+   - Mali (ML)
+   - Monaco (MC)
+   - Niger (NE)
+   - Rwanda (RW)
+   - Senegal (SN)
+   - Switzerland (CH) - some regions
+   - Togo (TG)
+
+4. German:
+   - Austria (AT)
+   - Belgium (BE) - some regions
+   - Germany (DE)
+   - Liechtenstein (LI)
+   - Luxembourg (LU)
+   - Switzerland (CH)
+
+5. Hindi:
+   - India (IN)
+
+6. Italian:
+   - Italy (IT)
+   - San Marino (SM)
+   - Switzerland (CH) - some regions
+   - Vatican City (VA)
+
+7. Japanese:
+   - Japan (JP)
+
+8. Korean:
+   - North Korea (KP)
+   - South Korea (KR)
+
+9. Portuguese:
+   - Angola (AO)
+   - Brazil (BR)
+   - Cape Verde (CV)
+   - East Timor (TL)
+   - Guinea-Bissau (GW)
+   - Mozambique (MZ)
+   - Portugal (PT)
+   - São Tomé and Principe (ST)
+
+10. Russian:
+    - Armenia (AM)
+    - Azerbaijan (AZ)
+    - Belarus (BY)
+    - Estonia (EE)
+    - Georgia (GE)
+    - Kazakhstan (KZ)
+    - Kyrgyzstan (KG)
+    - Latvia (LV)
+    - Lithuania (LT)
+    - Moldova (MD)
+    - Russia (RU)
+    - Tajikistan (TJ)
+    - Turkmenistan (TM)
+    - Ukraine (UA)
+    - Uzbekistan (UZ)
+
+11. Spanish:
+    - Argentina (AR)
+    - Bolivia (BO)
+    - Chile (CL)
+    - Colombia (CO)
+    - Costa Rica (CR)
+    - Cuba (CU)
+    - Dominican Republic (DO)
+    - Ecuador (EC)
+    - El Salvador (SV)
+    - Guatemala (GT)
+    - Honduras (HN)
+    - Mexico (MX)
+    - Nicaragua (NI)
+    - Panama (PA)
+    - Paraguay (PY)
+    - Peru (PE)
+    - Puerto Rico (PR)
+    - Spain (ES)
+    - Uruguay (UY)
+    - Venezuela (VE)
+
+Note: This is not an exhaustive list, as there are many countries with multiple languages spoken.",1.0,0.8340807174887892,0,91
+"SELECT sum(Population) , max(GNP) FROM country WHERE Continent = ""Asia""",world_1,"[(3705025700, 3787042.0)]",What is the total population and the highest GNP of all countries in Asia?,"[(3705025700, 3787042.0)]",What is the total population and maximum GNP in Asia?,"The total population of Asia is approximately 4.6 billion people, which accounts for around 60% of the world's population.
+
+As for the maximum GNP (Gross National Product) in Asia, it's difficult to provide an exact figure as it constantly changes due to various economic factors. However, according to the World Bank, the total GDP (Gross Domestic Product) of Asia was around $34.4 trillion in 2021.
+
+The country with the highest GNP in Asia is China, with a nominal GDP of over $18.3 trillion in 2021, followed by Japan with a nominal GDP of over $5.1 trillion.",1.0,1.0,1,100
+"SELECT sum(Population) FROM city WHERE District = ""Gelderland""",world_1,"[(545548,)]",What is the total population of all cities in the province of Gelderland?,"[(545548,)]",How many people live in Gelderland district?,"Gelderland is a province in the Netherlands, not a district. As of my knowledge cutoff in 2023, the estimated population of Gelderland province is approximately 2.1 million people.",1.0,1.0,1,100
+SELECT AVG ( population ) FROM state;,geo,"[(4415590.666666667,)]",What is the average population of all states?,"[(4415590.666666667,)]",what is the average population of the us by state,"The average population of the US by state varies greatly. According to the 2020 United States Census, the estimated average population per state is approximately 2.59 million people. However, this number can be misleading due to the large population disparities between states.
+
+Here's a breakdown of the estimated 2020 population by state, from highest to lowest:
+
+1. California - 39.5 million
+2. Texas - 29.7 million
+3. Florida - 21.7 million
+4. New York - 20.2 million
+5. Pennsylvania - 12.8 million
+6. Illinois - 12.6 million
+7. Ohio - 11.8 million
+8. Georgia - 10.7 million
+9. North Carolina - 10.4 million
+10. Michigan - 10.0 million
+
+On the other end of the spectrum, the least populous states are:
+
+1. Wyoming - 579,000
+2. Vermont - 643,000
+3. North Dakota - 760,000
+4. Alaska - 773,000
+5. South Dakota - 892,000
+
+Please note that these numbers are estimates based on the 2020 census and may have changed slightly since then due to various factors such as population growth and migration.",1.0,1.0,1,100
+SELECT max(elevation) FROM airports WHERE country = 'Iceland',flight_4,"[(1030,)]",What is the highest elevation of any airport in Iceland?,"[(1030,)]",What is the maximum elevation of all airports in the country of Iceland?,"The maximum elevation of all airports in Iceland is 674 meters (2,211 ft) at the Egilsstaðir Airport (EGS).",1.0,1.0,1,100
+"SELECT avg(LifeExpectancy) FROM country WHERE Continent = ""Africa"" AND GovernmentForm = ""Republic""",world_1,"[(50.84347826086957,)]",What is the average life expectancy of people living in African republics?,"[(50.84347826086957,)]",What is the average life expectancy in African countries that are republics?,"The average life expectancy in African republics varies greatly. However, based on available data from 2020, here are some average life expectancies in African republics:
+
+- Algeria: 77.2 years
+- Angola: 61.7 years
+- Benin: 61.8 years
+- Botswana: 69.6 years
+- Burkina Faso: 61.8 years
+- Burundi: 61.6 years
+- Cameroon: 59.4 years
+- Cape Verde: 73.8 years
+- Central African Republic: 53.5 years
+- Chad: 54.1 years
+- Comoros: 67.3 years
+- Congo (Brazzaville): 64.4 years
+- Congo (Kinshasa): 61.8 years
+- Côte d'Ivoire: 58.8 years
+- Djibouti: 64.4 years
+- Equatorial Guinea: 58.4 years
+- Eritrea: 66.4 years
+- Eswatini (formerly Swaziland): 58.3 years
+- Ethiopia: 65.8 years
+- Gabon: 66.5 years
+- Gambia: 62.1 years
+- Ghana: 63.4 years
+- Guinea: 62.4 years
+- Guinea-Bissau: 58.4 years
+- Kenya: 64.7 years
+- Lesotho: 53.7 years
+- Liberia: 62.5 years
+- Madagascar: 67.3 years
+- Malawi: 63.8 years
+- Mali: 58.7 years
+- Mauritania: 64.1 years
+- Mauritius: 75.2 years
+- Mozambique: 59.5 years
+- Namibia: 64.5 years
+- Niger: 62.4 years
+- Nigeria: 59.3 years
+- Rwanda: 67.1 years
+- São Tomé and Principe: 70.4 years
+- Senegal: 67.5 years
+- Seychelles: 73.2 years
+- Sierra Leone: 54.7 years
+- Somalia: 58.4 years
+- South Sudan: 57.3 years
+- Sudan: 65.1 years
+- Tanzania: 65.5 years
+- Togo: 60.4 years
+- Tunisia: 76.4 years
+- Uganda: 63.4 years
+- Zambia: 63.5 years
+- Zimbabwe: 61.4 years
+
+The overall average life expectancy in African republics is approximately 63 years.",1.0,1.0,1,100
+"SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = ""Africa""",world_1,"[(10,)]",How many different forms of government are there in African countries?,"[(10,)]",How many type of governments are in Africa?,"There are several types of governments in Africa, but they can be broadly categorized into the following:
+
+1. Presidential systems (e.g., South Africa, Nigeria, Egypt)
+2. Parliamentary systems (e.g., Morocco, Algeria, Tunisia)
+3. Constitutional monarchies (e.g., Morocco, Lesotho, Eswatini)
+4. Absolute monarchies (e.g., Eswatini)
+5. Military dictatorships (e.g., some countries have experienced this type of government in the past)
+6. Authoritarian regimes (e.g., some countries have experienced this type of government in the past)
+7. Federal republics (e.g., Ethiopia, Nigeria)
+8. Unitary republics (e.g., most African countries)
+9. Hybrid systems (e.g., some countries have a mix of presidential and parliamentary systems)
+
+It's worth noting that some African countries have experienced multiple types of governments throughout their history, and some may have a complex system that doesn't fit neatly into one category.",1.0,1.0,1,100
+SELECT COUNT ( river_name ) FROM river;,geo,"[(149,)]",How many rivers are there?,"[(149,)]",how many rivers are there in us,"There are approximately 250,000 rivers in the United States.",1.0,1.0,1,100
+"SELECT Abbreviation FROM AIRLINES WHERE Airline = ""JetBlue Airways""",flight_2,"[('JetBlue',)]",What is the abbreviation for JetBlue Airways?,"[('B6',)]","What is the abbreviation of Airline ""JetBlue Airways""?",B6,0.0,0.0,0,22
+SELECT Name FROM country WHERE IndepYear > 1950,world_1,"[('Angola',), ('United Arab Emirates',), ('Armenia',), ('Antigua and Barbuda',), ('Azerbaijan',), ('Burundi',), ('Benin',), ('Burkina Faso',), ('Bangladesh',), ('Bahrain',), ('Bahamas',), ('Bosnia and Herzegovina',), ('Belarus',), ('Belize',), ('Barbados',), ('Brunei',), ('Botswana',), ('Central African Republic',), ('Côte d’Ivoire',), ('Cameroon',), ('Congo, The Democratic Republic of the',), ('Congo',), ('Comoros',), ('Cape Verde',), ('Cyprus',), ('Czech Republic',), ('Germany',), ('Djibouti',), ('Dominica',), ('Algeria',), ('Eritrea',), ('Estonia',), ('Fiji Islands',), ('Micronesia, Federated States of',), ('Gabon',), ('Georgia',), ('Ghana',), ('Guinea',), ('Gambia',), ('Guinea-Bissau',), ('Equatorial Guinea',), ('Grenada',), ('Guyana',), ('Croatia',), ('Jamaica',), ('Kazakstan',), ('Kenya',), ('Kyrgyzstan',), ('Cambodia',), ('Kiribati',), ('Saint Kitts and Nevis',), ('Kuwait',), ('Laos',), ('Libyan Arab Jamahiriya',), ('Saint Lucia',), ('Lesotho',), ('Lithuania',), ('Latvia',), ('Morocco',), ('Moldova',), ('Madagascar',), ('Maldives',), ('Marshall Islands',), ('Macedonia',), ('Mali',), ('Malta',), ('Mozambique',), ('Mauritania',), ('Mauritius',), ('Malawi',), ('Malaysia',), ('Namibia',), ('Niger',), ('Nigeria',), ('Nauru',), ('Oman',), ('Palau',), ('Papua New Guinea',), ('Qatar',), ('Russian Federation',), ('Rwanda',), ('Sudan',), ('Senegal',), ('Singapore',), ('Solomon Islands',), ('Sierra Leone',), ('Somalia',), ('Sao Tome and Principe',), ('Suriname',), ('Slovakia',), ('Slovenia',), ('Swaziland',), ('Seychelles',), ('Chad',), ('Togo',), ('Tajikistan',), ('Turkmenistan',), ('Tonga',), ('Trinidad and Tobago',), ('Tunisia',), ('Tuvalu',), ('Tanzania',), ('Uganda',), ('Ukraine',), ('Uzbekistan',), ('Saint Vincent and the Grenadines',), ('Vanuatu',), ('Samoa',), ('Zambia',), ('Zimbabwe',)]",What countries gained independence after 1950?,"[('Angola',), ('United Arab Emirates',), ('Armenia',), ('Azerbaijan',), ('Burundi',), ('Bangladesh',), ('Bahamas',), ('Bosnia and Herzegovina',), ('Barbados',), ('Brunei',), ('Botswana',), ('Cape Verde',), ('Cyprus',), ('Djibouti',), ('Dominica',), ('Eritrea',), ('Estonia',), ('Fiji Islands',), ('Micronesia, Federated States of',), ('Gabon',), ('Georgia',), ('Ghana',), ('Grenada',), ('Guyana',), ('Jamaica',), ('Kazakstan',), ('Kiribati',), ('Saint Kitts and Nevis',), ('Kuwait',), ('Laos',), ('Saint Lucia',), ('Lesotho',), ('Lithuania',), ('Latvia',), ('Maldives',), ('Marshall Islands',), ('Mauritius',), ('Malawi',), ('Malaysia',), ('Nauru',), ('Oman',), ('Palau',), ('Papua New Guinea',), ('Qatar',), ('Saint Vincent and the Grenadines',), ('Seychelles',), ('Singapore',), ('Solomon Islands',), ('Somalia',), ('Sao Tome and Principe',), ('Suriname',), ('Swaziland',), ('Tonga',), ('Trinidad and Tobago',), ('Tuvalu',), ('Uganda',), ('Ukraine',), ('Uzbekistan',), ('Vanuatu',), ('Zambia',), ('Zimbabwe',)]",What are the names of all the countries that became independent after 1950?,"There are numerous countries that gained independence after 1950. Here's a list of some of them:
+
+1. Sri Lanka (1948, but gained full independence in 1950 as the Dominion of Ceylon, and became a republic in 1972)
+2. Libya (1951)
+3. Morocco (1956)
+4. Tunisia (1956)
+5. Ghana (1957)
+6. Malaysia (1957)
+7. Singapore (1959, as a self-governing state, and 1963 as part of Malaysia, and 1965 as an independent country)
+8. Cyprus (1960)
+9. Nigeria (1960)
+10. Senegal (1960)
+11. Somalia (1960)
+12. Togo (1960)
+13. Cameroon (1960)
+14. Mali (1960)
+15. Ivory Coast (1960)
+16. Chad (1960)
+17. Central African Republic (1960)
+18. Republic of the Congo (1960)
+19. Gabon (1960)
+19. Benin (1960)
+20. Niger (1960)
+21. Burkina Faso (1960)
+22. Mauritania (1960)
+23. Sierra Leone (1961)
+24. Kuwait (1961)
+25. Jamaica (1962)
+26. Trinidad and Tobago (1962)
+27. Uganda (1962)
+28. Kenya (1963)
+29. Zanzibar (1963, merged with Tanganyika in 1964 to form Tanzania)
+30. Tanganyika (1964, merged with Zanzibar in 1964 to form Tanzania)
+31. Malawi (1964)
+32. Zambia (1964)
+33. The Gambia (1965)
+34. Singapore (1965)
+35. Botswana (1966)
+36. Lesotho (1966)
+37. Guyana (1966)
+38. Mauritius (1968)
+39. Swaziland (1968)
+40. Equatorial Guinea (1968)
+41. Qatar (1971)
+42. Bahrain (1971)
+43. United Arab Emirates (1971)
+44. Oman (1971)
+45. Bangladesh (1971)
+46. Bahamas (1973)
+47. Grenada (1974)
+48. Guinea-Bissau (1974)
+49. Mozambique (1975)
+50. Angola (1975)
+51. Cape Verde (1975)
+52. Comoros (1975)
+53. São Tomé and Principe (1975)
+54. Suriname (1975)
+55. Papua New Guinea (1975)
+56. Seychelles (1976)
+57. Djibouti (1977)
+58. Dominica (1978)
+59. Saint Lucia (1979)
+60. Saint Vincent and the Grenadines (1979)
+61. Zimbabwe (1980)
+62. Vanuatu (1980)
+63. Belize (1981)
+64. Antigua and Barbuda (1981)
+65. Saint Kitts and Nevis (1983)
+66. Brunei (1984)
+67. Namibia (1990)
+68. Armenia (1991)
+69. Azerbaijan (1991)
+70. Belarus (1991)
+71. Estonia (1991)
+72. Georgia (1991)
+73. Kazakhstan (1991)
+74. Kyrgyzstan (1991)
+75. Latvia (1991)
+76. Lithuania (1991)
+77. Moldova (1991)
+78. Russia (1991)
+79. Tajikistan (1991)
+80. Turkmenistan (1991)
+81. Ukraine (1991)
+82. Uzbekistan (1991)
+83. Bosnia and Herzegovina (1992)
+84. Croatia (1992)
+85. Macedonia (1992)
+86. Slovenia (1992)
+87. Eritrea (1993)
+88. Czech Republic (1993)
+89. Slovakia (1993)
+90. Andorra (1993, adopted a new constitution)
+91. Palau (1994)
+92. Marshall Islands (1994)
+93. Micronesia (1994)
+94. Macedonia (officially known as the Republic of North Macedonia since 2019) (1994)
+95. Timor-Leste (2002)
+96. Montenegro (2006)
+97. Kosovo (2008)
+98. South Sudan (2011)
+
+Note: The dates mentioned above are the dates of independence from colonial or other foreign rule. Some countries may have had earlier declarations of independence or other forms of self-governance.",1.0,0.5545454545454546,0,69
+"SELECT name , city , country , elevation FROM airports WHERE city = 'New York'",flight_4,"[('La Guardia Airport', 'New York', 'United States', 21), ('John F Kennedy International Airport', 'New York', 'United States', 13), ('Indianola Municipal Airport', 'New York', 'United States', 126), ('One Police Plaza Heliport', 'New York', 'United States', 244)]","What are the names, cities, countries, and elevations of airports located in New York?","[('La Guardia Airport', 'New York', 'United States', 21), ('John F Kennedy International Airport', 'New York', 'United States', 13), ('Indianola Municipal Airport', 'New York', 'United States', 126), ('One Police Plaza Heliport', 'New York', 'United States', 244)]","Find the name, city, country, and altitude (or elevation) of the airports in the city of New York.","Here's the information about the airports in New York City:
+
+1. John F. Kennedy International Airport (JFK)
+   - Name: John F. Kennedy International Airport
+   - City: New York City
+   - Country: United States
+   - Altitude (Elevation): 13 feet (4 meters) above sea level
+
+2. LaGuardia Airport (LGA)
+   - Name: LaGuardia Airport
+   - City: New York City
+   - Country: United States
+   - Altitude (Elevation): 21 feet (6 meters) above sea level
+
+3. Newark Liberty International Airport (EWR) (serves New York City, located in New Jersey)
+   - Name: Newark Liberty International Airport
+   - City: Newark (serves New York City)
+   - Country: United States
+   - Altitude (Elevation): 83 feet (25 meters) above sea level
+
+Note: Although Newark Liberty International Airport is not technically in New York City, it is often considered one of the airports serving the city due to its proximity.
+
+There are other smaller airports in the New York City area, but the above list includes the three major airports.",1.0,1.0,1,100
+"SELECT LENGTH FROM river WHERE river_name = ""rio grande"";",geo,"[(3033,), (3033,), (3033,)]",What is the length of the Rio Grande river?,[],how long is the rio grande river,"The Rio Grande River is approximately 1,885 miles (3,034 kilometers) long.",0.0,0.0,0,0
+SELECT traverse FROM river;,geo,"[('minnesota',), ('wisconsin',), ('iowa',), ('illinois',), ('missouri',), ('kentucky',), ('tennessee',), ('arkansas',), ('mississippi',), ('louisiana',), ('louisiana',), ('montana',), ('north dakota',), ('south dakota',), ('iowa',), ('nebraska',), ('missouri',), ('missouri',), ('colorado',), ('utah',), ('arizona',), ('nevada',), ('california',), ('pennsylvania',), ('west virginia',), ('kentucky',), ('indiana',), ('illinois',), ('illinois',), ('ohio',), ('new mexico',), ('texas',), ('oklahoma',), ('arkansas',), ('arkansas',), ('louisiana',), ('colorado',), ('kansas',), ('oklahoma',), ('arkansas',), ('colorado',), ('new mexico',), ('texas',), ('oklahoma',), ('new hampshire',), ('vermont',), ('massachusetts',), ('connecticut',), ('new york',), ('pennsylvania',), ('new jersey',), ('delaware',), ('wyoming',), ('montana',), ('south dakota',), ('north dakota',), ('wyoming',), ('idaho',), ('oregon',), ('washington',), ('washington',), ('georgia',), ('georgia',), ('florida',), ('new mexico',), ('kansas',), ('oklahoma',), ('wyoming',), ('utah',), ('colorado',), ('utah',), ('colorado',), ('wyoming',), ('nebraska',), ('west virginia',), ('maryland',), ('virginia',), ('district of columbia',), ('colorado',), ('nebraska',), ('kansas',), ('colorado',), ('new mexico',), ('texas',), ('colorado',), ('new mexico',), ('colorado',), ('utah',), ('tennessee',), ('alabama',), ('tennessee',), ('kentucky',), ('ohio',), ('indiana',), ('illinois',), ('wyoming',), ('montana',), ('north dakota',), ('pennsylvania',), ('new york',), ('pennsylvania',), ('wyoming',), ('montana',), ('wyoming',), ('north dakota',), ('montana',), ('idaho',), ('washington',), ('oregon',), ('kentucky',), ('tennessee',), ('kentucky',), ('north dakota',), ('south dakota',), ('new mexico',), ('arizona',), ('new york',), ('new jersey',), ('kansas',), ('oklahoma',), ('wyoming',), ('nebraska',), ('arkansas',), ('louisiana',), ('michigan',), ('louisiana',), ('new mexico',), ('texas',), ('wyoming',), ('montana',), ('virginia',), ('north carolina',), ('wisconsin',), ('illinois',), ('colorado',), ('kansas',), ('colorado',), ('nebraska',), ('missouri',), ('arkansas',), ('mississippi',), ('alabama',), ('texas',), ('oklahoma',), ('north carolina',), ('south carolina',), ('arkansas',), ('missouri',), ('arkansas',)]",What are the paths or routes that rivers follow?,"[('minnesota',), ('wisconsin',), ('iowa',), ('illinois',), ('missouri',), ('kentucky',), ('tennessee',), ('arkansas',), ('mississippi',), ('louisiana',), ('louisiana',), ('montana',), ('north dakota',), ('south dakota',), ('iowa',), ('nebraska',), ('missouri',), ('missouri',), ('colorado',), ('utah',), ('arizona',), ('nevada',), ('california',), ('pennsylvania',), ('west virginia',), ('kentucky',), ('indiana',), ('illinois',), ('illinois',), ('ohio',), ('new mexico',), ('texas',), ('oklahoma',), ('arkansas',), ('arkansas',), ('louisiana',), ('colorado',), ('kansas',), ('oklahoma',), ('arkansas',), ('colorado',), ('new mexico',), ('texas',), ('oklahoma',), ('new hampshire',), ('vermont',), ('massachusetts',), ('connecticut',), ('new york',), ('pennsylvania',), ('new jersey',), ('delaware',), ('wyoming',), ('montana',), ('south dakota',), ('north dakota',), ('wyoming',), ('idaho',), ('oregon',), ('washington',), ('washington',), ('georgia',), ('georgia',), ('florida',), ('new mexico',), ('kansas',), ('oklahoma',), ('wyoming',), ('utah',), ('colorado',), ('utah',), ('colorado',), ('wyoming',), ('nebraska',), ('west virginia',), ('maryland',), ('virginia',), ('district of columbia',), ('colorado',), ('nebraska',), ('kansas',), ('colorado',), ('new mexico',), ('texas',), ('colorado',), ('new mexico',), ('colorado',), ('utah',), ('tennessee',), ('alabama',), ('tennessee',), ('kentucky',), ('ohio',), ('indiana',), ('illinois',), ('wyoming',), ('montana',), ('north dakota',), ('pennsylvania',), ('new york',), ('pennsylvania',), ('wyoming',), ('montana',), ('wyoming',), ('north dakota',), ('montana',), ('idaho',), ('washington',), ('oregon',), ('kentucky',), ('tennessee',), ('kentucky',), ('north dakota',), ('south dakota',), ('new mexico',), ('arizona',), ('new york',), ('new jersey',), ('kansas',), ('oklahoma',), ('wyoming',), ('nebraska',), ('arkansas',), ('louisiana',), ('michigan',), ('louisiana',), ('new mexico',), ('texas',), ('wyoming',), ('montana',), ('virginia',), ('north carolina',), ('wisconsin',), ('illinois',), ('colorado',), ('kansas',), ('colorado',), ('nebraska',), ('missouri',), ('arkansas',), ('mississippi',), ('alabama',), ('texas',), ('oklahoma',), ('north carolina',), ('south carolina',), ('arkansas',), ('missouri',), ('arkansas',)]",which states have a river,"Almost all states in the United States have a river. However, here's a list of some notable rivers in each state:
+
+1. Alabama - Tennessee River, Alabama River
+2. Alaska - Yukon River, Kuskokwim River
+3. Arizona - Colorado River, Salt River
+4. Arkansas - Arkansas River, Mississippi River
+5. California - Sacramento River, San Joaquin River
+6. Colorado - Colorado River, Arkansas River
+7. Connecticut - Connecticut River
+8. Delaware - Delaware River
+9. Florida - St. Johns River, Suwannee River
+10. Georgia - Chattahoochee River, Savannah River
+11. Hawaii - Wailua River, Waikato River
+12. Idaho - Snake River, Salmon River
+13. Illinois - Illinois River, Mississippi River
+14. Indiana - Wabash River, Ohio River
+15. Iowa - Mississippi River, Iowa River
+16. Kansas - Kansas River, Arkansas River
+17. Kentucky - Ohio River, Cumberland River
+18. Louisiana - Mississippi River, Atchafalaya River
+19. Maine - Penobscot River, Kennebec River
+20. Maryland - Potomac River, Patuxent River
+21. Massachusetts - Charles River, Merrimack River
+22. Michigan - Grand River, Detroit River
+23. Minnesota - Mississippi River, St. Croix River
+24. Mississippi - Mississippi River, Pascagoula River
+25. Missouri - Mississippi River, Missouri River
+26. Montana - Missouri River, Yellowstone River
+27. Nebraska - Platte River, Missouri River
+28. Nevada - Colorado River, Truckee River
+29. New Hampshire - Merrimack River, Connecticut River
+30. New Jersey - Delaware River, Hudson River
+31. New Mexico - Rio Grande, Pecos River
+32. New York - Hudson River, St. Lawrence River
+33. North Carolina - Cape Fear River, Neuse River
+34. North Dakota - Missouri River, Red River
+35. Ohio - Ohio River, Cuyahoga River
+36. Oklahoma - Arkansas River, Red River
+37. Oregon - Columbia River, Willamette River
+38. Pennsylvania - Susquehanna River, Allegheny River
+39. Rhode Island - Providence River, Blackstone River
+40. South Carolina - Santee River, Edisto River
+41. South Dakota - Missouri River, Cheyenne River
+42. Tennessee - Tennessee River, Cumberland River
+43. Texas - Rio Grande, Brazos River
+44. Utah - Colorado River, Green River
+45. Vermont - Lake Champlain, Connecticut River
+46. Virginia - Potomac River, James River
+47. Washington - Columbia River, Yakima River
+48. West Virginia - Ohio River, Monongahela River
+49. Wisconsin - Mississippi River, Wisconsin River
+50. Wyoming - Yellowstone River, Snake River
+
+Please note that this is not an exhaustive list, and there are many more rivers in each state.",1.0,1.0,1,100
+SELECT lake_name FROM lake;,geo,"[('iliamna',), ('becharof',), ('teshekpuk',), ('naknek',), ('salton sea',), ('tahoe',), ('okeechobee',), ('michigan',), ('michigan',), ('pontchartrain',), ('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',), ('superior',), ('lake of the woods',), ('red',), ('rainy',), ('mille lacs',), ('flathead',), ('tahoe',), ('erie',), ('ontario',), ('champlain',), ('erie',), ('erie',), ('great salt lake',), ('champlain',), ('superior',), ('michigan',), ('winnebago',)]",What are the names of the lakes?,"[('iliamna',), ('becharof',), ('teshekpuk',), ('naknek',), ('salton sea',), ('tahoe',), ('okeechobee',), ('michigan',), ('michigan',), ('pontchartrain',), ('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',), ('superior',), ('lake of the woods',), ('red',), ('rainy',), ('mille lacs',), ('flathead',), ('tahoe',), ('erie',), ('ontario',), ('champlain',), ('erie',), ('erie',), ('great salt lake',), ('champlain',), ('superior',), ('michigan',), ('winnebago',)]",name all the lakes of us,"There are numerous lakes in the United States. Here's a list of some of the major lakes:
+
+1. Great Lakes:
+   - Lake Superior
+   - Lake Michigan
+   - Lake Huron
+   - Lake Erie
+   - Lake Ontario
+
+2. Other notable lakes:
+   - Great Salt Lake (Utah)
+   - Lake Mead (Arizona/Nevada)
+   - Lake Powell (Arizona/Utah)
+   - Lake Tahoe (California/Nevada)
+   - Lake George (New York)
+   - Lake Champlain (New York/Vermont)
+   - Lake Winnipesaukee (New Hampshire)
+   - Lake Oahe (North Dakota/South Dakota)
+   - Lake Sakakawea (North Dakota)
+   - Lake Texoma (Oklahoma/Texas)
+   - Lake Eufaula (Oklahoma)
+   - Lake Norman (North Carolina)
+   - Lake Lanier (Georgia)
+   - Lake Okeechobee (Florida)
+   - Lake Pontchartrain (Louisiana)
+   - Lake Michigan-Huron (Michigan)
+   - Lake Chelan (Washington)
+   - Lake Coeur d'Alene (Idaho)
+   - Lake Flathead (Montana)
+   - Lake Havasu (Arizona/California)
+   - Lake Berryessa (California)
+   - Lake Shasta (California)
+   - Lake Don Pedro (California)
+   - Lake Berryessa (California)
+   - Lake McConaughy (Nebraska)
+   - Lake Sharpe (South Dakota)
+   - Lake Francis Case (South Dakota)
+   - Lake Lewis and Clark (South Dakota/Nebraska)
+   - Lake Wallula (Washington/Oregon)
+   - Lake Roosevelt (Washington)
+   - Lake Hartwell (South Carolina/Georgia)
+   - Lake Thurmond (South Carolina/Georgia)
+   - Lake Seminole (Georgia)
+   - Lake Allatoona (Georgia)
+   - Lake Weiss (Georgia/Alabama)
+   - Lake Eufaula (Alabama/Georgia)
+   - Lake Martin (Alabama)
+   - Lake Logan Martin (Alabama)
+   - Lake Guntersville (Alabama)
+   - Lake Pickwick (Alabama/Mississippi/Tennessee)
+   - Lake Barkley (Kentucky/Tennessee)
+   - Lake Cumberland (Kentucky)
+   - Lake Dale Hollow (Kentucky/Tennessee)
+   - Lake St. Clair (Michigan)
+   - Lake Pepin (Minnesota/Wisconsin)
+   - Lake Mille Lacs (Minnesota)
+   - Lake Minnetonka (Minnesota)
+   - Lake Vermilion (Minnesota)
+   - Lake of the Woods (Minnesota)
+   - Lake Sakatah (Minnesota)
+   - Lake Pepin (Minnesota/Wisconsin)
+   - Lake Winnebago (Wisconsin)
+   - Lake Michigan (Wisconsin)
+   - Lake Monona (Wisconsin)
+   - Lake Waubesa (Wisconsin)
+   - Lake Wingra (Wisconsin)
+   - Lake Mendota (Wisconsin)
+   - Lake Butte des Morts (Wisconsin)
+   - Lake Poygan (Wisconsin)
+   - Lake Winneconne (Wisconsin)
+   - Lake Little Butte des Morts (Wisconsin)
+   - Lake Green Bay (Wisconsin)
+   - Lake Chippewa (Wisconsin)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pepin (Wisconsin/Minnesota)
+   - Lake Pep",1.0,1.0,1,100
+"SELECT state_name FROM city WHERE city_name = ""springfield"";",geo,"[('illinois',), ('massachusetts',), ('missouri',), ('ohio',)]",What is the state where Springfield is located?,"[('illinois',), ('massachusetts',), ('missouri',), ('ohio',)]",what state is springfield in,"There are actually several Springfields in the United States.  Some of the most well-known ones are in:
+
+1. Illinois (Springfield, IL) - This is the state capital of Illinois.
+2. Massachusetts (Springfield, MA) - This is the largest city in Western Massachusetts.
+3. Missouri (Springfield, MO) - This is the third-largest city in Missouri.
+4. Oregon (Springfield, OR) - This is a city in Lane County, Oregon.
+
+Without more context, it's difficult to pinpoint which Springfield you're referring to.",1.0,1.0,1,100
+"SELECT avg(GNP) , sum(population) FROM country WHERE GovernmentForm = ""US Territory""",world_1,"[(510.3333333333333, 329000)]",What is the average GNP and total population of all US territories?,"[(510.3333333333333, 329000)]",What is the average GNP and total population in all nations whose government is US territory?,"The US territories include:
+
+1. American Samoa
+2. Guam
+3. Northern Mariana Islands
+4. Puerto Rico
+5. United States Virgin Islands
+
+Here's the average GNP (Gross National Product) and total population for these territories:
+
+- American Samoa: 
+  GNP (2020): $709 million
+  Population (2020): 55,519
+
+- Guam: 
+  GNP (2020): $5.92 billion
+  Population (2020): 164,583
+
+- Northern Mariana Islands: 
+  GNP (2020): $1.24 billion
+  Population (2020): 53,833
+
+- Puerto Rico: 
+  GNP (2020): $103.4 billion
+  Population (2020): 3,193,694
+
+- United States Virgin Islands: 
+  GNP (2020): $4.68 billion
+  Population (2020): 109,700
+
+Average GNP: 
+($709 million + $5.92 billion + $1.24 billion + $103.4 billion + $4.68 billion) / 5 ≈ $23.1 billion
+
+Average population: 
+(55,519 + 164,583 + 53,833 + 3,193,694 + 109,700) / 5 ≈ 1,115,466",1.0,1.0,1,100
+"SELECT lake_name FROM lake WHERE area > 750 AND state_name = ""michigan"";",geo,"[('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',)]",What are the names of lakes in Michigan that are larger than 750 square units?,"[('superior',), ('michigan',), ('huron',), ('erie',)]",name the major lakes in michigan,"The four major lakes in Michigan are:
+
+1. Lake Superior
+2. Lake Michigan
+3. Lake Huron
+4. Lake Erie",1.0,0.8,0,67
+SELECT lake_name FROM lake WHERE area > 750;,geo,"[('iliamna',), ('becharof',), ('teshekpuk',), ('salton sea',), ('okeechobee',), ('michigan',), ('michigan',), ('pontchartrain',), ('superior',), ('huron',), ('michigan',), ('erie',), ('st. clair',), ('superior',), ('lake of the woods',), ('red',), ('rainy',), ('erie',), ('ontario',), ('champlain',), ('erie',), ('erie',), ('great salt lake',), ('champlain',), ('superior',), ('michigan',)]",What are the names of lakes that cover an area greater than 750 square kilometers?,"[('superior',), ('michigan',), ('erie',), ('ontario',), ('great salt lake',), ('lake of the woods',)]",what are the major lakes in united states,"The major lakes in the United States include:
+
+1. Lake Superior: The largest of the Great Lakes, located on the border of the US and Canada.
+2. Lake Michigan: The second-largest Great Lake, located in the northern US.
+3. Lake Huron: The third-largest Great Lake, located on the border of the US and Canada.
+4. Lake Erie: The fourth-largest Great Lake, located on the border of the US and Canada.
+5. Lake Ontario: The smallest of the Great Lakes, located on the border of the US and Canada.
+6. Great Salt Lake: A large saltwater lake in Utah.
+7. Lake Mead: A large man-made lake on the Arizona-Nevada border.
+8. Lake Powell: A large man-made lake on the Arizona-Utah border.
+9. Lake Tahoe: A freshwater lake in the Sierra Nevada mountains on the California-Nevada border.
+10. Lake Oahe: A large man-made lake on the North Dakota-South Dakota border.
+
+Additionally, some notable lakes in the US include:
+
+- Lake George (New York)
+- Lake Champlain (New York-Vermont)
+- Lake Winnipesaukee (New Hampshire)
+- Lake Pontchartrain (Louisiana)
+- Lake Texoma (Texas-Oklahoma)
+- Lake Chelan (Washington)
+- Lake Coeur d'Alene (Idaho)
+- Lake Norman (North Carolina)
+- Lake Lanier (Georgia)
+
+Note: This is not an exhaustive list, but it includes some of the most notable and largest lakes in the United States.",1.0,0.35294117647058826,0,36
+"SELECT state_name FROM city WHERE city_name = ""austin"" AND population > 150000;",geo,"[('texas',)]","What state is Austin located in, given that Austin has a population of more than 150,000?","[('texas',)]",which states have a major city named austin,"There are two states with a major city named Austin: 
+
+1. Texas - Austin is the state capital of Texas.
+2. Minnesota - Austin is a city in southeastern Minnesota.",1.0,1.0,1,100
+"SELECT COUNT ( state_name ) FROM city WHERE city_name = ""springfield"";",geo,"[(4,)]",How many states have a city named Springfield?,"[(4,)]",how many states have a city named springfield,There are at least 41 states in the United States that have a city or town named Springfield.,1.0,1.0,1,100
+SELECT COUNT ( traverse ) FROM river WHERE LENGTH > 750;,geo,"[(100,)]",How many rivers in the world are longer than 750 kilometers?,"[(100,)]",how many states have major rivers,"Almost all 50 states in the United States have major rivers. However, I can give you a more specific answer. There are 48 states that have major rivers, with the exceptions being Hawaii and Delaware (although Delaware has smaller rivers and streams).",1.0,1.0,1,100
+SELECT traverse FROM river WHERE LENGTH = ( SELECT MIN ( LENGTH ) FROM river );,geo,"[('new york',), ('pennsylvania',), ('new jersey',), ('delaware',)]",What is the path of the shortest river?,"[('delaware',)]",what states does the shortest river run through,"The shortest river in the United States is the D River, which runs through Oregon.",1.0,0.25,0,33
+"SELECT population FROM city WHERE city_name = ""seattle"" AND state_name = ""washington"";",geo,"[(493846,)]","What is the population of Seattle, Washington?","[(493846,)]",what is the population of seattle washington,"As of the 2020 United States Census, the population of Seattle, Washington is approximately 733,919.",1.0,1.0,1,100
+SELECT COUNT ( DISTINCT traverse ) FROM river WHERE LENGTH > 750;,geo,"[(33,)]",How many different rivers have a length of more than 750 kilometers?,"[(33,)]",how many states are next to major rivers,There are 48 states in the United States that have a major river within or along their borders.,1.0,1.0,1,100
+SELECT DISTINCT capital FROM state;,geo,"[('montgomery',), ('juneau',), ('phoenix',), ('little rock',), ('sacramento',), ('denver',), ('hartford',), ('dover',), ('washington',), ('tallahassee',), ('atlanta',), ('honolulu',), ('boise',), ('springfield',), ('indianapolis',), ('des moines',), ('topeka',), ('frankfort',), ('baton rouge',), ('augusta',), ('annapolis',), ('boston',), ('lansing',), ('st. paul',), ('jackson',), ('jefferson city',), ('helena',), ('lincoln',), ('carson city',), ('concord',), ('trenton',), ('santa fe',), ('albany',), ('raleigh',), ('bismarck',), ('columbus',), ('oklahoma city',), ('salem',), ('harrisburg',), ('providence',), ('columbia',), ('pierre',), ('nashville',), ('austin',), ('salt lake city',), ('montpelier',), ('richmond',), ('olympia',), ('charleston',), ('madison',), ('cheyenne',)]",What are the different capital cities of states?,"[('montgomery',), ('juneau',), ('phoenix',), ('little rock',), ('sacramento',), ('denver',), ('hartford',), ('dover',), ('washington',), ('tallahassee',), ('atlanta',), ('honolulu',), ('boise',), ('springfield',), ('indianapolis',), ('des moines',), ('topeka',), ('frankfort',), ('baton rouge',), ('augusta',), ('annapolis',), ('boston',), ('lansing',), ('st. paul',), ('jackson',), ('jefferson city',), ('helena',), ('lincoln',), ('carson city',), ('concord',), ('trenton',), ('santa fe',), ('albany',), ('raleigh',), ('bismarck',), ('columbus',), ('oklahoma city',), ('salem',), ('harrisburg',), ('providence',), ('columbia',), ('pierre',), ('nashville',), ('austin',), ('salt lake city',), ('montpelier',), ('richmond',), ('olympia',), ('charleston',), ('madison',), ('cheyenne',)]",name the 50 capitals in the usa,"Here are the 50 US state capitals:
+
+1. Montgomery (Alabama)
+2. Juneau (Alaska)
+3. Phoenix (Arizona)
+4. Little Rock (Arkansas)
+5. Sacramento (California)
+6. Denver (Colorado)
+7. Hartford (Connecticut)
+8. Dover (Delaware)
+9. Tallahassee (Florida)
+10. Atlanta (Georgia)
+11. Honolulu (Hawaii)
+12. Boise (Idaho)
+13. Springfield (Illinois)
+14. Indianapolis (Indiana)
+15. Des Moines (Iowa)
+16. Topeka (Kansas)
+17. Frankfort (Kentucky)
+18. Baton Rouge (Louisiana)
+19. Augusta (Maine)
+20. Annapolis (Maryland)
+21. Boston (Massachusetts)
+22. Lansing (Michigan)
+23. St. Paul (Minnesota)
+24. Jackson (Mississippi)
+25. Jefferson City (Missouri)
+26. Helena (Montana)
+27. Lincoln (Nebraska)
+28. Carson City (Nevada)
+29. Concord (New Hampshire)
+30. Trenton (New Jersey)
+31. Santa Fe (New Mexico)
+32. Albany (New York)
+33. Raleigh (North Carolina)
+34. Bismarck (North Dakota)
+35. Columbus (Ohio)
+36. Oklahoma City (Oklahoma)
+37. Salem (Oregon)
+38. Harrisburg (Pennsylvania)
+39. Providence (Rhode Island)
+40. Columbia (South Carolina)
+41. Pierre (South Dakota)
+42. Nashville (Tennessee)
+43. Austin (Texas)
+44. Salt Lake City (Utah)
+45. Montpelier (Vermont)
+46. Richmond (Virginia)
+47. Olympia (Washington)
+48. Charleston (West Virginia)
+49. Madison (Wisconsin)
+50. Cheyenne (Wyoming)",1.0,1.0,1,100
+"SELECT COUNT ( river_name ) FROM river WHERE traverse = ""idaho"";",geo,"[(2,)]",How many rivers in Idaho have been traversed?,"[(2,)]",how many rivers are in idaho,"Idaho has approximately 3,100 miles of rivers, with more than 130 named rivers.",1.0,1.0,1,100
+"SELECT country_name FROM state WHERE state_name = ""massachusetts"";",geo,"[('usa',)]",What is the country where Massachusetts is located?,"[('usa',)]",where is massachusetts,"Massachusetts is a state located in the northeastern United States, in the New England region. It is bordered by the states of New Hampshire and Vermont to the north, Rhode Island and Connecticut to the south, New York to the west, and the Atlantic Ocean to the east.",1.0,1.0,1,100
+SELECT count(*) FROM FLIGHTS,flight_2,"[(1200,)]",How many flights are there in total?,"[(1200,)]",How many flights do we have?,"I don't have access to real-time flight information. However, I can guide you on how to find the answer. You can check with your airline or a flight search engine like Google Flights, Skyscanner, or Expedia to get the most up-to-date information on flights.",1.0,1.0,1,100
+"SELECT river_name FROM river WHERE LENGTH > 750 AND traverse = ""illinois"";",geo,"[('mississippi',), ('ohio',), ('ohio',), ('wabash',)]",What are the names of rivers in Illinois that are longer than 750 units?,"[('wabash',)]",name the major rivers in illinois,"The major rivers in Illinois include:
+
+1. Illinois River
+2. Mississippi River
+3. Ohio River
+4. Wabash River
+5. Kankakee River
+6. Rock River
+7. Sangamon River
+8. Vermilion River",1.0,0.3333333333333333,0,35
+"SELECT Airline FROM AIRLINES WHERE Abbreviation = ""UAL""",flight_2,"[('United Airlines',)]","What is the name of the airline with the abbreviation ""UAL""?","[('United Airlines',)]",Which airline has abbreviation 'UAL'?,United Airlines.,1.0,1.0,1,100
+"SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = ""Aruba"" ORDER BY Percentage DESC LIMIT 1",world_1,"[('Papiamento',)]",What is the most widely spoken language in Aruba?,"[('Papiamento',)]",Which language is the most popular in Aruba?,"The most popular language in Aruba is Papiamento, but many residents also speak Dutch, English, and Spanish.",1.0,1.0,1,100
+"SELECT t2.capital FROM state AS t2 JOIN city AS t1 ON t2.state_name = t1.state_name WHERE t1.city_name = ""durham"";",geo,"[('raleigh',)]",What is the capital of the state where Durham is located?,"[('raleigh',)]",what is the capital of states that have cities named durham,"There are several states with cities named Durham. Here are the capitals of those states:
+
+1. North Carolina - Raleigh (Durham is a city in North Carolina)
+2. New Hampshire - Concord (Durham is a town in New Hampshire)
+3. Connecticut - Hartford (Durham is a town in Connecticut)",1.0,1.0,1,100
+"SELECT DISTINCT T1.Region FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = ""English"" OR T2.Language = ""Dutch""",world_1,"[('Caribbean',), ('Polynesia',), ('Australia and New Zealand',), ('Western Europe',), ('Middle East',), ('Central America',), ('North America',), ('Southeast Asia',), ('Nordic Countries',), ('South America',), ('British Islands',), ('Southern Europe',), ('Micronesia',), ('Eastern Asia',), ('Southern Africa',), ('Southern and Central Asia',), ('Western Africa',), ('Eastern Africa',), ('Micronesia/Caribbean',), ('Melanesia',)]",What regions have countries where English or Dutch is spoken?,"[('Caribbean',), ('Australia and New Zealand',), ('Western Europe',), ('North America',), ('British Islands',), ('Micronesia/Caribbean',)]",What are the regions that use English or Dutch?,"The regions that use English or Dutch include:
+
+English-speaking regions:
+1. United Kingdom (UK)
+2. United States (US)
+3. Canada (except Quebec)
+4. Australia
+5. New Zealand
+6. Ireland
+7. South Africa
+8. India (co-official language)
+9. Singapore
+10. Philippines
+11. Caribbean countries (e.g., Jamaica, Barbados)
+12. Many African countries (e.g., Nigeria, Ghana)
+
+Dutch-speaking regions:
+1. Netherlands
+2. Belgium (Flanders region)
+3. Suriname (South America)
+4. Aruba
+5. Curaçao
+6. Sint Maarten (Dutch part)
+7. Caribbean islands (e.g., Bonaire, Sint Eustatius, Saba)",1.0,0.3,0,50
+"SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.HeadOfState = ""Beatrix"" AND T2.IsOfficial = ""T""",world_1,"[('Dutch',), ('Dutch',), ('Papiamento',), ('Dutch',)]",What official languages are spoken in the countries where Beatrix is the head of state?,"[('Dutch',), ('Dutch',), ('Papiamento',), ('Dutch',)]",What is the official language spoken in the country whose head of state is Beatrix?,"The official language spoken in the Netherlands, whose head of state was Queen Beatrix (until her abdication in 2013), is Dutch.",1.0,1.0,1,100
+SELECT state_name FROM state WHERE state_name NOT IN ( SELECT traverse FROM river );,geo,"[('alaska',), ('hawaii',), ('maine',), ('rhode island',)]",What are the names of states that do not have any rivers that flow through them?,"[('alaska',), ('hawaii',), ('maine',), ('rhode island',)]",what state has no rivers,"Maryland is often considered the state with no natural rivers that flow entirely within its borders. However, it's worth noting that Maryland has many rivers that flow through it, but they originate from neighboring states.",1.0,1.0,1,100
+"SELECT COUNT ( river_name ) FROM river WHERE traverse NOT IN ( SELECT state_name FROM state WHERE capital = ""albany"" );",geo,"[(146,)]",How many rivers are there that do not flow through states whose capital is Albany?,"[(146,)]",how many rivers do not traverse the state with the capital albany,"There are 46 states in the United States that do not have Albany as their capital. However, I assume you are referring to New York, which has Albany as its capital. 
+
+New York has a total of 7,849 rivers, streams, and lakes. However, I couldn't find an exact number of rivers that do not traverse the state of New York.",1.0,1.0,1,100
+"SELECT COUNT( DISTINCT Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = ""Chinese""",world_1,"[(4,)]",How many continents have countries where Chinese is spoken?,"[(4,)]",What is the number of distinct continents where Chinese is spoken?,"There are 5 distinct continents where Chinese is spoken: Asia, Africa, North America, South America, and Australia/Oceania, and Europe.",1.0,1.0,1,100
+"SELECT Region FROM country AS T1 JOIN city AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = ""Kabul""",world_1,"[('Southern and Central Asia',)]",What region is the city of Kabul located in?,"[('Southern and Central Asia',)]",Which region is the city Kabul located in?,"Kabul is located in the South Asia region, specifically in the country of Afghanistan.",1.0,1.0,1,100
+"SELECT COUNT(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = ""Afghanistan"" AND IsOfficial = ""T""",world_1,"[(2,)]",How many official languages does Afghanistan have?,"[(2,)]",How many official languages does Afghanistan have?,Afghanistan has two official languages: Pashto and Dari.,1.0,1.0,1,100
+SELECT t2.capital FROM state AS t2 JOIN city AS t1 ON t2.capital = t1.city_name WHERE t1.population <= 150000;,geo,"[('concord',), ('richmond',), ('hartford',), ('tallahassee',), ('albany',), ('boise',), ('springfield',), ('topeka',), ('lansing',), ('springfield',), ('columbia',), ('trenton',), ('albany',), ('raleigh',), ('springfield',), ('salem',), ('columbia',), ('charleston',), ('charleston',)]","What are the capitals of states that have a population of 150,000 or less in their capital city?","[('concord',), ('hartford',), ('boise',), ('springfield',), ('topeka',), ('lansing',), ('springfield',), ('columbia',), ('trenton',), ('raleigh',), ('salem',), ('columbia',), ('charleston',), ('charleston',)]",which capitals are not major cities,"Some examples of capitals that are not major cities include:
+
+1. Naypyidaw (Myanmar) - a planned city that replaced Yangon as the capital in 2006.
+2. Brasília (Brazil) - a planned city that was built specifically to be the capital, but is not as large or economically significant as cities like São Paulo or Rio de Janeiro.
+3. Canberra (Australia) - while it's a significant city, it's not as large or economically significant as cities like Sydney or Melbourne.
+4. Astana (Kazakhstan) - a planned city that was built to replace Almaty as the capital in 1997.
+5. Valletta is not the largest city in Malta, but it is the capital.",1.0,0.7857142857142857,0,84
