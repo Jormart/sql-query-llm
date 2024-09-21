@@ -241,8 +241,6 @@ def parse_llm_output(output_str):
         return None
 
 
-
-
 def calculate_precision_recall(sql_answer, model_answer):
     """
     Calculate precision and recall between SQL and model answers.
