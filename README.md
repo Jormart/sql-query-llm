@@ -15,7 +15,7 @@ Follow these steps to set up the environment and run the application:
 To get started, first clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Jormart/repository-name.git
+git clone https://github.com/Jormart/sql-query-llm.git
 ```
 
 ### 2. Navigate to the Project Directory
