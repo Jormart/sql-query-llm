@@ -271,13 +271,13 @@ def calculate_exact_match(sql_answer, model_answer):
         model_answer: The answer from the model.
 
     Returns:
-        tuple: Exact match (1 or 0) and fuzzy match score (0-100).
+        tuple: Exact match (1 or 0) and fuzzy match score (0-1).
     """
     sql_answer_str = ' '.join(normalize_response(sql_answer))
     model_answer_str = ' '.join(normalize_response(model_answer))
 
     exact_match = 1 if sql_answer_str == model_answer_str else 0
-    fuzzy_match = fuzz.ratio(sql_answer_str, model_answer_str)
+    fuzzy_match = fuzz.ratio(sql_answer_str, model_answer_str) / 100.0  # Convert to 0-1 scale
     return exact_match, fuzzy_match
 
 
